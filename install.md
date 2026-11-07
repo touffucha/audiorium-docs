@@ -1,5 +1,7 @@
 # Audiorium インストール手順
 
+画像付きの手順は [Audiorium ドキュメント](https://touffucha.github.io/audiorium-docs/docs/getting-started/install) にあります。
+
 対象のバージョン：1.0.0
 
 ## 導入の前に
