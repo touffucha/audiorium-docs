@@ -28,6 +28,25 @@ Unity と VRChat SDK のバージョンをご確認ください。動作確認�
 
 Unity の Console にコンパイルエラーが出ている場合、Studio は開きません。最初のエラーの全文を控えて、お問い合わせください。
 
+## VizVid と VRC Light Volumes を同時に導入するとコンパイルエラーが出る
+
+新規のプロジェクトに VizVid と VRC Light Volumes を同時に導入すると、Unity の Console に次のエラーが 3 件表示され、コンパイルが止まることがあります。
+
+```text
+Packages\idv.jlchntoz.vvmw\Editor\VVMW\Designer\ScreenConfiguratorEditor.cs(114,32): error CS1061: 'ScreenConfigurator' does not contain a definition for 'CreateLightVolume'
+```
+
+続く 2 件は `EnsureLightVolumeCookie` と `TryEstimatePlacement` についての同じ形のエラーです。
+
+VizVid と VRC Light Volumes の組み合わせで起きるエラーで、Audiorium は関係しません。Audiorium は VRC Light Volumes を使用しないため、Audiorium のために VRC Light Volumes を導入する必要はありません。
+
+次のどちらかで解決する場合があります（当ショップでは動作を確認していません）。
+
+- **Edit › Project Settings… › Player › Other Settings › Script Compilation** の Scripting Define Symbols に `VRC_LIGHT_VOLUMES` を追加し、「Apply」を押します。
+- VRC Light Volumes を先に導入してコンパイルが終わるのを待ち、その後に VizVid を導入します。
+
+解決しない場合は、VizVid の配布ページの案内をご確認ください。
+
 ## Play モードで音が鳴らない
 
 動画の外部 URL は、Unity の Play モードでは再生できません。音はビルドして VRChat で確認してください（[クイックスタート](../getting-started/quick-start.md) の手順 8）。
