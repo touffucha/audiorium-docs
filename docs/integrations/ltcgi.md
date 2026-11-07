@@ -1,4 +1,5 @@
 ---
+sidebar_label: LTCGI と連携する
 title: LTCGI
 sidebar_position: 3
 description: LTCGI を導入したときにコンソールでできることと、クレジットの表示

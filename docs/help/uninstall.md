@@ -1,4 +1,5 @@
 ---
+sidebar_label: ワールドから削除する
 title: 取り外し
 sidebar_position: 2
 description: Audiorium をワールドから取り外す手順と、一時的に使わない状態にする方法

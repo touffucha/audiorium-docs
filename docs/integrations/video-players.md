@@ -1,4 +1,5 @@
 ---
+sidebar_label: 動画プレイヤーを接続する
 title: 動画プレイヤー
 sidebar_position: 1
 description: Audiorium が対応する動画プレイヤー（YamaPlayer・VizVid）と接続の仕組み

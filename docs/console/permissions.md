@@ -1,4 +1,5 @@
 ---
+sidebar_label: 操作権限を設定する
 title: 操作権限
 sidebar_position: 2
 description: コンソールでワールド全体の設定を変更できる人の選び方と、外部ギミックからの許可・禁止

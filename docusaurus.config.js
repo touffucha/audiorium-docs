@@ -29,7 +29,7 @@ const config = {
     { href: 'https://fonts.googleapis.com', rel: 'preconnect' },
     { href: 'https://fonts.gstatic.com', rel: 'preconnect', crossorigin: 'anonymous' },
     {
-      href: 'https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600&display=swap',
+      href: 'https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap',
       rel: 'stylesheet',
     },
   ],

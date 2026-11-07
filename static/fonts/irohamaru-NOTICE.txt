@@ -1,0 +1,10 @@
+Irohamaru Light (いろはマル Light)
+Original font publisher: MODI工場 / 倒神神倒
+Source: https://modi.jpn.org/font_irohamaru.php
+License: SIL Open Font License 1.1. The complete license is in OFL.txt.
+
+Copyright notices embedded in the source TTF:
+[Source Han Sans] Copyright © 2014, 2015 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'.
+[M+ OUTLINE FONTS] Copyright (c) 2015 M+ FONTS PROJECT.
+
+The included Unity TMP font asset uses this font. The font and its Unity asset remain under the SIL Open Font License. They are provided with the audio-console product and are not sold as standalone font files.

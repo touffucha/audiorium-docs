@@ -1,4 +1,5 @@
 ---
+sidebar_label: AudioLink と連携する
 title: AudioLink
 sidebar_position: 2
 description: AudioLink を導入したときに使える機能と、Scene への追加と接続の手順
