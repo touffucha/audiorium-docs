@@ -36,9 +36,9 @@ Audiorium に接続できる動画プレイヤーは 1 台です。Scene に複�
 
 ## 取り外し
 
-1. Hierarchy で Audiorium の Setup の GameObject を削除します。Audiorium が作成したオブジェクトも一緒に削除されます。Setup の子に配置した物は、Setup と一緒に削除されます。Undo で元に戻せます。
-2. 照明のセットと入場時の警告の看板は残ります。不要な場合は Hierarchy から削除します。
-3. `Assets/Audiorium/` フォルダーを削除します。
+1. Hierarchy で Audiorium の Setup の GameObject を削除します。コンソール、スピーカー、照明のセット、入場時の警告の看板など、Audiorium が配置した物も一緒に削除されます。Undo で元に戻せます。
+   Setup の外にご自身で配置した物は残ります。Setup の子に配置した物は、Setup と一緒に削除されます。
+2. `Assets/Audiorium/` フォルダーを削除します。
 
 Audiorium は、保存したシーンの動画プレイヤーの音源の設定を書き換えません。削除した後は、元の設定のまま鳴ります。
 
