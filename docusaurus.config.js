@@ -10,7 +10,7 @@ const links = {
 const config = {
   title: 'Audiorium',
   tagline: 'VRChat のワールドに設置する音響・演出コンソール',
-  favicon: 'img/mark.svg',
+  favicon: 'img/mark-ink.svg',
 
   url: 'https://touffucha.github.io',
   baseUrl: '/audiorium-docs/',
@@ -29,7 +29,7 @@ const config = {
     { href: 'https://fonts.googleapis.com', rel: 'preconnect' },
     { href: 'https://fonts.gstatic.com', rel: 'preconnect', crossorigin: 'anonymous' },
     {
-      href: 'https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap',
+      href: 'https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600&display=swap',
       rel: 'stylesheet',
     },
   ],
@@ -53,10 +53,10 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      colorMode: { defaultMode: 'dark', disableSwitch: true, respectPrefersColorScheme: false },
+      colorMode: { defaultMode: 'light', disableSwitch: true, respectPrefersColorScheme: false },
       navbar: {
         title: '',
-        logo: { alt: 'Audiorium', src: 'img/logo.svg', className: 'navbar-logo' },
+        logo: { alt: 'Audiorium', src: 'img/logo-ink.svg', className: 'navbar-logo' },
         items: [
           { type: 'docSidebar', sidebarId: 'docs', position: 'left', label: 'ドキュメント' },
           ...(links.booth ? [{ href: links.booth, label: 'BOOTH', position: 'right' }] : []),
