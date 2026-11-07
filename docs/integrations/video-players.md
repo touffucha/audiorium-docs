@@ -11,12 +11,7 @@ Audiorium は、動画プレイヤーの音を受け取り、ワールドに配�
 
 ## 対応する動画プレイヤー
 
-| 動画プレイヤー | 動作確認済みの版 | 入手先 |
-| --- | --- | --- |
-| YamaPlayer | 1.5.19 | [BOOTH](https://booth.pm/ja/items/4768863) |
-| VizVid | 1.8.2 | [BOOTH](https://booth.pm/ja/items/5056077) |
-
-どちらか 1 つが必要です。それ以外の動画プレイヤーは、Studio の選択の画面に「未対応」と表示されます。
+YamaPlayer か VizVid のどちらか 1 つが必要です。動作確認済みのバージョンと入手先は [必要な物と動作環境](../getting-started/requirements.md) にあります。それ以外の動画プレイヤーは、Studio の選択の画面に「未対応」と表示されます。
 
 ## 接続できるのは 1 台
 

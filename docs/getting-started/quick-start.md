@@ -9,6 +9,14 @@ hide_table_of_contents: true
 
 Audiorium Studio を開いてから、VRChat で最初の音を鳴らすまでの手順です。[インストール](./install.md) を済ませたプロジェクトで、ワールドの Scene を開いた状態から始めます。
 
+:::warning TMP Importer が表示された場合
+
+新しく作ったプロジェクトでは、Audiorium や動画プレイヤーをインポートした後に「TMP Importer」のウィンドウが表示されます。このウィンドウは、TextMesh Pro を初めて使うプロジェクトで 1 回だけ表示されます。
+
+何も押さずに閉じます。コンソールの文字に必要な TMP Essentials は、手順 3 でコンソールを配置するときに Studio が自動で導入します。「Import TMP Essentials」を押した後にコンソールの文字が四角のまま表示される場合は、[トラブルシューティング](../help/troubleshooting.md#コンソールの文字が表示されない) を参照してください。
+
+:::
+
 ## Studio を開く
 
 メニューの **Tools › Audiorium › Studio** を開きます。
@@ -31,7 +39,7 @@ Scene に動画プレイヤーがある場合は、手順 3 に進みます。
 
 ![接続する動画プレイヤーの選択。YamaPlayer のカードを押す](/img/quick-start/start-player.png)
 
-Studio が動画プレイヤーに接続し、スピーカーとコンソールを配置します。Hierarchy には `AudioriumSetup` の GameObject が追加され、配置した物はすべてこの中に入ります。
+Studio が動画プレイヤーに接続し、スピーカーとコンソールを配置します。Hierarchy には `AudioriumSetup` の GameObject が追加され、配置した物はすべてこの中に入ります。TMP Essentials が無いプロジェクトでは、このときに Studio が TMP Essentials を自動で導入します。
 
 ![接続した直後の Speakers タブ。レイアウトは Stereo](/img/quick-start/connected.png)
 
@@ -71,7 +79,7 @@ Studio で変更した内容は、「反映」を押すまで Scene に適用さ
 
 ![レイアウトを反映した状態。図に FL・FR・SL・SR と視聴位置が表示される](/img/quick-start/layout-applied.png)
 
-視聴位置は、来訪者が動画を視聴する位置です。Hierarchy の `AudioriumSetup` の中にある `ListeningPosition` の GameObject を、Scene ビューで客席の中央に移動します。
+視聴位置は、ユーザーが動画を視聴する位置です。Hierarchy の `AudioriumSetup` の中にある `ListeningPosition` の GameObject を、Scene ビューで客席の中央に移動します。
 
 ![Hierarchy の ListeningPosition](/img/quick-start/listening-position.png)
 
@@ -109,6 +117,6 @@ Studio で変更した内容は、「反映」を押すまで Scene に適用さ
 
 ![コンソールの Sound Mode タブ](/img/home/console-sound.webp)
 
-これで最初の音が鳴りました。コンソールの各タブの操作は [来訪者の操作](../console/operation.md) を参照してください。コンソールの設置モデル、テーマ、操作権限は、Studio の [Console](../studio/console.md) タブで変更できます。
+これで最初の音が鳴りました。コンソールの各タブの操作は [ユーザーの操作](../console/operation.md) を参照してください。コンソールの設置モデル、テーマ、操作権限は、Studio の [Console](../studio/console.md) タブで変更できます。
 
 ![Studio の Console タブ。設置モデル、テーマ、最初に開くタブ、操作権限を設定する](/img/quick-start/console.png)

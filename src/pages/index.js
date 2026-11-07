@@ -46,7 +46,7 @@ const guide = [
     ['最初の音を鳴らす', '/docs/getting-started/quick-start', 'クイックスタート'],
     ['新しい版に更新する', '/docs/getting-started/update', '更新する'],
   ]],
-  ['調整する', [
+  ['セットアップ', [
     ['スピーカーと視聴位置を調整する', '/docs/guides/speaker-position', 'スピーカーの位置'],
     ['Sound Mode のプリセットを編集する', '/docs/guides/edit-presets', 'プリセット'],
     ['コンソールの外観と位置を変更する', '/docs/guides/console-appearance', 'コンソール'],
@@ -172,7 +172,7 @@ function Hero() {
     <header ref={ref} className={clsx(styles.hero, inView && styles.play)}>
       <p className={clsx(styles.label, styles.rise)} style={{ '--at': '0ms' }}>- DOCUMENTATION -</p>
       <img className={clsx(styles.logo, styles.rise)} style={{ '--at': '80ms' }} src={useBaseUrl('/img/logo-ink.svg')} alt="Audiorium" width="954" height="212" />
-      <h1 className={clsx(styles.lead, styles.rise)} style={{ '--at': '760ms' }}>来訪者が操作できる、ワールドの音響・演出コンソール</h1>
+      <h1 className={clsx(styles.lead, styles.rise)} style={{ '--at': '760ms' }}>ユーザーが操作できる、ワールドの音響・演出コンソール</h1>
       <dl className={clsx(styles.compat, styles.rise)} style={{ '--at': '840ms' }}>
         {compat.map(([label, value]) => (
           <div key={label}><dt>{label}</dt><dd>{value}</dd></div>
@@ -318,7 +318,7 @@ function Guide() {
 
 export default function Home() {
   return (
-    <Layout title="Audiorium ドキュメント" description="VRChat のワールドに配置する、来訪者が操作できる音響・演出コンソール Audiorium の導入と使い方">
+    <Layout title="Audiorium ドキュメント" description="VRChat のワールドに配置する、ユーザーが操作できる音響・演出コンソール Audiorium の導入と使い方">
       <Hero />
       <main>
         <Flow />

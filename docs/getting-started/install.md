@@ -24,7 +24,7 @@ AudioLink と LTCGI を使用する場合は、プロジェクトに導入し、
 
 1. `Audiorium_1.0.0.unitypackage` を Unity のウィンドウへドラッグするか、ダブルクリックします。
 2. 「Import Unity Package」のウィンドウで、すべての項目にチェックが入った状態のまま「Import」を押します。
-3. 「TMP Importer」のウィンドウが表示された場合は、閉じます。
+3. 「TMP Importer」のウィンドウが表示された場合は、何も押さずに閉じます。このウィンドウは、TextMesh Pro を初めて使うプロジェクトで 1 回だけ表示されます。
 
 :::info TMP Essentials について
 

@@ -6,7 +6,7 @@ description: Studio の Sound Mode タブ。コンソールに表示する音の
 
 # Sound Mode
 
-コンソールの Sound Mode タブに表示する、音のプリセットを編集するタブです。来訪者はコンソールでプリセットを切り替えます。
+コンソールの Sound Mode タブに表示する、音のプリセットを編集するタブです。ユーザーはコンソールでプリセットを切り替えます。
 
 ![Sound Mode タブ](/img/studio/sound-top.png)
 

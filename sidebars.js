@@ -17,7 +17,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '使い方',
+      label: 'セットアップ',
       collapsible: false,
       items: [
         'guides/speaker-position',
