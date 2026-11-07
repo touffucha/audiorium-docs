@@ -71,7 +71,7 @@ Studio で変更した内容は、「反映」を押すまで Scene に適用さ
 
 ![レイアウトを反映した状態。図に FL・FR・SL・SR と視聴位置が表示される](/img/quick-start/layout-applied.png)
 
-視聴位置は、来訪者が動画を視聴する位置です。Hierarchy の `AudioriumSetup` の中にある `聴く位置` の GameObject を、Scene ビューで客席の中央に移動します。
+視聴位置は、来訪者が動画を視聴する位置です。Hierarchy の `AudioriumSetup` の中にある `視聴位置` の GameObject を、Scene ビューで客席の中央に移動します。
 
 ## 6. 音量のバランスを揃える
 
@@ -107,6 +107,6 @@ Studio で変更した内容は、「反映」を押すまで Scene に適用さ
 
 ![コンソールの Sound Mode タブ](/img/home/console-sound.webp)
 
-これで最初の音が鳴りました。コンソールの設置モデル、テーマ、操作権限は、Studio の Console タブで変更できます。
+これで最初の音が鳴りました。コンソールの各タブの操作は [来訪者の操作](../console/operation.md) を参照してください。コンソールの設置モデル、テーマ、操作権限は、Studio の [Console](../studio/console.md) タブで変更できます。
 
 ![Studio の Console タブ。設置モデル、テーマ、最初に開くタブ、操作権限を設定する](/img/quick-start/console.png)
