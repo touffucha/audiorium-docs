@@ -161,6 +161,14 @@ body {
   max-width: 42em;
 }
 
+.markdown > p:has(> .zoomable-image) {
+  max-width: none;
+}
+
+.markdown .zoomable-image img {
+  width: 100%;
+}
+
 .markdown h2 {
   margin-top: var(--space-7);
   padding-bottom: var(--space-2);

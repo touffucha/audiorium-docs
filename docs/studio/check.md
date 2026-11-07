@@ -1,7 +1,7 @@
 ---
 title: Check
 sidebar_position: 7
-description: Studio の Check タブ。ビルドの前に解決が必要な項目と、ビルドして確認する手順
+description: Studio の Check タブ。ビルドの前に解決が必要な項目と直し方
 ---
 
 # Check
@@ -22,10 +22,8 @@ description: Studio の Check タブ。ビルドの前に解決が必要な項�
 
 ## 解決が必要な項目が無い場合
 
-「次の操作：ビルドして確認」が表示されます。動画の外部 URL は Unity の Play モードでは再生できないため、音はビルドして VRChat で確認します。
+「問題はありません。」と表示されます。
 
 ![解決が必要な項目が無い Check タブ](/img/quick-start/check.png)
 
-1. メニューの **VRChat SDK › Show Control Panel** を開きます。「VRChat SDK を開く」からも開けます。
-2. VRChat のアカウントでログインします。
-3. 「Builder」タブで Build & Test Your World を選択し、Build & Test を押します。
+動画の外部 URL は Unity の Play モードでは再生できないため、音はビルドして VRChat で確認します。手順は [クイックスタート](../getting-started/quick-start.md#ビルドして-vrchat-で確認する) を参照してください。

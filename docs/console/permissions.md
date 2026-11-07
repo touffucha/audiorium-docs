@@ -6,7 +6,7 @@ description: コンソールでワールド全体の設定を変更できる人�
 
 # 操作権限
 
-コンソールの操作のうち、Sound Mode・Speaker EQ・Live はワールド全体に反映されます。これらを変更できる人は、Studio の [Console](../studio/console.md) タブの「ワールド全体の設定の操作権限」で選択します。Studio の画面では、Live を Lights と表示しています。
+コンソールの操作のうち、Sound Mode・Speaker EQ・Live はワールド全体に反映されます。これらを変更できる人は、Studio の [Console](../studio/console.md) タブの「ワールド全体の設定の操作権限」で選択します。
 
 Effects は操作権限の対象外です。各ユーザーが自分の画面について個別に切り替えます。
 
@@ -35,4 +35,4 @@ Effects は操作権限の対象外です。各ユーザーが自分の画面に
 
 Studio の Console タブの「外部ギミックとの連携」で、SoundMode の行を送信元の Udon のフィールドへドラッグすると、送信先を指定できます。イベント名はクリックでコピーできます。
 
-![Console タブの「外部ギミックとの連携」](/img/studio/console-bottom.png)
+![Console タブの「外部ギミックとの連携」](/img/studio/console-external.png)

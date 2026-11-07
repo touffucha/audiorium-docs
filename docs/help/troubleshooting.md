@@ -16,6 +16,7 @@ Studio が開く場合は、「Check」タブを開きます。ビルドの前�
 | --- | --- | --- |
 | ビルド先が PC（Windows）ではありません | ビルドのプラットフォームが Android などになっている | 「Windows に切り替え」を押します。Audiorium は PC 専用です |
 | コンソールがありません | コンソールが削除された | 「修復」を押すと、コンソールを再配置します |
+| TMP Essentials がプロジェクトにないため、コンソールの文字が表示されません | TextMesh Pro の Essentials を自動で導入できなかった | 「TMP Essentials を導入」を押します |
 | 「修復」のボタンが表示される | Audiorium が配置した物の一部が削除された | 「修復」を押すと、不足している物を再生成します。設定はそのまま保持されます |
 
 ## 接続していた動画プレイヤーが見つからない
@@ -38,7 +39,7 @@ Packages\idv.jlchntoz.vvmw\Editor\VVMW\Designer\ScreenConfiguratorEditor.cs(114,
 
 続く 2 件は `EnsureLightVolumeCookie` と `TryEstimatePlacement` についての同じ形のエラーです。
 
-VizVid と VRC Light Volumes の組み合わせで起きるエラーで、Audiorium は関係しません。Audiorium は VRC Light Volumes を使用しないため、Audiorium のために VRC Light Volumes を導入する必要はありません。
+VizVid と VRC Light Volumes の組み合わせで起きるエラーで、Audiorium は関係しません。Audiorium 自体は VRC Light Volumes を使用しません。LTCGI を使う場合は、VRC Light Volumes が必要です（[LTCGI を導入するとコンパイルエラーが出る](#ltcgi-を導入するとコンパイルエラーが出る)）。
 
 次のどちらかで解決する場合があります（当ショップでは動作を確認していません）。
 
@@ -46,6 +47,12 @@ VizVid と VRC Light Volumes の組み合わせで起きるエラーで、Audior
 - VRC Light Volumes を先に導入してコンパイルが終わるのを待ち、その後に VizVid を導入します。
 
 解決しない場合は、VizVid の配布ページの案内をご確認ください。
+
+## LTCGI を導入するとコンパイルエラーが出る
+
+LTCGI 1.7.4 は、VRC Light Volumes が無いプロジェクトでは、LTCGI に含まれる U# がコンパイルエラーになります。このエラーが出ている間は、Audiorium の U# もコンパイルされず、Audiorium が動作しません。
+
+LTCGI を使う場合は、VRC Light Volumes もプロジェクトに導入します。動作確認済みのバージョンは [必要な物と動作環境](../getting-started/requirements.md) にあります。
 
 ## Play モードで音が鳴らない
 
@@ -67,7 +74,10 @@ Lights タブは、照明システム（拡張パッケージ）をインポー�
 
 ## コンソールの文字が表示されない
 
-TextMesh Pro の Essentials が導入されていません。メニューの **Window › TextMeshPro › Import TMP Essential Resources** から導入します。
+コンソールの文字には、TextMesh Pro の Essentials（TMP Essentials）が必要です。Studio は、コンソールを配置するときに TMP Essentials が無ければ自動で導入します。
+
+- 自動で導入できなかった場合は、Check タブに「TMP Essentials がプロジェクトにないため、コンソールの文字が表示されません。」が表示されます。「TMP Essentials を導入」を押します。
+- TMP Importer のウィンドウから先に TMP Essentials を導入した後、コンソールの文字が四角のまま表示される場合は、Unity を開き直します。TextMesh Pro の不具合で、開き直すと文字が表示されます。
 
 ## お問い合わせ
 

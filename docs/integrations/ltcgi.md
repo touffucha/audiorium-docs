@@ -21,8 +21,9 @@ Studio の [Effects](../studio/effects.md) タブの「この Scene との連携
 
 ## 導入する
 
-1. LTCGI をプロジェクトに導入し、LTCGI の手順に従って Scene に配置します。
-2. Studio の Effects タブで、LTCGI の行に「未配置」が表示されていないことを確認します。
+1. LTCGI と VRC Light Volumes をプロジェクトに導入します。LTCGI 1.7.4 は、VRC Light Volumes が無いとコンパイルエラーになります（[トラブルシューティング](../help/troubleshooting.md#ltcgi-を導入するとコンパイルエラーが出る)）。
+2. Studio の Effects タブで「LTCGI を Scene に追加」を押すか、LTCGI の手順に従って Scene に配置します。
+3. Effects タブで、LTCGI の行に「未配置」が表示されていないことを確認します。
 
 LTCGI の配置と設定の方法は、LTCGI の配布ページをご確認ください。
 

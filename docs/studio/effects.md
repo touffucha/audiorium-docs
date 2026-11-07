@@ -8,7 +8,9 @@ description: Studio の Effects タブ。コンソールの Effects タブの表
 
 コンソールの Effects タブと、AudioLink・LTCGI との連携を設定するタブです。
 
-Effects タブを使うには、AudioLink か LTCGI を Scene に配置します。どちらも無い場合は、連携の一覧と「AudioLink を Scene に追加」だけが表示されます。
+Effects タブを使うには、AudioLink か LTCGI を Scene に配置します。どちらも Scene に無い場合は、連携の一覧だけが表示されます。プロジェクトに導入済みであれば「AudioLink を Scene に追加」「LTCGI を Scene に追加」を押して配置できます。
+
+![AudioLink と LTCGI が Scene に無い状態。「Scene に追加」が表示される](/img/studio/effects-add.png)
 
 ![Effects タブ。左にコンソールの Effects タブのプレビュー](/img/studio/effects-top.png)
 
@@ -44,8 +46,8 @@ AudioLink と LTCGI が Scene にあるかを表示します。
 | 表示 | 内容 |
 | --- | --- |
 | ✓ | Scene に配置されています |
-| 未配置 | Scene にありません。「入手先を開く」で配布ページを開けます |
-| AudioLink を Scene に追加 | AudioLink をプロジェクトに導入している場合に押せます。AudioLink を Scene に配置します |
+| 未配置 | Scene にありません。プロジェクトに未導入の場合は「入手先を開く」で配布ページを開けます |
+| AudioLink を Scene に追加・LTCGI を Scene に追加 | プロジェクトに導入済みで、Scene に無い場合に表示されます。押すと Scene に配置します |
 
 ## AudioLink の接続
 

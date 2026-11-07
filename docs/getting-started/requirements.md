@@ -28,6 +28,7 @@ Audiorium は、ご自身のワールドのプロジェクトに導入します�
 | VizVid 1.8.2 | YamaPlayer とどちらかが必須 | 動画プレイヤー | [BOOTH](https://booth.pm/ja/items/5056077) |
 | AudioLink 3.1.2 | 推奨 | 視界エフェクト、音に反応する照明と EQ のグラフ | [audiolink.dev](https://audiolink.dev/) |
 | LTCGI 1.7.4 | 任意 | コンソールからの LTCGI の点灯と強さの操作 | [ltcgi.dev](https://ltcgi.dev/) |
+| VRC Light Volumes 3.0.1 | LTCGI を使う場合は必須 | LTCGI のコンパイルに必要 | [GitHub](https://github.com/REDSIM/VRCLightVolumes) |
 
 :::info AudioLink を導入しない場合
 

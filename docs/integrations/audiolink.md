@@ -25,7 +25,7 @@ AudioLink は、音を解析してワールドの演出に渡す仕組みです�
 ## Scene に追加する
 
 1. AudioLink をプロジェクトに導入します。
-2. Studio の [Effects](../studio/effects.md) タブを開き、「この Scene との連携」の「AudioLink を Scene に追加」を押します。
+2. Studio の [Effects](../studio/effects.md) タブを開き、「AudioLink を Scene に追加」を押します。
 
 AudioLink をプロジェクトに導入していない場合、このボタンは押せません。「入手先を開く」から配布ページを開けます。ご自身で AudioLink の Prefab を Scene に配置しても使用できます。
 

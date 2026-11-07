@@ -19,7 +19,7 @@ Audiorium Studio は、Audiorium のセットアップに使うエディター�
 | [Sound Mode](./sound-mode.md) | コンソールの Sound Mode タブに表示する音のプリセット |
 | [Effects](./effects.md) | コンソールの Effects タブの表示と、AudioLink・LTCGI との連携 |
 | [Lights](./lights.md) | 照明のセットの配置と、入場時の光過敏の警告（照明システムが必要です） |
-| [Check](./check.md) | ビルドの前に解決が必要な項目と、ビルドして確認する手順 |
+| [Check](./check.md) | ビルドの前に解決が必要な項目 |
 
 Lights タブは、照明システム（拡張パッケージ）をインポートすると使用できます。インポートしていない場合は「別売」と表示されます。
 
