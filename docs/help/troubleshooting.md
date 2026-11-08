@@ -56,7 +56,7 @@ LTCGI を使う場合は、VRC Light Volumes もプロジェクトに導入し�
 
 ## Play モードで音が鳴らない
 
-動画の外部 URL は、Unity の Play モードでは再生できません。音はビルドして VRChat で確認してください（[クイックスタート](../getting-started/quick-start.md) の手順 8）。
+動画の外部 URL は、Unity の Play モードでは再生できません。音はビルドして VRChat で確認してください（[クイックスタート](../getting-started/quick-start.md#ビルドして-vrchat-で確認する)）。
 
 ## 動画プレイヤーが選択の画面に表示されない
 
@@ -66,7 +66,7 @@ LTCGI を使う場合は、VRC Light Volumes もプロジェクトに導入し�
 
 ## コンソールの Effects タブが使えない
 
-Effects タブの視界エフェクトには AudioLink が必要です。AudioLink を Scene に配置してから、Studio の Effects タブを確認します。
+Effects タブの視界エフェクトには AudioLink が必要です。Studio の [Effects](../studio/effects.md) タブの「シーン連携」で、「AudioLink」をオンにします。チェックの代わりに「入手先を開く」が表示される場合は、AudioLink がプロジェクトに導入されていません。
 
 ## Studio の Lights タブが選択できない
 

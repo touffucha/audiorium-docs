@@ -2,7 +2,7 @@
 sidebar_label: LTCGI と連携する
 title: LTCGI
 sidebar_position: 3
-description: LTCGI を導入したときにコンソールでできることと、クレジットの表示
+description: LTCGI を導入したときにコンソールでできることと、Studio のシーン連携でオン・オフする手順、クレジットの表示
 ---
 
 # LTCGI
@@ -16,17 +16,30 @@ LTCGI は、スクリーンの映像の光をワールドの物体に映す仕�
 
 ## LTCGI で使える機能
 
-Scene に LTCGI を配置すると、コンソールの Effects タブで LTCGI のオン・オフと強さを操作できます。操作は、操作した人の画面にのみ反映されます。
+LTCGI と連携すると、コンソールの Effects タブで LTCGI のオン・オフと強さを操作できます。操作は、操作した人の画面にのみ反映されます。
 
-Studio の [Effects](../studio/effects.md) タブの「この Scene との連携」で、LTCGI が Scene にあるかを確認できます。
-
-## 導入する
+## 連携する
 
 1. LTCGI と VRC Light Volumes をプロジェクトに導入します。LTCGI 1.7.4 は、VRC Light Volumes が無いとコンパイルエラーになります（[トラブルシューティング](../help/troubleshooting.md#ltcgi-を導入するとコンパイルエラーが出る)）。
-2. Studio の Effects タブで「LTCGI を Scene に追加」を押すか、LTCGI の手順に従って Scene に配置します。
-3. Effects タブで、LTCGI の行に「未配置」が表示されていないことを確認します。
+2. Studio の [Effects](../studio/effects.md) タブを開き、「シーン連携」の「LTCGI」をオンにします。
 
-LTCGI の配置と設定の方法は、LTCGI の配布ページをご確認ください。
+LTCGI が Scene に無い場合は配置されます。YamaPlayer では、YamaPlayer の Inspector の「LTCGI を使用」と同じ設定が入ります。
+
+![シーン連携](/img/studio/effects-links.png)
+
+LTCGI をプロジェクトに導入していない場合は、チェックの代わりに「入手先を開く」が表示されます。
+
+:::note VizVid の場合
+
+VizVid では、Studio から LTCGI との連携を設定できません。「LTCGI」のチェックは、Scene に LTCGI があるかを表します。VizVid の LTCGI の設定は、VizVid の手順に従って行います。
+
+:::
+
+## 連携を解除する
+
+「LTCGI」をオフにすると、動画プレイヤーと LTCGI の連携が解除されます。LTCGI は Scene に残ります。不要な場合は、Hierarchy から削除します。
+
+LTCGI の配置と設定の詳細は、LTCGI の配布ページをご確認ください。
 
 :::warning クレジットの表示
 

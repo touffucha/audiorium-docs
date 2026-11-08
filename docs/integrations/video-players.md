@@ -21,18 +21,16 @@ Audiorium に接続できる動画プレイヤーは 1 台です。Scene に複�
 
 ## 接続する動画プレイヤーを変更する
 
-Studio の [Speakers](../studio/speakers.md) タブの「動画プレイヤーとスクリーン」で、「動画プレイヤー」の欄に別の動画プレイヤーを指定します。
+Hierarchy から別の動画プレイヤーを、Studio の [Speakers](../studio/speakers.md) タブの「動画プレイヤー」の欄へドラッグします。
 
-![Speakers タブの「動画プレイヤーとスクリーン」](/img/quick-start/connected.png)
+![Speakers タブの「動画プレイヤー」](/img/studio/speakers-player.png)
 
-## スクリーン
-
-スピーカーとコンソールは、動画プレイヤーのスクリーンを基準に配置されます。接続したときにスクリーンが見つからない場合は、「スクリーン」の欄で、動画を映すスクリーンの MeshRenderer を選択します。
+スピーカーとコンソールは、動画プレイヤーのスクリーンを基準に配置されます。接続した後に動画プレイヤーを移動した場合は、[スピーカーと視聴位置を調整する](../guides/speaker-position.md#動画プレイヤーを移動した場合) を参照してください。
 
 ## 動画プレイヤーの音源の設定
 
 Audiorium は、保存した Scene の動画プレイヤーの音源の設定を書き換えません。Audiorium を取り外すと、動画プレイヤーは元の設定のまま鳴ります（[取り外し](../help/uninstall.md)）。
 
-## 動画を AudioLink に送る設定
+## AudioLink と LTCGI の連携
 
-AudioLink を使用する場合は、Studio の [Effects](../studio/effects.md) タブの「AudioLink の接続」で、「動画の音声を AudioLink に送信する」をオンにします。詳しくは [AudioLink](./audiolink.md) を参照してください。
+AudioLink を使用する場合は、Studio の [Effects](../studio/effects.md) タブの「シーン連携」で「AudioLink」をオンにします。動画プレイヤーの Inspector で AudioLink を設定済みの場合は、オンの状態で表示されます。詳しくは [AudioLink と連携する](./audiolink.md) を参照してください。LTCGI も同じ欄でオンにします（[LTCGI と連携する](./ltcgi.md)）。

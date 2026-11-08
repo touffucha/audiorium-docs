@@ -1,24 +1,40 @@
 ---
 title: Effects
 sidebar_position: 5
-description: Studio の Effects タブ。コンソールの Effects タブの表示、画面酔いの注意、AudioLink・LTCGI との連携
+description: Studio の Effects タブ。コンソールの Effects タブの表示、画面酔いの注意、AudioLink・LTCGI のシーン連携
 ---
 
 # Effects
 
 コンソールの Effects タブと、AudioLink・LTCGI との連携を設定するタブです。
 
-Effects タブを使うには、AudioLink か LTCGI を Scene に配置します。どちらも Scene に無い場合は、連携の一覧だけが表示されます。プロジェクトに導入済みであれば「AudioLink を Scene に追加」「LTCGI を Scene に追加」を押して配置できます。
+Effects タブを使うには、「シーン連携」で AudioLink か LTCGI をオンにします。どちらもオフの場合は、「シーン連携」だけが表示されます。
 
-![AudioLink と LTCGI が Scene に無い状態。「Scene に追加」が表示される](/img/studio/effects-add.png)
+![AudioLink と LTCGI がオフの状態](/img/studio/effects-links-off.png)
 
 ![Effects タブ。左にコンソールの Effects タブのプレビュー](/img/studio/effects-top.png)
+
+## シーン連携
+
+![シーン連携](/img/studio/effects-links.png)
+
+AudioLink と LTCGI を、動画プレイヤーの Inspector と同じようにチェックでオン・オフします。
+
+| 操作 | 内容 |
+| --- | --- |
+| オンにする | Scene に無い場合は配置し、接続した動画プレイヤーと連携します |
+| オフにする | 動画プレイヤーとの連携を解除します。配置した AudioLink・LTCGI は Scene に残ります |
+| 入手先を開く | プロジェクトに導入していない場合に、チェックの代わりに表示されます。押すと配布ページを開きます |
+
+動画プレイヤーの Inspector で先に連携を設定している場合は、オンの状態で表示されます。
+
+詳しくは [AudioLink と連携する](../integrations/audiolink.md)、[LTCGI と連携する](../integrations/ltcgi.md) を参照してください。
 
 ## Audiorium コンソールの Effects タブ
 
 ![コンソールの Effects タブのプレビュー](/img/studio/effects-preview.png)
 
-左側に、コンソールの Effects タブのプレビューが表示されます。Scene にある連携に合わせて、表示される項目が変わります。
+左側に、コンソールの Effects タブのプレビューが表示されます。シーン連携に合わせて、表示される項目が変わります。
 
 | 区分 | 項目 | 必要な物 |
 | --- | --- | --- |
@@ -35,22 +51,4 @@ Effects タブを使うには、AudioLink か LTCGI を Scene に配置します
 
 ## 画面酔いの注意
 
-「Effects タブに 1 行で表示」をオンにすると、コンソールの Effects タブに注意書きを表示します。日本語と English の文を変更できます。コンソールのフォントに含まれない文字があると、その文字が表示されます。
-
-## この Scene との連携
-
-![この Scene との連携と AudioLink の接続](/img/studio/effects-audiolink.png)
-
-AudioLink と LTCGI が Scene にあるかを表示します。
-
-| 表示 | 内容 |
-| --- | --- |
-| ✓ | Scene に配置されています |
-| 未配置 | Scene にありません。プロジェクトに未導入の場合は「入手先を開く」で配布ページを開けます |
-| AudioLink を Scene に追加・LTCGI を Scene に追加 | プロジェクトに導入済みで、Scene に無い場合に表示されます。押すと Scene に配置します |
-
-## AudioLink の接続
-
-AudioLink が Scene にあるときに表示されます。「動画の音声を AudioLink に送信する」をオンにすると、接続した動画プレイヤーの音が AudioLink に送られます。
-
-詳しくは [AudioLink](../integrations/audiolink.md)、[LTCGI](../integrations/ltcgi.md) を参照してください。
+「Effects タブに表示」をオンにすると、コンソールの Effects タブに注意書きを表示します。日本語と English の文を変更できます。コンソールのフォントに含まれない文字を入力すると、欄の下にその文字が表示されます。

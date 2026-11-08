@@ -22,6 +22,6 @@ description: レイアウトのスピーカーに加えて、L / R ペアや単�
 2. Inspector で「入力」と「種類」を設定します。「入力」は、動画プレイヤーの音源が 1 つの場合は変更できません。
 3. コンソールの Speaker EQ タブに表示する名前を変更する場合は、Hierarchy で GameObject の名前を変更します。
 
-![スピーカーの Inspector](/img/studio/speakers-inspector-speaker.png)
+![スピーカーの Inspector。Room を選択した状態](/img/studio/speakers-inspector-speaker.png)
 
 役割は、視聴位置から見たスピーカーの位置で自動的に決まります。各項目の詳細は [Speakers](../studio/speakers.md#スピーカーごとの設定) を参照してください。

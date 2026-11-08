@@ -2,18 +2,20 @@
 sidebar_label: 操作権限を設定する
 title: 操作権限
 sidebar_position: 2
-description: コンソールでワールド全体の設定を変更できる人の選び方と、外部ギミックからの許可・禁止
+description: コンソールの Sound Mode・Speaker EQ・Live のタブを操作できる人の選び方
 ---
 
 # 操作権限
 
-コンソールの操作のうち、Sound Mode・Speaker EQ・Live はワールド全体に反映されます。これらを変更できる人は、Studio の [Console](../studio/console.md) タブの「ワールド全体の設定の操作権限」で選択します。
+コンソールの操作のうち、Sound Mode・Speaker EQ・Live はワールド全体に反映されます。これらのタブを操作できる人は、Studio の [Console](../studio/console.md) タブの「操作権限」で選択します。
 
 Effects は操作権限の対象外です。各ユーザーが自分の画面について個別に切り替えます。
 
+![操作権限の選択肢](/img/studio/console-access.png)
+
 ## 選択肢
 
-| 選択肢 | Sound Mode・Speaker EQ・Live を変更できる人 |
+| 選択肢 | Sound Mode・Speaker EQ・Live を操作できる人 |
 | --- | --- |
 | 全員 | インスタンスにいる全員 |
 | インスタンスオーナー | インスタンスオーナーのみ |
@@ -21,19 +23,10 @@ Effects は操作権限の対象外です。各ユーザーが自分の画面に
 
 「登録したユーザー」を選択した場合は、「ユーザーを追加」で VRChat の表示名を入力します。大文字と小文字を区別するため、表示名を正確に入力してください。
 
+変更は、右上の「反映」を押すと Scene に適用されます。
+
+## 操作権限の無い人の表示
+
 操作権限の無い人のコンソールでは、GLOBAL の下に「権限がありません」と表示され、Sound Mode・Speaker EQ・Live の操作部品が暗く表示されます。操作しても反映されず、「操作権限なし」の操作音が鳴ります。
 
 ![操作権限の無い人に表示されるコンソールの Sound Mode タブ](/img/console/sound-locked.webp)
-
-## 外部ギミックとの連携
-
-ほかのギミックの Udon から、コンソールの UdonBehaviour（SoundMode）へイベントを送信すると、操作権限の設定より優先して、そのユーザーの操作を許可・禁止できます。入室の認証や、スタッフ用のスイッチと組み合わせるときに使います。
-
-| イベント | 内容 |
-| --- | --- |
-| `_GrantGlobal` | イベントを送信したユーザー自身の操作を許可します |
-| `_RevokeGlobal` | イベントを送信したユーザー自身の操作を禁止します |
-
-Studio の Console タブの「外部ギミックとの連携」で、SoundMode の行を送信元の Udon のフィールドへドラッグすると、送信先を指定できます。イベント名はクリックでコピーできます。
-
-![Console タブの「外部ギミックとの連携」](/img/studio/console-external.png)
