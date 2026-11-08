@@ -56,7 +56,7 @@ const config = {
       colorMode: { defaultMode: 'light', disableSwitch: true, respectPrefersColorScheme: false },
       navbar: {
         title: '',
-        logo: { alt: 'Audiorium', src: 'img/logo-ink.svg', className: 'navbar-logo' },
+        logo: { alt: 'Audiorium', src: 'img/logo-ink.svg', className: 'navbar-logo', href: '/docs/getting-started/overview' },
         items: [
           { type: 'docSidebar', sidebarId: 'docs', position: 'left', label: 'ドキュメント' },
           ...(links.booth ? [{ href: links.booth, label: 'BOOTH', position: 'right' }] : []),

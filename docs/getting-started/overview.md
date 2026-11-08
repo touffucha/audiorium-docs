@@ -28,4 +28,18 @@ Audiorium は、VRChat のワールドに配置する音響・演出コンソー
 | 音に連動する視界エフェクトを切り替える（AudioLink が必要） | [AudioLink と連携する](../integrations/audiolink.md) |
 | コンソールを操作できる人を限定する | [操作権限を設定する](../console/permissions.md) |
 
+## 目的から探す
+
+| 目的 | ページ |
+| --- | --- |
+| 購入前に、必要な物と動作環境を確認する | [必要な物と動作環境](./requirements.md) |
+| プロジェクトにインポートする | [インストール](./install.md) |
+| 最初の音を鳴らす | [クイックスタート](./quick-start.md) |
+| 新しいバージョンに更新する | [Audiorium を更新する](./update.md) |
+| スピーカーと視聴位置を調整する | [スピーカーと視聴位置を調整する](../guides/speaker-position.md) |
+| コンソールの外観と位置を変更する | [コンソールの外観と位置を変更する](../guides/console-appearance.md) |
+| Studio の各項目を調べる | [Studio の画面と「反映」](../studio/overview.md) |
+| Check タブに表示された問題を解決する | [トラブルシューティング](../help/troubleshooting.md) |
+| 変更点を確認する | [更新履歴](../changelog.md) |
+
 次は [必要な物と動作環境](./requirements.md) を確認します。
