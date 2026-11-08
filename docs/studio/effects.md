@@ -10,15 +10,13 @@ description: Studio の Effects タブ。コンソールの Effects タブの表
 
 Effects タブを使うには、「シーン連携」で AudioLink か LTCGI をオンにします。どちらもオフの場合は、「シーン連携」だけが表示されます。
 
-![AudioLink と LTCGI がオフの状態](/img/studio/effects-links-off.png)
-
 ![Effects タブ。左にコンソールの Effects タブのプレビュー](/img/studio/effects-top.png)
 
 ## シーン連携
 
 ![シーン連携](/img/studio/effects-links.png)
 
-AudioLink と LTCGI を、動画プレイヤーの Inspector と同じようにチェックでオン・オフします。
+AudioLink と LTCGI を、動画プレイヤーの Inspector と同じようにチェックで切り替えます。
 
 | 操作 | 内容 |
 | --- | --- |
