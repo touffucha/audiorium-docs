@@ -29,9 +29,10 @@ Hierarchy に `AudioriumSetup` が追加され、Audiorium が置いた物はす
 
 | 置かれる物 | 説明 |
 | --- | --- |
-| スピーカー | Front・Surround・Top Middle の左右、Stereo Mix、Subwoofer。動画プレイヤーのスクリーンを基準に置かれます |
-| コンソール | ユーザーが操作する盤と、それを載せる台 |
 | `ListeningPosition` | 視聴位置。スピーカーの音量のバランスの基準になります |
+| `Front`・`Surround`・`Top Middle`・`Stereo Mix`・`Subwoofer` | スピーカー。動画プレイヤーのスクリーンを基準に置かれます |
+| `ConsoleMount_`（台の名前） | コンソールと、それを載せる台。名前の後半は、選択したモデルで変わります |
+| `AudioControls` など、そのほかの物 | Audiorium の動作に使う物。移動・削除しません |
 
 Audiorium は、動画プレイヤーの音源の設定を書き換えません。音は `AudioriumSetup` の中のスピーカーから鳴ります。
 
