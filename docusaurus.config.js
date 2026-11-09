@@ -1,5 +1,6 @@
 // @ts-check
 import { themes as prismThemes } from 'prism-react-renderer';
+import sentenceBreaks from './src/remark/sentence-breaks.js';
 
 const links = {
   booth: '',
@@ -42,6 +43,7 @@ const config = {
         docs: {
           routeBasePath: 'docs',
           sidebarPath: './sidebars.js',
+          remarkPlugins: [sentenceBreaks],
           showLastUpdateTime: false,
         },
         blog: false,

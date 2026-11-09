@@ -18,9 +18,11 @@ description: 照明システム（拡張パッケージ）の照明の置き方�
 
 - `AudioriumSetup` を選択し、メニューの **Tools › Audiorium › Add Lights** を押す（Hierarchy の右クリックのメニューの **Audiorium Lights** でも同じ）
 
-`AudioriumSetup` の中に `AudioriumLights` が追加されます。最初に置かれるのは、ムービング（吊り）1 台、ライトショー、[入場時の光過敏の警告](./entry-notice.md) です。
+`AudioriumSetup` の中に `AudioriumLights` が追加され、次の 3 つが置かれます。
 
-![照明を置いた後の Hierarchy。AudioriumLights の中にムービング（吊り）・LightShow・AudioriumEntryNotice](/img/lights/hierarchy.png)
+![照明を置いた後の Hierarchy。AudioriumLights の中にムービング（吊り）・ライトショー・光過敏の警告](/img/lights/hierarchy.png)
+
+光過敏の警告は [入場時の光過敏の警告](./entry-notice.md) で設定します。
 
 照明を削除するときは、外部設定の「照明」をオフにします。Ctrl+Z で元に戻せます。
 

@@ -237,32 +237,6 @@ body {
   text-wrap: balance;
 }
 
-/* 2 枚の画面を横に並べる（できることの「2 つの画面」）。狭い幅では縦に積む */
-.figure-pair {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-4);
-  align-items: start;
-  max-width: 100%;
-}
-
-.figure-pair > p {
-  margin: 0;
-}
-
-.figure-pair figcaption,
-.figure-pair .figure-pair__label {
-  color: var(--color-caption);
-  font-size: var(--font-size-sm);
-  letter-spacing: 0.08em;
-}
-
-@media (max-width: 996px) {
-  .figure-pair {
-    grid-template-columns: 1fr;
-  }
-}
-
 .markdown > p:has(> .zoomable-image) {
   max-width: none;
 }
@@ -409,6 +383,16 @@ body {
   margin: var(--space-3) 0 var(--space-2);
   padding: var(--space-2);
   cursor: zoom-in;
+}
+
+.zoomable-image--full {
+  display: block;
+  width: 100%;
+  max-width: 42rem;
+}
+
+.zoomable-image--full img {
+  width: 100%;
 }
 
 .zoomable-image:hover {

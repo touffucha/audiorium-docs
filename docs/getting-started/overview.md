@@ -6,37 +6,25 @@ description: Audiorium の概要と、できることの一覧。詳細は各ペ
 
 # できること
 
-Audiorium は、VRChat のワールドに置く音響・演出コンソールです。動画プレイヤーの音をワールドのスピーカーから鳴らし、ユーザーがワールド内のコンソールで音の響き、照明、視界エフェクトを操作します。
+Audiorium は、VRChat のワールドに置く音響・演出コンソールです。
+動画プレイヤーの音を、ワールドのスピーカーから鳴らします。
+ユーザーは、ワールド内のコンソールで音の響き・照明・視界エフェクトを操作します。
 
 購入前に、[公開ワールド](https://vrchat.com/home/launch?worldId=wrld_3b124d05-d1c4-4ae3-a216-0b58c5f82ab9)で操作を試せます。
 
 ## 2 つの画面
 
-<div className="figure-pair">
-<div>
+![AudioriumSetup の Inspector](/img/setup/inspector-map.png "full")
 
-<span className="figure-pair__label">ワールド制作者 · Inspector</span>
+ワールド制作者が Unity で使う、`AudioriumSetup` の Inspector です。[セットアップ](../setup/add-audiorium.md)の各ページで説明します。
 
-![AudioriumSetup の Inspector](/img/setup/inspector-map.png)
+![コンソール](/img/console/sound.webp "full")
 
-</div>
-<div>
+ユーザーがワールド内で操作するコンソールです。[コンソールの操作](../console/operation.md)で説明します。
 
-<span className="figure-pair__label">ユーザー · コンソール</span>
+## 主な機能
 
-![コンソール](/img/console/sound.webp)
-
-</div>
-</div>
-
-| 画面 | 使う人 | 説明 |
-| --- | --- | --- |
-| `AudioriumSetup` の Inspector | ワールド制作者 | Unity でのセットアップは、すべてこの Inspector で行います。[セットアップ](../setup/add-audiorium.md)の各ページで説明します |
-| コンソール | ユーザー | ワールド内の操作盤。[コンソールの操作](../console/operation.md)で説明します |
-
-## できること
-
-| できること | 詳細 |
+| 機能 | 詳細 |
 | --- | --- |
 | 動画の音を、前方・横と後方・上方のスピーカーから鳴らす | [スピーカー](../setup/speakers.md) |
 | 音の響きをプリセットで切り替える | [Sound Mode](../setup/sound-mode.md) |
