@@ -9,11 +9,11 @@ hide_table_of_contents: true
 
 Scene に Audiorium を置いてから、VRChat で最初の音を鳴らすまでの手順です。[インストール](./install.md) を済ませたプロジェクトで、ワールドの Scene を開いた状態から始めます。
 
-## 1. 動画プレイヤーを置く
+## 動画プレイヤーを置く
 
 動画プレイヤー（YamaPlayer か VizVid）を Scene に置き、Scene ビューで位置と向きを決めます。置き方は [動画プレイヤー](../setup/video-player.md#動画プレイヤーを置く) で説明します。スピーカーとコンソールは、動画プレイヤーのスクリーンを基準に置かれます。先に動画プレイヤーの位置を決めておくと、後の調整が少なく済みます。
 
-## 2. Audiorium を置く
+## Audiorium を置く
 
 1. Hierarchy で動画プレイヤーを選択します。
 
@@ -21,7 +21,7 @@ Scene に Audiorium を置いてから、VRChat で最初の音を鳴らすま�
 
 2. メニューの **Tools › Audiorium › Add Audiorium** を押します。Hierarchy の右クリックのメニューの **Audiorium** でも同じです。
 
-Hierarchy に `AudioriumSetup` が追加され、スピーカーとコンソールが置かれます。Inspector には `AudioriumSetup` の設定が表示されます。TMP Essentials が無いプロジェクトでは、このときに自動で導入されます。
+`AudioriumSetup` が Hierarchy に追加され、スピーカーとコンソールが置かれます。Inspector には、その設定が表示されます。TMP Essentials が無いプロジェクトでは、このときに自動で導入されます。
 
 ![Add Audiorium の直後。Scene にスピーカーとコンソールが置かれ、Inspector に AudioriumSetup の設定が表示される](/img/quick-start/editor-after-add.png)
 
@@ -33,13 +33,13 @@ Hierarchy に `AudioriumSetup` が追加され、スピーカーとコンソー�
 
 :::
 
-## 3. Inspector の警告を確認する
+## Inspector の警告を確認する
 
 `AudioriumSetup` の Inspector の一番上に、ビルドの前に直す項目が黄色の警告で表示されます。警告が無ければ、そのままビルドできます。
 
 警告にボタンがある場合は、ボタンを押すと直ります。詳しくは [トラブルシューティング](../help/troubleshooting.md) を参照してください。
 
-## 4. スピーカーとコンソールの位置を調整する
+## スピーカーとコンソールの位置を調整する
 
 スピーカーとコンソールは、Scene ビューで移動します。
 
@@ -48,7 +48,7 @@ Hierarchy に `AudioriumSetup` が追加され、スピーカーとコンソー�
 
 Inspector での変更は、すぐに Scene に反映されます。元に戻すときは Ctrl+Z を押します。
 
-## 5. ビルドして VRChat で確認する
+## ビルドして VRChat で確認する
 
 動画の外部 URL は Unity の Play モードでは再生できないため、音はビルドして VRChat で確認します。
 
@@ -58,7 +58,7 @@ Inspector での変更は、すぐに Scene に反映されます。元に戻す
 
 ワールドがビルドされて VRChat が開きます。動画プレイヤーで動画を再生し、スピーカーから音が鳴ることを確認します。
 
-## 6. コンソールを操作する
+## コンソールを操作する
 
 ワールド内のコンソールで Sound Mode のプリセットを切り替えると、音の響きが変わります。
 

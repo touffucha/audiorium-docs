@@ -13,9 +13,14 @@ description: 照明システム（拡張パッケージ）の照明の置き方�
 次のどちらかで置きます。
 
 - `AudioriumSetup` の Inspector の [外部設定](./external.md) で、「照明」をオンにする
+
+  ![外部設定の「照明」](/img/lights/external-lights.png)
+
 - `AudioriumSetup` を選択し、メニューの **Tools › Audiorium › Add Lights** を押す（Hierarchy の右クリックのメニューの **Audiorium Lights** でも同じ）
 
-`AudioriumSetup` の中に照明が追加されます。最初に置かれるのは、ムービングライト（吊り）1 台、ライトショー、[入場時の光過敏の警告](./entry-notice.md) です。
+`AudioriumSetup` の中に `AudioriumLights` が追加されます。最初に置かれるのは、ムービング（吊り）1 台、ライトショー、[入場時の光過敏の警告](./entry-notice.md) です。
+
+![照明を置いた後の Hierarchy。AudioriumLights の中にムービング（吊り）・LightShow・AudioriumEntryNotice](/img/lights/hierarchy.png)
 
 照明を削除するときは、外部設定の「照明」をオフにします。Ctrl+Z で元に戻せます。
 
@@ -48,7 +53,7 @@ description: 照明システム（拡張パッケージ）の照明の置き方�
 | トラス | 照明を吊る金属の枠。支柱は無いため、天井の近くに置きます |
 | スタンド | 床に自立する高さ 2.2 m の三脚。脚の開きは約 1.8 m。上の横棒にムービング（床置き）を載せます |
 
-ムービングライトは、吊りと床置きを合わせて 16 台まで置けます。16 台を置いているときは、メニューのムービングライトが選択できなくなります。
+ムービングライトは、吊りと床置きを合わせて 16 台まで置けます。16 台を置いているときは、メニューのムービング（吊り）とムービング（床置き）が選択できなくなります。
 
 ![全種類を 1 台ずつ追加した状態](/img/lights/inspector-many.png)
 

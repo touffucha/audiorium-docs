@@ -231,6 +231,38 @@ body {
   max-width: 42em;
 }
 
+/* auto-phrase だけでは 42em の行末で文節の途中が折れるので、行の長さをそろえて文節の切れ目へ寄せる。pretty は「Scene／ビュー」のように語の中で折れたので使わない */
+.markdown p,
+.markdown li {
+  text-wrap: balance;
+}
+
+/* 2 枚の画面を横に並べる（できることの「2 つの画面」）。狭い幅では縦に積む */
+.figure-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+  align-items: start;
+  max-width: 100%;
+}
+
+.figure-pair > p {
+  margin: 0;
+}
+
+.figure-pair figcaption,
+.figure-pair .figure-pair__label {
+  color: var(--color-caption);
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 996px) {
+  .figure-pair {
+    grid-template-columns: 1fr;
+  }
+}
+
 .markdown > p:has(> .zoomable-image) {
   max-width: none;
 }
@@ -298,6 +330,12 @@ body {
 
 .markdown table thead tr {
   border-bottom: 1px solid var(--color-text);
+}
+
+/* 見出しの下線のすぐ下に表が来ると罫が 2 本並ぶので、表の上の罫を消す */
+.markdown h2 + table thead tr,
+.markdown h2 + table tr:first-child {
+  border-top: none;
 }
 
 .markdown table th {
