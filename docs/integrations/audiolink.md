@@ -1,8 +1,8 @@
 ---
-sidebar_label: AudioLink と連携する
+sidebar_label: AudioLink
 title: AudioLink
-sidebar_position: 2
-description: AudioLink を導入したときに使える機能と、Studio のシーン連携でオン・オフする手順
+sidebar_position: 1
+description: AudioLink を導入したときに使える機能と、外部設定でオン・オフする手順
 ---
 
 # AudioLink
@@ -25,17 +25,11 @@ AudioLink は、音を解析してワールドの演出に渡す仕組みです�
 
 ## 連携する
 
-1. AudioLink をプロジェクトに導入します。
-2. Studio の [Effects](../studio/effects.md) タブを開き、「シーン連携」の「AudioLink」をオンにします。
+1. VCC で AudioLink をプロジェクトに追加します。
+2. `AudioriumSetup` の Inspector の [外部設定](../setup/external.md) で、「AudioLink」をオンにします。
 
-AudioLink が Scene に無い場合は配置され、接続した動画プレイヤーの音が AudioLink に送られます。動画プレイヤーの Inspector の AudioLink の設定と同じ設定です。
-
-![シーン連携](/img/studio/effects-links.png)
-
-AudioLink をプロジェクトに導入していない場合は、チェックの代わりに「入手先を開く」が表示されます。
+AudioLink が Scene に無い場合は置かれ、接続した動画プレイヤーの音が AudioLink に送られます。動画プレイヤーの Inspector の AudioLink の設定と同じ設定です。
 
 ## 連携を解除する
 
 「AudioLink」をオフにすると、動画プレイヤーと AudioLink の連携が解除されます。AudioLink は Scene に残ります。不要な場合は、Hierarchy から削除します。
-
-動画プレイヤーの Inspector で AudioLink の設定を変更した場合も、Studio の表示に反映されます。

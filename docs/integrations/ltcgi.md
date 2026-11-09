@@ -1,8 +1,8 @@
 ---
-sidebar_label: LTCGI と連携する
+sidebar_label: LTCGI
 title: LTCGI
-sidebar_position: 3
-description: LTCGI を導入したときにコンソールでできることと、Studio のシーン連携でオン・オフする手順、クレジットの表示
+sidebar_position: 2
+description: LTCGI を導入したときにコンソールでできることと、外部設定でオン・オフする手順、クレジットの表示
 ---
 
 # LTCGI
@@ -20,18 +20,14 @@ LTCGI と連携すると、コンソールの Effects タブで LTCGI のオン�
 
 ## 連携する
 
-1. LTCGI と VRC Light Volumes をプロジェクトに導入します。LTCGI 1.7.4 は、VRC Light Volumes が無いとコンパイルエラーになります（[トラブルシューティング](../help/troubleshooting.md#ltcgi-を導入するとコンパイルエラーが出る)）。
-2. Studio の [Effects](../studio/effects.md) タブを開き、「シーン連携」の「LTCGI」をオンにします。
+1. VCC で LTCGI と VRC Light Volumes をプロジェクトに追加します。LTCGI 1.7.4 は、VRC Light Volumes が無いとコンパイルエラーになります（[トラブルシューティング](../help/troubleshooting.md#ltcgi-を導入するとコンパイルエラーが出る)）。
+2. `AudioriumSetup` の Inspector の [外部設定](../setup/external.md) で、「LTCGI」をオンにします。
 
-LTCGI が Scene に無い場合は配置されます。YamaPlayer では、YamaPlayer の Inspector の「LTCGI を使用」と同じ設定が入ります。
-
-![シーン連携](/img/studio/effects-links.png)
-
-LTCGI をプロジェクトに導入していない場合は、チェックの代わりに「入手先を開く」が表示されます。
+LTCGI が Scene に無い場合は置かれます。YamaPlayer では、YamaPlayer の Inspector の「LTCGI を使用」と同じ設定が入ります。
 
 :::note VizVid の場合
 
-VizVid では、Studio から LTCGI との連携を設定できません。「LTCGI」のチェックは、Scene に LTCGI があるかを表します。VizVid の LTCGI の設定は、VizVid の手順に従って行います。
+VizVid では、Audiorium から LTCGI との連携を設定できません。「LTCGI」のチェックは、Scene に LTCGI があるかを表します。VizVid の LTCGI の設定は、VizVid の手順に従って行います。
 
 :::
 

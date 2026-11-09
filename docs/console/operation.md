@@ -1,10 +1,11 @@
 ---
-title: ユーザーの操作
+title: コンソールの操作
+sidebar_label: コンソールの操作
 sidebar_position: 1
 description: ワールド内のコンソールの 4 つのタブで、ユーザーができる操作
 ---
 
-# ユーザーの操作
+# コンソールの操作
 
 ユーザーは、ワールド内のコンソールの 4 つのタブで操作します。左上の GLOBAL の 3 タブの操作はワールド全体に、右の LOCAL の Effects は操作した人の画面にのみ反映されます。
 
@@ -15,7 +16,7 @@ description: ワールド内のコンソールの 4 つのタブで、ユーザ�
 | Live | ワールド全体 | 必要 | 照明システム |
 | Effects | 操作した人の画面のみ | 不要 | AudioLink か LTCGI |
 
-操作権限については [操作権限](./permissions.md) を参照してください。
+操作できる人は、`AudioriumSetup` の Inspector の [詳細](../setup/advanced.md#操作権限) で設定します。
 
 ## Sound Mode
 
@@ -57,7 +58,7 @@ description: ワールド内のコンソールの 4 つのタブで、ユーザ�
 | PATTERN | ムービングライトの動き（Auto・Fan・Cross・Tent・Wave・Circle・Sweep・Pillar）と、SPEED、MODE |
 | CUE | Blinder・Wash・Blackout・Strobe。押している間だけ効きます（カードの Hold の表示） |
 
-照明の点滅に配慮が必要な場合は、Studio の [Lights](../studio/lights.md) タブで入場時の光過敏の警告を表示できます。
+照明の点滅に配慮が必要な場合は、[入場時の光過敏の警告](../setup/entry-notice.md) を表示できます。
 
 ## Effects
 
@@ -72,4 +73,4 @@ description: ワールド内のコンソールの 4 つのタブで、ユーザ�
 | WORLD | Echo・Invert・LTCGI | 空間に効く効果。LTCGI は、LTCGI がワールドにある場合に表示されます |
 | FX Bypass | — | 視界エフェクトを一時的にすべて無効にします |
 
-視界エフェクトは画面酔いを起こすことがあります。注意書きの表示は、Studio の [Effects](../studio/effects.md) タブで設定します。
+視界エフェクトは画面酔いを起こすことがあります。注意文の表示は、`AudioriumSetup` の Inspector の [視界エフェクト](../setup/visual-effects.md) で設定します。

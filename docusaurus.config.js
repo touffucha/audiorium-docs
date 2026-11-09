@@ -19,7 +19,7 @@ const config = {
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
-  markdown: { hooks: { onBrokenMarkdownLinks: 'throw' } },
+  markdown: { hooks: { onBrokenMarkdownLinks: 'throw', onBrokenMarkdownImages: 'warn' } },
 
   i18n: { defaultLocale: 'ja', locales: ['ja'] },
 

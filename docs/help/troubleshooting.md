@@ -1,33 +1,58 @@
 ---
 title: トラブルシューティング
 sidebar_position: 1
-description: Audiorium Studio の Check タブの使い方と、よくある問題の解決方法
+description: AudioriumSetup の Inspector に表示される警告の直し方と、よくある問題の解決方法
 ---
 
 # トラブルシューティング
 
-## まず Check タブを開く
+## まず Inspector の一番上を確認する
 
-Studio が開く場合は、「Check」タブを開きます。ビルドの前に解決が必要な項目と、直し方が表示されます。ほかのタブを開いているときも、解決が必要な項目があると、タブの下に件数と「Check を開く」が表示されます。
+Hierarchy で `AudioriumSetup` を選択します。ビルドの前に直す項目があると、Inspector の一番上に黄色の警告が表示されます。ボタンが付いた警告は、ボタンを押すと直ります。
 
-ボタンが付いた項目は、ボタンを押すと解決します。
+![動画プレイヤーが原点から遠いときの警告](/img/setup/issue-far-origin.png)
+
+| 警告 | 原因 | 直し方 |
+| --- | --- | --- |
+| ビルド先が PC（Windows）ではありません | ビルドのプラットフォームが Android などになっている | 「Windows に切り替え」を押します。Audiorium は PC 専用です |
+| TMP Essentials がプロジェクトにないため、コンソールの文字が表示されません | TextMesh Pro の Essentials を自動で導入できなかった | 「TMP Essentials を導入」を押します |
+| 動画プレイヤーが原点から約 ○ km 離れています | 動画プレイヤーが原点（0, 0, 0）から 5 km より遠い | 「原点付近へ移す」を押します（[原点から遠い](#コンソールの文字や絵が欠けて見える)） |
+| コンソールがありません | コンソールが削除された | 「修復」を押すと、コンソールを置き直します。設定はそのまま残ります |
+
+## コンソールの文字や絵が欠けて見える
+
+ワールドが原点（0, 0, 0）から遠いと、位置の精度が落ち、コンソールの文字や絵が欠けて見えます。動画プレイヤーが原点から 5 km より遠い場合は、Inspector の一番上に警告が表示されます。
+
+「原点付近へ移す」を押すと、動画プレイヤーと Audiorium が、位置の関係を保ったまま原点付近へ移動します。ワールド全体が原点から遠い場合は、ワールド全体を原点付近へ移してください。
+
+## Tools › Audiorium のメニューが表示されない
+
+Unity と VRChat SDK のバージョンが、[必要な物と動作環境](../getting-started/requirements.md) と合っているかを確認します。
+
+Unity の Console にコンパイルエラーが出ている場合、メニューは表示されません。最初のエラーの全文を控えて、[お問い合わせ](#お問い合わせ)ください。
+
+## Add Audiorium で「準備が終わっていません」と表示される
+
+Unity がスクリプトをコンパイルしている間は、Audiorium を置けません。Unity の右下の進行表示が消えてから、もう一度 **Tools › Audiorium › Add Audiorium** を押します。
+
+## 動画プレイヤーに接続できない
 
 | 表示 | 原因 | 直し方 |
 | --- | --- | --- |
-| ビルド先が PC（Windows）ではありません | ビルドのプラットフォームが Android などになっている | 「Windows に切り替え」を押します。Audiorium は PC 専用です |
-| コンソールがありません | コンソールが削除された | 「修復」を押すと、コンソールを再配置します |
-| TMP Essentials がプロジェクトにないため、コンソールの文字が表示されません | TextMesh Pro の Essentials を自動で導入できなかった | 「TMP Essentials を導入」を押します |
-| 「修復」のボタンが表示される | Audiorium が配置した物の一部が削除された | 「修復」を押すと、不足している物を再生成します。設定はそのまま保持されます |
+| この Scene にある、音源を持つ対応動画プレイヤーを 1 台選択してください。 | 選択した物が対応する動画プレイヤーではない、または別の Scene にある | YamaPlayer か VizVid の、いちばん上の GameObject を選択します |
+| ほかの Audiorium がこの動画プレイヤーに接続しています。 | 別の `AudioriumSetup` がその動画プレイヤーに接続している | 別の動画プレイヤーを選ぶか、接続している `AudioriumSetup` を削除します |
 
-## 接続していた動画プレイヤーが見つからない
+対応する動画プレイヤーは YamaPlayer と VizVid です。
 
-接続していた動画プレイヤーを削除すると、Studio に「接続していた動画プレイヤーが見つかりません」と表示されます。動画プレイヤーを接続し直すか、[取り外し](./uninstall.md) の手順で Audiorium を削除します。
+## 照明システムを本体より先にインポートした
 
-## Studio が開かない
+Unity の Console に U# のコンパイルエラーが表示されます。本体をインポートした後、**Tools › Audiorium › Add Audiorium** を押すと、Audiorium が U# のコンパイルをやり直します。
 
-Unity と VRChat SDK のバージョンをご確認ください。動作確認済みのバージョンは [必要な物と動作環境](../getting-started/requirements.md) にあります。
+照明システムは、本体の後にインポートしてください（[インストール](../getting-started/install.md#インポートの順番)）。
 
-Unity の Console にコンパイルエラーが出ている場合、Studio は開きません。最初のエラーの全文を控えて、お問い合わせください。
+## 照明の Inspector に「別のライトショーに接続しています」と表示される
+
+Scene がすでに別のライトショーに接続しているため、Audiorium の照明を置けません。接続を解除してから照明を置いてください。
 
 ## VizVid と VRC Light Volumes を同時に導入するとコンパイルエラーが出る
 
@@ -56,28 +81,31 @@ LTCGI を使う場合は、VRC Light Volumes もプロジェクトに導入し�
 
 ## Play モードで音が鳴らない
 
-動画の外部 URL は、Unity の Play モードでは再生できません。音はビルドして VRChat で確認してください（[クイックスタート](../getting-started/quick-start.md#ビルドして-vrchat-で確認する)）。
+動画の外部 URL は、Unity の Play モードでは再生できません。音はビルドして VRChat で確認してください（[クイックスタート](../getting-started/quick-start.md#5-ビルドして-vrchat-で確認する)）。
 
-## 動画プレイヤーが選択の画面に表示されない
+## コンソールの Effects タブが表示されない
 
-- 動画プレイヤーが、開いている Scene に配置されているかを確認します。
-- 対応している動画プレイヤーは YamaPlayer と VizVid です。それ以外の動画プレイヤーのカードには「未対応」と表示されます。
-- 別の Audiorium がその動画プレイヤーに接続している場合、カードに「使用中」と表示されます。
+Effects タブは、次の両方を満たすと表示されます（[視界エフェクト](../setup/visual-effects.md)）。
 
-## コンソールの Effects タブが使えない
+- 「視界エフェクト」の「Effects を有効化」がオン
+- 「外部設定」で AudioLink か LTCGI がオン
 
-Effects タブの視界エフェクトには AudioLink が必要です。Studio の [Effects](../studio/effects.md) タブの「シーン連携」で、「AudioLink」をオンにします。チェックの代わりに「入手先を開く」が表示される場合は、AudioLink がプロジェクトに導入されていません。
+外部設定にチェックの代わりに「入手先を開く」が表示される場合は、AudioLink と LTCGI がプロジェクトに導入されていません。
 
-## Studio の Lights タブが選択できない
+## 外部設定に「照明」が表示されない
 
-Lights タブは、照明システム（拡張パッケージ）をインポートすると使用できます。照明システムは本体の後にインポートします。
+照明システム（拡張パッケージ）をインポートすると表示されます。照明システムは本体の後にインポートします。
 
 ## コンソールの文字が表示されない
 
-コンソールの文字には、TextMesh Pro の Essentials（TMP Essentials）が必要です。Studio は、コンソールを配置するときに TMP Essentials が無ければ自動で導入します。
+コンソールの文字には、TextMesh Pro の Essentials（TMP Essentials）が必要です。Audiorium は、コンソールを置くときに TMP Essentials が無ければ自動で導入します。
 
-- 自動で導入できなかった場合は、Check タブに「TMP Essentials がプロジェクトにないため、コンソールの文字が表示されません。」が表示されます。「TMP Essentials を導入」を押します。
+- 自動で導入できなかった場合は、Inspector の一番上に「TMP Essentials がプロジェクトにないため、コンソールの文字が表示されません。」が表示されます。「TMP Essentials を導入」を押します。
 - TMP Importer のウィンドウから先に TMP Essentials を導入した後、コンソールの文字が四角のまま表示される場合は、Unity を開き直します。TextMesh Pro の不具合で、開き直すと文字が表示されます。
+
+## サンプルシーンに Missing と表示される
+
+YamaPlayer をプロジェクトに追加する前にサンプルシーンを開くと表示されます。YamaPlayer を追加すると消えます（[サンプルシーン](../getting-started/sample-scene.md)）。
 
 ## お問い合わせ
 
