@@ -24,6 +24,4 @@ AudioLink と LTCGI は、動画プレイヤーの Inspector の設定と同じ�
 
 AudioLink か LTCGI をプロジェクトに導入していない場合は、チェックの代わりに説明と「入手先を開く」が表示されます。押すと配布ページが開きます。
 
-![AudioLink と LTCGI を導入していない場合の外部設定](/img/setup/external-missing.png)
-
 照明の行は、照明システムをインポートした場合にだけ表示されます。
