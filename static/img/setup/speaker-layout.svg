@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1080" height="705" viewBox="0 0 720 470" font-family="'Jost','Irohamaru','Hiragino Sans','Yu Gothic UI',sans-serif">
-  <!-- 真上から見た Add Audiorium の直後の配置。値は製品の AudioriumArrangements：視聴位置からスクリーンまでを D（スクリーンの幅 × 0.78）として、
-       Front は左右 0.56D・スクリーンの手前、Surround は左右 0.66D・視聴位置の 0.24D 後ろ、Top Middle は左右 0.37D・視聴位置の真横の天井、
-       Stereo Mix と Subwoofer は動画プレイヤーの音源の位置、コンソールは視聴位置からスクリーン側へ 0.9 m（D = 4 m の縮尺）。図では D = 220 -->
+  <!-- 真上から見た Add Audiorium の直後の配置。studio-ia の実測（dbb4a883、YamaPlayer 3 倍、スクリーン幅 8 m、2026-11-11）と製品の AudioriumArrangements の値：
+       視聴位置からスクリーンまでを D（6.24 m）として、Front は左右 0.56D・スクリーンの 0.03D 手前、Surround は左右 0.66D・視聴位置の 0.24D 後ろ、
+       Top Middle は左右 0.37D・視聴位置の真横の天井、Stereo Mix と Subwoofer はスクリーンの中心、コンソールは視聴位置の 1.32 m 手前。図では D = 220 -->
   <g stroke="#b9b9b9" stroke-width="1" stroke-dasharray="4 4">
-    <line x1="360" y1="304" x2="237" y2="104"/>
-    <line x1="360" y1="304" x2="483" y2="104"/>
+    <line x1="360" y1="304" x2="237" y2="99"/>
+    <line x1="360" y1="304" x2="483" y2="99"/>
     <line x1="360" y1="304" x2="215" y2="357"/>
     <line x1="360" y1="304" x2="505" y2="357"/>
   </g>
@@ -12,18 +12,18 @@
   <rect x="219" y="80" width="282" height="8" fill="#2a2a2a"/>
   <text x="360" y="68" font-size="13" fill="#6b6b6b" text-anchor="middle">スクリーン（動画プレイヤー）</text>
 
-  <rect x="228" y="95" width="18" height="18" fill="#2a2a2a"/>
-  <rect x="474" y="95" width="18" height="18" fill="#2a2a2a"/>
-  <text x="220" y="109" font-size="15" fill="#2a2a2a" text-anchor="end">Front</text>
-  <text x="500" y="109" font-size="15" fill="#2a2a2a">Front</text>
+  <rect x="228" y="90" width="18" height="18" fill="#2a2a2a"/>
+  <rect x="474" y="90" width="18" height="18" fill="#2a2a2a"/>
+  <text x="220" y="104" font-size="15" fill="#2a2a2a" text-anchor="end">Front</text>
+  <text x="500" y="104" font-size="15" fill="#2a2a2a">Front</text>
 
-  <circle cx="348" cy="104" r="7" fill="#8a8a8a"/>
-  <rect x="362" y="98" width="22" height="12" rx="4" fill="#8a8a8a"/>
-  <text x="336" y="129" font-size="15" fill="#2a2a2a" text-anchor="end">Stereo Mix</text>
-  <text x="378" y="129" font-size="15" fill="#2a2a2a">Subwoofer</text>
+  <circle cx="348" cy="84" r="7" fill="#8a8a8a" stroke="#f6f7f6" stroke-width="2"/>
+  <rect x="362" y="78" width="22" height="12" rx="4" fill="#8a8a8a" stroke="#f6f7f6" stroke-width="2"/>
+  <text x="336" y="114" font-size="15" fill="#2a2a2a" text-anchor="end">Stereo Mix</text>
+  <text x="378" y="114" font-size="15" fill="#2a2a2a">Subwoofer</text>
 
-  <rect x="330" y="247" width="60" height="14" fill="none" stroke="#8a8a8a" stroke-width="1.5"/>
-  <text x="360" y="240" font-size="13" fill="#6b6b6b" text-anchor="middle">コンソール</text>
+  <rect x="330" y="251" width="60" height="14" fill="none" stroke="#8a8a8a" stroke-width="1.5"/>
+  <text x="360" y="244" font-size="13" fill="#6b6b6b" text-anchor="middle">コンソール</text>
 
   <rect x="270" y="295" width="18" height="18" fill="none" stroke="#2a2a2a" stroke-width="1.5" stroke-dasharray="3 2"/>
   <rect x="432" y="295" width="18" height="18" fill="none" stroke="#2a2a2a" stroke-width="1.5" stroke-dasharray="3 2"/>
@@ -46,6 +46,6 @@
     <text x="296" y="415">天井</text>
     <circle cx="378" cy="410" r="6" fill="#8a8a8a"/>
     <rect x="388" y="404" width="20" height="12" rx="4" fill="#8a8a8a"/>
-    <text x="416" y="415">動画プレイヤーの音源の位置</text>
+    <text x="416" y="415">スクリーンの中心</text>
   </g>
 </svg>
