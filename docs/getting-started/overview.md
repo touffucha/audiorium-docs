@@ -34,17 +34,4 @@ Audiorium は、VRChat のワールドに置く音響・演出コンソールで
 | 音に連動する視界エフェクトを切り替える（AudioLink が必要） | [視界エフェクト](../setup/visual-effects.md) |
 | コンソールを操作できる人を限定する | [詳細](../setup/advanced.md#操作権限) |
 
-## 目的から探す
-
-| 目的 | ページ |
-| --- | --- |
-| 購入前に、必要な物と動作環境を確認する | [必要な物と動作環境](./requirements.md) |
-| プロジェクトにインポートする | [インストール](./install.md) |
-| 最初の音を鳴らす | [クイックスタート](./quick-start.md) |
-| 完成したワールドの例を開く | [サンプルシーン](./sample-scene.md) |
-| 新しいバージョンに更新する | [Audiorium を更新する](./update.md) |
-| Inspector の各項目を調べる | [Audiorium を置く](../setup/add-audiorium.md#inspector-の構成) |
-| Inspector の上に出た警告を解決する | [トラブルシューティング](../help/troubleshooting.md) |
-| 変更点を確認する | [更新履歴](../changelog.md) |
-
 次は [必要な物と動作環境](./requirements.md) を確認します。
