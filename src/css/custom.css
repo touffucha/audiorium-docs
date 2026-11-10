@@ -226,12 +226,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-.markdown > p,
-.markdown > ul,
-.markdown > ol {
-  max-width: 42em;
-}
-
 .markdown {
   container-type: inline-size;
 }
@@ -246,10 +240,6 @@ body {
   .markdown .clause {
     display: inline-block;
   }
-}
-
-.markdown > p:has(> .zoomable-image) {
-  max-width: none;
 }
 
 .markdown h2 {
