@@ -30,6 +30,8 @@ YamaPlayer か VizVid を Scene に置き、位置と向きを決めます。
 
 ![Add Audiorium の直後。Scene にスピーカーとコンソールが置かれ、Inspector に AudioriumSetup の設定が表示される](/img/quick-start/editor-after-add.png)
 
+![Add Audiorium の直後の Hierarchy](/img/setup/hierarchy.png)
+
 最初は、Front・Surround・Top Middle・Stereo Mix・Subwoofer の 5 種類、8 つの出力が置かれます。使わないスピーカーは [スピーカー](../setup/speakers.md) で外します。
 
 :::info TMP Importer が表示された場合
@@ -50,6 +52,8 @@ YamaPlayer か VizVid を Scene に置き、位置と向きを決めます。
 
 - スピーカーは、Inspector の「スピーカー」の一覧の欄を押すと Hierarchy で選択されます（[スピーカー](../setup/speakers.md)）。
 - コンソールは、「Audiorium コンソール」の「コンソールを選択」を押すと、台ごと選択されます（[Audiorium コンソール](../setup/console.md)）。
+
+![Scene ビューのスピーカーと視聴位置。音が届く範囲が表示されている](/img/scene/speakers.png)
 
 Inspector での変更は、すぐに Scene に反映されます。元に戻すときは Ctrl+Z を押します。
 
