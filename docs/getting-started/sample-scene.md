@@ -13,9 +13,9 @@ description: 付属のサンプルシーン（照明なし・照明あり）の�
 | 照明なし | `AudioriumShowroom_1.0.0.unitypackage` | 本体だけで動く構成 |
 | 照明あり | `AudioriumShowroomLighting_1.0.0.unitypackage` | 照明システムを使う構成 |
 
-シーンのファイルは、照明なしが `AudioriumNoLighting.unity`、照明ありが `Audiorium.unity` です。照明ありのサンプルシーンを開くには、本体・照明システム・`AudioriumShowroom_1.0.0.unitypackage`・`AudioriumShowroomLighting_1.0.0.unitypackage` の 4 つをインポートします。
+シーンのファイルは、照明なしが `AudioriumNoLighting.unity`、照明ありが `Audiorium.unity` です。
 
-{/* 未確認：照明ありのサンプルシーンが、サンプルシーン（照明なし）のファイル（モデル・焼いた光）を必要とすること。取り込みの順（本体 → 照明システム → サンプルシーン → 照明ありの分）からの読み取りで、配布物では確かめていない */}
+{/* 未確認：照明ありのサンプルシーンを開くのに、サンプルシーン（照明なし）のファイルが要るか。要ると確かめたら、ここに「照明ありのサンプルシーンを開くには、本体・照明システム・AudioriumShowroom_1.0.0.unitypackage・AudioriumShowroomLighting_1.0.0.unitypackage の 4 つをインポートします。」を足す */}
 
 ## 開く前に必要なパッケージ
 
@@ -28,7 +28,7 @@ description: 付属のサンプルシーン（照明なし・照明あり）の�
 
 ## 開く
 
-1. [インストール](./install.md) の順番で、本体の後にサンプルシーンのパッケージをインポートします。
+1. [インストール](./install.md) の順番で、使用するサンプルシーンのパッケージをインポートします。
 2. Project ウィンドウで、サンプルシーンのファイル（`AudioriumNoLighting.unity` または `Audiorium.unity`）をダブルクリックして開きます。
 
 {/* 画像を戻す場所：![Project ウィンドウのサンプルシーン](/img/sample/scenes.png)。配布物ができてから撮る */}
