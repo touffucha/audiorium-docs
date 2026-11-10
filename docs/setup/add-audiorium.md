@@ -1,7 +1,7 @@
 ---
 title: Audiorium を置く
 sidebar_position: 1
-description: Scene に Audiorium を置く方法、置かれる物、AudioriumSetup の Inspector の構成と一番上の警告
+description: Scene に Audiorium を置く方法、置かれる物、AudioriumSetup の Inspector の構成と、上部（Language の下）の警告
 ---
 
 # Audiorium を置く
@@ -59,9 +59,9 @@ Audiorium は、動画プレイヤーの音源の設定を書き換えません�
 
 Inspector での変更は、すぐに Scene に反映されます。元に戻すときは Ctrl+Z を押します。1 回の変更は 1 回の Ctrl+Z で戻ります。
 
-## 一番上の警告
+## 上部（Language の下）の警告
 
-ビルドの前に直す項目があると、Inspector の一番上に黄色の警告が表示されます。ボタンが付いた警告は、ボタンを押すと直ります。
+ビルドの前に直す項目があると、Inspector の上部（Language の下）に黄色の警告が表示されます。ボタンが付いた警告は、ボタンを押すと直ります。
 
 ![動画プレイヤーが原点から遠いときの警告と「原点付近へ移す」](/img/setup/issue-far-origin.png)
 

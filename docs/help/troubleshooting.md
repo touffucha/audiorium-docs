@@ -6,9 +6,9 @@ description: AudioriumSetup の Inspector に表示される警告の直し方�
 
 # トラブルシューティング
 
-## まず Inspector の一番上を確認する
+## まず Inspector の上部（Language の下）を確認する
 
-Hierarchy で `AudioriumSetup` を選択します。ビルドの前に直す項目があると、Inspector の一番上に黄色の警告が表示されます。ボタンが付いた警告は、ボタンを押すと直ります。
+Hierarchy で `AudioriumSetup` を選択します。ビルドの前に直す項目があると、Inspector の上部（Language の下）に黄色の警告が表示されます。ボタンが付いた警告は、ボタンを押すと直ります。
 
 ![動画プレイヤーが原点から遠いときの警告](/img/setup/issue-far-origin.png)
 
@@ -22,7 +22,7 @@ Hierarchy で `AudioriumSetup` を選択します。ビルドの前に直す項�
 
 ## コンソールの文字や絵が欠けて見える
 
-ワールドが原点（0, 0, 0）から遠いと、位置の精度が落ち、コンソールの文字や絵が欠けて見えます。動画プレイヤーが原点から 5 km より遠い場合は、Inspector の一番上に警告が表示されます。
+ワールドが原点（0, 0, 0）から遠いと、位置の精度が落ち、コンソールの文字や絵が欠けて見えます。動画プレイヤーが原点から 5 km より遠い場合は、Inspector の上部（Language の下）に警告が表示されます。
 
 「原点付近へ移す」を押すと、動画プレイヤーと Audiorium が、位置の関係を保ったまま原点付近へ移動します。ワールド全体が原点から遠い場合は、ワールド全体を原点付近へ移してください。
 
@@ -101,7 +101,7 @@ Effects タブは、次の両方を満たすと表示されます（[視界エ�
 
 コンソールの文字には、TextMesh Pro の Essentials（TMP Essentials）が必要です。Audiorium は、コンソールを置くときに TMP Essentials が無ければ自動で導入します。
 
-- 自動で導入できなかった場合は、Inspector の一番上に「TMP Essentials がプロジェクトにないため、コンソールの文字が表示されません。」が表示されます。「TMP Essentials を導入」を押します。
+- 自動で導入できなかった場合は、Inspector の上部（Language の下）に「TMP Essentials がプロジェクトにないため、コンソールの文字が表示されません。」が表示されます。「TMP Essentials を導入」を押します。
 - TMP Importer のウィンドウから先に TMP Essentials を導入した後、コンソールの文字が四角のまま表示される場合は、Unity を開き直します。TextMesh Pro の不具合で、開き直すと文字が表示されます。
 
 ## プリセットの名前を変えられない

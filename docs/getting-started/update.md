@@ -26,7 +26,7 @@ Inspector で行った設定は Scene に保存されています。`Assets/Audi
 3. Project ウィンドウで `Assets/Audiorium` を右クリックし、「Delete」を押します。照明システムとサンプルシーンも `Assets/Audiorium` の中にあるため、同時に削除されます。
 4. 新しいバージョンの `Audiorium_x.y.z.unitypackage` を Unity のウィンドウへドラッグします。「Import Unity Package」のウィンドウで「Import」を押します。
 5. 照明システムとサンプルシーンを使用している場合は、それぞれの新しいバージョンも同じ方法でインポートします。[インストール](./install.md#インポートの順番) の順番でインポートします。
-6. ワールドの Scene を開き、Hierarchy で `AudioriumSetup` を選択します。Inspector の一番上に警告が表示されないことを確認します。
+6. ワールドの Scene を開き、Hierarchy で `AudioriumSetup` を選択します。Inspector の上部（Language の下）に警告が表示されないことを確認します。
 
 `Assets/TextMesh Pro` など、`Assets/Audiorium` の外にあるフォルダーは削除しません。
 

@@ -46,7 +46,7 @@ YamaPlayer か VizVid を Scene に置き、位置と向きを決めます。
 
 ## Inspector の警告を確認する
 
-`AudioriumSetup` の Inspector の一番上に、ビルドの前に直す項目が黄色の警告で表示されます。警告が無ければ、そのままビルドできます。
+`AudioriumSetup` の Inspector の上部（Language の下）に、ビルドの前に直す項目が黄色の警告で表示されます。警告が無ければ、そのままビルドできます。
 
 警告にボタンがある場合は、ボタンを押すと直ります。詳しくは [トラブルシューティング](../help/troubleshooting.md) を参照してください。
 
