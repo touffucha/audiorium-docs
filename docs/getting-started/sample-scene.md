@@ -13,9 +13,9 @@ description: 付属のサンプルシーン（照明なし・照明あり）の�
 | 照明なし | `AudioriumShowroom_1.0.0.unitypackage` | 本体だけで動く構成 |
 | 照明あり | `AudioriumShowroomLighting_1.0.0.unitypackage` | 照明システムを使う構成 |
 
-シーンのファイルは、照明なしが `AudioriumNoLighting.unity`、照明ありが `Audiorium.unity` です。
+シーンのファイルは、照明なしが `AudioriumNoLighting.unity`、照明ありが `Audiorium.unity` です。照明なしのサンプルシーンに使う Audiorium のファイルは、本体と `AudioriumShowroom_1.0.0.unitypackage` の 2 つです。照明ありのサンプルシーンを開くには、本体・照明システム・`AudioriumShowroom_1.0.0.unitypackage`・`AudioriumShowroomLighting_1.0.0.unitypackage` の 4 つを、この順でインポートします。
 
-{/* 未確認：照明ありのサンプルシーンを開くのに、サンプルシーン（照明なし）のファイルが要るか。要ると確かめたら、ここに「照明ありのサンプルシーンを開くには、本体・照明システム・AudioriumShowroom_1.0.0.unitypackage・AudioriumShowroomLighting_1.0.0.unitypackage の 4 つをインポートします。」を足す */}
+{/* 未確認：直前の文は設計の事実（照明ありのシーンは、サンプルシーン（照明なし）のファイルのモデルと焼いた光を使う）。書き出した配布物での実測が届いたら、この印を消す。印が残っている間は公開しない */}
 
 ## 開く前に必要なパッケージ
 
