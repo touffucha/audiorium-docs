@@ -14,7 +14,7 @@ Scene に Audiorium を置いてから、VRChat で最初の音を鳴らすま�
 YamaPlayer か VizVid を Scene に置き、位置と向きを決めます。
 スピーカーとコンソールは、この画面を基準に置かれます。
 
-![Scene ビューに YamaPlayer を置いた状態。Audiorium を置く前](/img/quick-start/scene-player.png)
+![Scene に YamaPlayer を置いて選択した状態。Hierarchy に YamaPlayer、Scene ビューに動画プレイヤーの画面が表示されている。Audiorium を置く前](/img/quick-start/player-placed.png "full")
 
 置き方は [動画プレイヤー](../setup/video-player.md#動画プレイヤーを置く) で説明します。
 

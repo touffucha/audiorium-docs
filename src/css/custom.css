@@ -398,7 +398,6 @@ body {
 .zoomable-image--full {
   display: block;
   width: 100%;
-  max-width: 42rem;
 }
 
 .zoomable-image--full img {
