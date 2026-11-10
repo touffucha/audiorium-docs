@@ -66,5 +66,3 @@ VCC でプロジェクトに追加します。どれも後から追加できま�
 メニューの **Tools › Audiorium** に **Add Audiorium** が表示されれば、インストールは完了です。照明システムをインポートした場合は、**Add Lights** も表示されます。
 
 メニューが表示されない場合は、[トラブルシューティング](../help/troubleshooting.md#tools--audiorium-のメニューが表示されない) を参照してください。
-
-次は [クイックスタート](./quick-start.md) で、Scene に Audiorium を置きます。
