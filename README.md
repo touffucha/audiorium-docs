@@ -11,3 +11,5 @@ Audiorium は、VRChat のワールドに設置する音響・演出コンソー
 ## サイトの更新
 
 `docs/` の Markdown と `src/` を編集し、`main` に push すると、GitHub Actions が GitHub Pages へ公開します。手元で確認するときは `npm ci` の後に `npm start` を実行します。
+
+本文の折れる位置は、ビルドのときに `src/remark/line-breaks.js` が決めます。段落を「。」の後で改行し、文節の切れ目（BudouX）と読点の後でだけ折れるようにします。

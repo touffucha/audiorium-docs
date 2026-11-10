@@ -231,10 +231,20 @@ body {
   max-width: 42em;
 }
 
-/* auto-phrase だけでは 42em の行末で文節の途中が折れるので、行の長さをそろえて文節の切れ目へ寄せる。pretty は「Scene／ビュー」のように語の中で折れたので使わない */
-.markdown p,
-.markdown li {
-  text-wrap: balance;
+.markdown {
+  container-type: inline-size;
+}
+
+/* 折れる位置は、remark（src/remark/line-breaks.js）が文節の切れ目に入れた <wbr> と、句読点の後だけにする */
+.markdown :is(p, li, td, th) {
+  word-break: keep-all;
+}
+
+/* 読点までの節をひとかたまりにして、折れる位置を読点の後へ寄せる。本文の列が 42em より狭い幅では、節が 1 行に収まらないので行末まで流す */
+@container (min-width: 42em) {
+  .markdown .clause {
+    display: inline-block;
+  }
 }
 
 .markdown > p:has(> .zoomable-image) {
