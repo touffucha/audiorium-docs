@@ -252,6 +252,17 @@ body {
   margin-top: var(--space-6);
 }
 
+/* 見出しの番号の下の手順の番号を (1) (2) (3) にして、番号が二重に見えないようにする（クイックスタート） */
+@counter-style paren-decimal {
+  system: extends decimal;
+  prefix: '(';
+  suffix: ') ';
+}
+
+.markdown .paren-list > ol {
+  list-style-type: paren-decimal;
+}
+
 .markdown img {
   display: block;
   max-width: 100%;

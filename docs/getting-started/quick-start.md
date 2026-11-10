@@ -20,11 +20,15 @@ YamaPlayer か VizVid を Scene に置き、位置と向きを決めます。
 
 ## Audiorium を置く
 
+<div className="paren-list">
+
 1. Hierarchy で動画プレイヤーを選択します。
 
    ![Hierarchy で YamaPlayer を選択した状態](/img/quick-start/hierarchy-player.png)
 
 2. メニューの **Tools › Audiorium › Add Audiorium** を押します。Hierarchy の右クリックのメニューの **Audiorium** でも同じです。
+
+</div>
 
 `AudioriumSetup` が Hierarchy に追加され、スピーカーとコンソールが置かれます。Inspector には、その設定が表示されます。TMP Essentials が無いプロジェクトでは、このときに自動で導入されます。
 
@@ -61,9 +65,13 @@ Inspector での変更は、すぐに Scene に反映されます。元に戻す
 
 動画の外部 URL は Unity の Play モードでは再生できないため、音はビルドして VRChat で確認します。
 
+<div className="paren-list">
+
 1. メニューの **VRChat SDK › Show Control Panel** を開きます。
 2. VRChat のアカウントでログインします。
 3. 「Builder」タブで Build & Test Your World を選択し、Build & Test を押します。
+
+</div>
 
 ワールドがビルドされて VRChat が開きます。動画プレイヤーで動画を再生し、スピーカーから音が鳴ることを確認します。
 
