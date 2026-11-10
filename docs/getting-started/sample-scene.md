@@ -27,13 +27,13 @@ description: 付属のサンプルシーン（照明なし・照明あり）の�
 1. [インストール](./install.md) の順番で、本体の後にサンプルシーンのパッケージをインポートします。
 2. Project ウィンドウでサンプルシーンをダブルクリックして開きます。
 
-![Project ウィンドウのサンプルシーン](/img/sample/scenes.png)
+{/* 画像を戻す場所：![Project ウィンドウのサンプルシーン](/img/sample/scenes.png)。配布物ができてから撮る */}
 
 :::info YamaPlayer を入れる前に開いた場合
 
 Hierarchy と Inspector に「Missing」と表示されます。YamaPlayer をプロジェクトに追加すると、すべての参照がつながり、表示が消えます。サンプルシーンの不具合ではありません。
 
-![YamaPlayer を入れる前に開いたサンプルシーン。Missing と表示される](/img/sample/missing.png)
+{/* 画像を戻す場所：![YamaPlayer を入れる前に開いたサンプルシーン。Missing と表示される](/img/sample/missing.png)。配布物ができてから撮る */}
 
 :::
 
