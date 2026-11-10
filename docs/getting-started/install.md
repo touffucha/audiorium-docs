@@ -18,9 +18,12 @@ VRChat Creator Companion（VCC）で作成したワールドのプロジェク�
 | 2 | AudioLink、LTCGI、VRC Light Volumes | 使用する場合。サンプルシーンを開く場合は必ず |
 | 3 | `Audiorium_1.0.0.unitypackage`（本体） | 必ず |
 | 4 | `AudioriumLightingSystem_1.0.0.unitypackage`（照明システム） | 購入した場合 |
-| 5 | `AudioriumShowroom_1.0.0.unitypackage`（サンプルシーン） | 使用する場合 |
+| 5 | `AudioriumShowroom_1.0.0.unitypackage`（サンプルシーン・照明なし） | 使用する場合 |
+| 6 | `AudioriumShowroomLighting_1.0.0.unitypackage`（サンプルシーン・照明あり） | 照明システムを購入し、照明ありのサンプルシーンを使用する場合 |
 
-照明システムとサンプルシーンは、必ず本体の後にインポートします。照明システムを本体より先にインポートすると、Unity の Console に U# のコンパイルエラーが表示されます。
+照明システムとサンプルシーンは、必ず本体の後にインポートします。照明システムを本体より先にインポートすると、Unity の Console に U# のコンパイルエラーが表示されます。`AudioriumShowroomLighting_1.0.0.unitypackage` は、照明システムとサンプルシーン（照明なし）の後にインポートします。
+
+{/* 未確認：AudioriumShowroomLighting を照明システムやサンプルシーン（照明なし）より先にインポートしたときに起きる事。確かめた事実が届いたら、上の段落に 1 文足す */}
 
 ## 1. 動画プレイヤーを導入する
 
@@ -48,7 +51,13 @@ VCC でプロジェクトに追加します。どれも後から追加できま�
 
 ## 5. サンプルシーンをインポートする（使用する場合）
 
-`AudioriumShowroom_1.0.0.unitypackage` を手順 3 と同じ方法でインポートします。開き方は [サンプルシーン](./sample-scene.md) で説明します。
+`AudioriumShowroom_1.0.0.unitypackage` を手順 3 と同じ方法でインポートします。照明なしのサンプルシーンが入ります。
+
+## 6. 照明ありのサンプルシーンをインポートする（照明システムを購入した場合）
+
+手順 4 と手順 5 の後に、`AudioriumShowroomLighting_1.0.0.unitypackage` を手順 3 と同じ方法でインポートします。
+
+サンプルシーンの開き方は [サンプルシーン](./sample-scene.md) で説明します。
 
 ## インストールを確認する
 

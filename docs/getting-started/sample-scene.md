@@ -11,7 +11,11 @@ description: 付属のサンプルシーン（照明なし・照明あり）の�
 | サンプルシーン | 入っているファイル | 内容 |
 | --- | --- | --- |
 | 照明なし | `AudioriumShowroom_1.0.0.unitypackage` | 本体だけで動く構成 |
-| 照明あり | `AudioriumLightingSystem_1.0.0.unitypackage` | 照明システムを使う構成 |
+| 照明あり | `AudioriumShowroomLighting_1.0.0.unitypackage` | 照明システムを使う構成 |
+
+シーンのファイルは、照明なしが `AudioriumNoLighting.unity`、照明ありが `Audiorium.unity` です。照明ありのサンプルシーンを開くには、本体・照明システム・`AudioriumShowroom_1.0.0.unitypackage`・`AudioriumShowroomLighting_1.0.0.unitypackage` の 4 つをインポートします。
+
+{/* 未確認：照明ありのサンプルシーンが、サンプルシーン（照明なし）のファイル（モデル・焼いた光）を必要とすること。取り込みの順（本体 → 照明システム → サンプルシーン → 照明ありの分）からの読み取りで、配布物では確かめていない */}
 
 ## 開く前に必要なパッケージ
 
@@ -25,7 +29,7 @@ description: 付属のサンプルシーン（照明なし・照明あり）の�
 ## 開く
 
 1. [インストール](./install.md) の順番で、本体の後にサンプルシーンのパッケージをインポートします。
-2. Project ウィンドウでサンプルシーンをダブルクリックして開きます。
+2. Project ウィンドウで、サンプルシーンのファイル（`AudioriumNoLighting.unity` または `Audiorium.unity`）をダブルクリックして開きます。
 
 {/* 画像を戻す場所：![Project ウィンドウのサンプルシーン](/img/sample/scenes.png)。配布物ができてから撮る */}
 
@@ -45,6 +49,8 @@ Hierarchy と Inspector に「Missing」と表示されます。YamaPlayer を�
 - 足音と効果音
 - 鳩
 - 入退室を記録するボード
+- 設計図の字幕
+- 環境音（滝・鳥・風）
 
 ## 利用の条件
 
