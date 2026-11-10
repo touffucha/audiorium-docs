@@ -14,13 +14,13 @@ Audiorium は、VRChat のワールドに置く音響・演出コンソールで
 
 ## 2 つの画面
 
-![AudioriumSetup の Inspector](/img/setup/inspector-map.png "full")
-
-ワールド制作者が Unity で使う、`AudioriumSetup` の Inspector です。[セットアップ](../setup/add-audiorium.md)の各ページで説明します。
-
 ![コンソール](/img/console/sound.webp "full")
 
 ユーザーがワールド内で操作するコンソールです。[コンソールの操作](../console/operation.md)で説明します。
+
+![AudioriumSetup の Inspector。スピーカーの節を開いた状態](/img/setup/speakers.png "full")
+
+ワールド制作者が Unity で使う、`AudioriumSetup` の Inspector です。[セットアップ](../setup/add-audiorium.md)の各ページで説明します。
 
 ## 主な機能
 
