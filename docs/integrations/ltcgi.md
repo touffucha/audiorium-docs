@@ -2,7 +2,7 @@
 sidebar_label: LTCGI
 title: LTCGI
 sidebar_position: 2
-description: LTCGI を導入したときにコンソールでできることと、外部設定でオン・オフする手順、クレジットの表示
+description: LTCGI を導入したときにコンソールでできることと、外部設定でオン・オフする手順
 ---
 
 # LTCGI
@@ -36,9 +36,3 @@ VizVid では、Audiorium から LTCGI との連携を設定できません。�
 「LTCGI」をオフにすると、動画プレイヤーと LTCGI の連携が解除されます。LTCGI は Scene に残ります。不要な場合は、Hierarchy から削除します。
 
 LTCGI の配置と設定の詳細は、LTCGI の配布ページをご確認ください。
-
-:::warning クレジットの表示
-
-LTCGI を使用するワールドには、LTCGI の規約に基づきクレジットの表示が必要です。
-
-:::
