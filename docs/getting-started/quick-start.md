@@ -35,7 +35,7 @@ YamaPlayer か VizVid を Scene に置き、位置と向きを決めます。ス
 
 | 置かれる物 | 説明 |
 | --- | --- |
-| `ListeningPosition` | 視聴位置。スピーカーの音量のバランスの基準になります |
+| `ListeningPosition` | 視聴位置。スピーカーの音が届く範囲を決める基準の位置です |
 | `Front`・`Surround`・`Top Middle`・`Stereo Mix`・`Subwoofer` | スピーカー。動画プレイヤーのスクリーンを基準に配置されます |
 | `ConsoleMount_`（台の名前） | コンソールと、それを載せる台。名前の後半は、選択したモデルで変わります |
 | `AudioControls` など、そのほかの物 | Audiorium の動作に使う物。移動・削除しません |

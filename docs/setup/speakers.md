@@ -42,7 +42,7 @@ description: AudioriumSetup の Inspector の「スピーカー」の節。ス�
 
 ### 視聴位置
 
-`AudioriumSetup` の中の `ListeningPosition` を、客席の中央に移動します。スピーカーの音量のバランスは、この位置を基準に決まります。
+視聴位置（`AudioriumSetup` の中の `ListeningPosition`）は、スピーカーの音が届く範囲を決める基準の位置です。Add Audiorium が、画面の正面に自動で置きます。通常は、動かす必要はありません。客席がこの位置から数 m 以上離れているときだけ、Scene ビューで動かします。
 
 ### 動画プレイヤーを移動した場合
 
