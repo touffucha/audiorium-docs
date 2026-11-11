@@ -53,7 +53,7 @@ YamaPlayer か VizVid を Scene に置き、位置と向きを決めます。ス
 
 :::info TMP Importer が表示された場合
 
-何も押さずに閉じます。「Import TMP Essentials」を押した後にコンソールの文字が四角のまま表示される場合は、[トラブルシューティング](../help/troubleshooting.md#コンソールの文字が表示されない) を参照してください。
+「Import TMP Essentials」を押します。導入した後にコンソールの文字が四角のまま表示される場合は、[トラブルシューティング](../help/troubleshooting.md#コンソールの文字が表示されない) を参照してください。
 
 :::
 

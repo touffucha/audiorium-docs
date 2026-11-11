@@ -108,7 +108,7 @@ Packages\idv.jlchntoz.vvmw\Editor\VVMW\Designer\ScreenConfiguratorEditor.cs(114,
 **直し方**：
 
 - **Inspector に警告が出ている**：自動で導入できませんでした。警告の「TMP Essentials を導入」を押します。
-- **TMP Importer から先に導入した後、文字が四角のまま**：Unity を開き直します。TextMesh Pro の不具合で、開き直すと表示されます。
+- **TMP Importer から導入した後、文字が四角のまま**：Unity を開き直します。TextMesh Pro の不具合で、開き直すと表示されます。
 
 ## プリセットの名前を変えられない
 

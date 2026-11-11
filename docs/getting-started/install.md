@@ -32,11 +32,11 @@ VRChat Creator Companion（VCC）で作成したワールドのプロジェク�
 
 :::info TMP Importer が表示された場合
 
-本体のインポートの後に「TMP Importer」のウィンドウが表示された場合は、何も押さずに閉じます。TextMesh Pro を初めて使うプロジェクトで 1 回だけ表示されます。
+本体のインポートの後に「TMP Importer」のウィンドウが表示された場合は、「Import TMP Essentials」を押します。TextMesh Pro を初めて使うプロジェクトで 1 回だけ表示されます。
 
 ![TMP Importer のウィンドウ](/img/install/tmp-importer.png)
 
-コンソールの文字に必要な TextMesh Pro の Essentials（TMP Essentials）は、コンソールを置くときに Audiorium が自動で導入します。「Import TMP Essentials」から先に導入した場合、コンソールの文字が四角のまま表示されることがあります。そのときは Unity を開き直します。
+導入した後にコンソールの文字が四角のまま表示される場合は、Unity を開き直します。
 
 :::
 
