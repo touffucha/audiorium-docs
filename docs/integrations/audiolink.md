@@ -12,7 +12,7 @@ AudioLink は、音を解析してワールドの演出に渡す仕組みです�
 | 項目 | 内容 |
 | --- | --- |
 | 動作確認済みの版 | 3.1.2 |
-| 入手先 | [audiolink.dev](https://audiolink.dev/) |
+| 入手先 | [GitHub](https://github.com/llealloo/audiolink) |
 
 ## AudioLink で使える機能
 

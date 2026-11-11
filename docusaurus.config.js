@@ -34,6 +34,7 @@ const config = {
   ],
 
   plugins: [searchIndex],
+  clientModules: ['./src/clientModules/linkPreview.js'],
 
   presets: [
     [

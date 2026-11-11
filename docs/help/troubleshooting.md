@@ -64,20 +64,15 @@ description: Inspector に表示される警告と、よくある問題の原因
 
 ## VizVid と VRC Light Volumes を同時に導入するとコンパイルエラーが出る
 
-**原因**：VizVid と VRC Light Volumes の組み合わせで起きるエラーで、Audiorium は関係しません。Audiorium 自体は VRC Light Volumes を使いません（LTCGI には必要です。[下記](#ltcgi-を導入するとコンパイルエラーが出る)）。
+**原因**：VizVid と VRC Light Volumes の組み合わせで起きるエラーで、Audiorium は関係しません。VRC Light Volumes は LTCGI に必要です。
 
-新規のプロジェクトに両方を同時に導入すると、次のエラーが 3 件出てコンパイルが止まることがあります。残りの 2 件は `EnsureLightVolumeCookie` と `TryEstimatePlacement` についての同じ形のエラーです。
+VizVid を VRC Light Volumes より先にインポートすると、次のエラーが 3 件出てコンパイルが止まります。残りの 2 件は `EnsureLightVolumeCookie` と `TryEstimatePlacement` についての同じ形のエラーです。
 
 ```text
 Packages\idv.jlchntoz.vvmw\Editor\VVMW\Designer\ScreenConfiguratorEditor.cs(114,32): error CS1061: 'ScreenConfigurator' does not contain a definition for 'CreateLightVolume'
 ```
 
-**直し方**（どちらかで解決する場合があります。当ショップでは動作を確認していません）：
-
-- **Edit › Project Settings… › Player › Other Settings › Script Compilation** の Scripting Define Symbols に `VRC_LIGHT_VOLUMES` を追加し、「Apply」を押します。
-- VRC Light Volumes を先に導入し、コンパイルが終わってから VizVid を導入します。
-
-解決しない場合は、VizVid の配布ページの案内をご確認ください。
+**直し方**：VRC Light Volumes を先にインポートし、コンパイルが終わってから VizVid をインポートします。
 
 ## LTCGI を導入するとコンパイルエラーが出る
 

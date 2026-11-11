@@ -12,7 +12,7 @@ LTCGI は、スクリーンの映像の光をワールドの物体に映す仕�
 | 項目 | 内容 |
 | --- | --- |
 | 動作確認済みの版 | 1.7.4 |
-| 入手先 | [ltcgi.dev](https://ltcgi.dev/) |
+| 入手先 | [ltcgi.dev](https://ltcgi.dev/#download) |
 
 ## LTCGI で使える機能
 
