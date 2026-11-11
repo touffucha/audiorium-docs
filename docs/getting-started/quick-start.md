@@ -27,7 +27,7 @@ YamaPlayer か VizVid を Scene に置き、位置と向きを決めます。ス
 
 </div>
 
-`AudioriumSetup` が Hierarchy に追加され、スピーカーとコンソールが配置されます。TMP Essentials が無いプロジェクトでは、このときに自動で導入されます。
+`AudioriumSetup` が Hierarchy に追加され、スピーカーとコンソールが配置されます。
 
 ![Add Audiorium の直後。Scene にスピーカーとコンソールが置かれ、Inspector に AudioriumSetup の設定が表示される](/img/quick-start/editor-after-add.png)
 
@@ -59,9 +59,7 @@ YamaPlayer か VizVid を Scene に置き、位置と向きを決めます。ス
 
 ## Inspector の警告を確認する
 
-`AudioriumSetup` の Inspector の上部（Language の下）に、ビルドの前に直す項目が黄色の警告で表示されます。警告が無ければ、そのままビルドできます。
-
-警告に付いているボタン（「Windows に切り替え」「TMP Essentials を導入」「原点付近へ移す」「修復」）を押すと直ります。その他の警告は [トラブルシューティング](../help/troubleshooting.md) を参照してください。
+`AudioriumSetup` の Inspector の上部（Language の下）に、確認が必要な項目が黄色の警告で表示されます。警告の文に直し方が書かれています。詳しくは [トラブルシューティング](../help/troubleshooting.md) を参照してください。
 
 ## スピーカーとコンソールの位置を調整する
 

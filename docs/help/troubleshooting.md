@@ -8,23 +8,23 @@ description: Inspector に表示される警告と、よくある問題の原因
 
 ## まず Inspector の上部（Language の下）を確認する
 
-`AudioriumSetup` を選択すると、ビルドの前に直す項目が Inspector の上部（Language の下）に黄色の警告で表示されます。ボタンが付いた警告は、押すと直ります。
+`AudioriumSetup` を選択すると、確認が必要な項目が Inspector の上部（Language の下）に黄色の警告で表示されます。
 
 ![動画プレイヤーが原点から遠いときの警告](/img/setup/issue-far-origin.png)
 
 | 警告 | 原因 | 直し方 |
 | --- | --- | --- |
-| ビルド先が PC（Windows）ではありません | ビルドのプラットフォームが Android など | 「Windows に切り替え」を押します。Audiorium は PC 専用です |
-| TMP Essentials がプロジェクトにないため、コンソールの文字が表示されません | TMP Essentials を自動で導入できなかった | 「TMP Essentials を導入」を押します |
-| 動画プレイヤーが原点から約 ○ km 離れています | 動画プレイヤーが原点（0, 0, 0）から 5 km より遠い | 「原点付近へ移す」を押します（[原点から遠い](#コンソールの文字や絵が欠けて見える)） |
-| コンソールがありません | コンソールが削除された | 「修復」を押します。コンソールが置き直され、設定は残ります |
+| ビルド先が PC（Windows）ではありません | ビルドのプラットフォームが Android など | **File › Build Settings** で PC（Windows）に切り替えます。Audiorium は PC 専用です |
+| TMP Essentials がプロジェクトにないため、コンソールの文字が表示されません | TMP Essentials を導入していない | 「TMP Essentials を導入」を押します |
+| 動画プレイヤーが原点から約 ○ km 離れています | 動画プレイヤーが原点（0, 0, 0）から 5 km より遠い | 動画プレイヤーと `AudioriumSetup` を原点の近くへ移します（[原点から遠い](#コンソールの文字や絵が欠けて見える)） |
+| コンソールがありません | コンソールが削除された | Ctrl+Z で削除を取り消すか、`AudioriumSetup` を削除してもう一度 Add Audiorium を実行します（Inspector の設定はデフォルトに戻ります） |
 | スピーカーがありません | スピーカーがすべて削除された | Ctrl+Z で取り消すか、[スピーカー](../setup/speakers.md) の一覧で追加します（Surround と Top Middle はチェックを入れ、ほかは「+」） |
 
 ## コンソールの文字や絵が欠けて見える
 
 **原因**：ワールドが原点（0, 0, 0）から遠く、位置の精度が落ちています。
 
-**直し方**：警告の「原点付近へ移す」を押すと、動画プレイヤーと Audiorium が位置の関係を保ったまま原点付近へ移動します。ワールド全体が原点から遠い場合は、ワールド全体を原点付近へ移します。
+**直し方**：動画プレイヤーと `AudioriumSetup` を両方選択し、一緒に原点付近へ移します。ワールド全体が原点から遠い場合は、ワールド全体を原点付近へ移します。
 
 ## Tools › Audiorium のメニューが表示されない
 
@@ -60,7 +60,7 @@ description: Inspector に表示される警告と、よくある問題の原因
 
 **原因**：Scene がすでに別のライトショーに接続しているため、Audiorium の照明を置けません。
 
-**直し方**：その接続を解除してから、照明を置きます。
+**直し方**：照明システムの Inspector の「ライトショー」の欄を空にしてから、照明を置きます。
 
 ## VizVid と VRC Light Volumes を同時に導入するとコンパイルエラーが出る
 
@@ -103,11 +103,11 @@ Packages\idv.jlchntoz.vvmw\Editor\VVMW\Designer\ScreenConfiguratorEditor.cs(114,
 
 ## コンソールの文字が表示されない
 
-**原因**：TextMesh Pro の Essentials（TMP Essentials）がありません。Audiorium は、コンソールを置くときに無ければ自動で導入します。
+**原因**：TextMesh Pro の Essentials（TMP Essentials）がプロジェクトにありません。
 
 **直し方**：
 
-- **Inspector に警告が出ている**：自動で導入できませんでした。警告の「TMP Essentials を導入」を押します。
+- **Inspector に警告が出ている**：警告の「TMP Essentials を導入」を押します。
 - **TMP Importer から導入した後、文字が四角のまま**：Unity を開き直します。TextMesh Pro の不具合で、開き直すと表示されます。
 
 ## プリセットの名前を変えられない
