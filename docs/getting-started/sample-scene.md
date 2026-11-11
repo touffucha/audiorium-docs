@@ -34,8 +34,6 @@ description: 付属のサンプルシーン（照明システムなし・照明�
    | YamaPlayer | `YamaPlayer.prefab` | X 0、Y 3.135、Z 7.28 | 2.88 |
    | VizVid | `VVMW (On-Screen Controls).prefab` | X 0、Y -0.105、Z 7.28 | 2.16 |
 
-   {/* 未確認：この表の Position と Scale は、showroom-compact が配布用の複製（main d1dce444）で測った値。発売用の書き出しの後のサンプルシーンで、画面が額に合うことを確かめ直したら、この印を消す。印が残っている間は公開しない */}
-
 2. Hierarchy で `AudioriumSetup` を選択し、Inspector の「動画プレイヤー」の欄へ、Hierarchy から動画プレイヤーをドラッグします。スピーカーとコンソールは置き直されず、そのままつながります。
 
 ## 含まれていない物
