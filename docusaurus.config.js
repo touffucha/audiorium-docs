@@ -57,7 +57,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      colorMode: { defaultMode: 'light', disableSwitch: true, respectPrefersColorScheme: false },
+      colorMode: { defaultMode: 'light', disableSwitch: false, respectPrefersColorScheme: true },
       navbar: {
         title: '',
         logo: { alt: 'Audiorium', src: 'img/logo-ink.svg', className: 'navbar-logo', href: '/docs/getting-started/overview' },

@@ -5,7 +5,8 @@
   font-display: swap;
 }
 
-:root {
+:root,
+html[data-theme='dark'] {
   --color-mist-50: #f6f7f6;
   --color-mist-100: #e8eaea;
   --color-mist-200: #e1e5e6;
@@ -106,6 +107,25 @@
   --ifm-h2-font-size: var(--font-size-xl);
   --ifm-h3-font-size: var(--font-size-lg);
   --docusaurus-highlighted-code-line-bg: var(--color-band-global);
+  --color-image-surface: var(--color-mist-50);
+  --color-curtain: var(--color-ink-900);
+}
+
+/* ダーク：コンソールの画面と同じ、暖かみのある炭の地に生成りの字 */
+html[data-theme='dark'] {
+  --color-background: #1f1e1c;
+  --color-surface: #292826;
+  --color-band-global: #32312e;
+  --color-band-local: #2e3237;
+  --color-text: #e8e6dc;
+  --color-text-secondary: #cbc8bd;
+  --color-text-muted: #9d9a91;
+  --color-caption: #a6a399;
+  --color-border: #56534c;
+  --color-primary: #e8e6dc;
+  --color-on-primary: #1b1a18;
+  --color-danger: #e2776f;
+  --color-danger-surface: #3a2523;
 }
 
 body {
@@ -245,7 +265,8 @@ body {
 
 /* 広い画面ではヘッダーを出さず、ロゴと検索窓をサイドバーの一番上に置く。狭い画面はメニューを開くボタンが要るのでヘッダーを残す */
 @media (min-width: 997px) {
-  :root {
+  :root,
+  html[data-theme='dark'] {
     --ifm-navbar-height: 0px;
   }
 
@@ -889,7 +910,7 @@ body {
   position: fixed;
   inset: 0;
   z-index: 500;
-  background: var(--color-text);
+  background: var(--color-curtain);
 }
 
 .intro {
@@ -899,4 +920,68 @@ body {
   width: 100%;
   height: 100%;
   cursor: pointer;
+}
+
+/* 画像の地：透過の画像（スピーカーの配置の図）でも、後ろの線や暗い幕が透けないよう、明るい地を敷く。図の線は墨色なので、ダークでも明るい地のまま */
+.zoomable-image img,
+.lightbox img {
+  background: var(--color-image-surface);
+}
+
+/* ロゴは墨色の 1 色なので、ダークでは反転して明るい色にする */
+html[data-theme='dark'] .sidebar-header__logo img,
+html[data-theme='dark'] .navbar__logo img {
+  filter: invert(1);
+}
+
+.theme-switch {
+  display: flex;
+  gap: var(--space-1);
+  padding: var(--space-2) var(--space-3);
+  border-top: 1px solid var(--color-border);
+}
+
+.theme-switch__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 0;
+  background: transparent;
+  color: var(--color-caption);
+  cursor: pointer;
+  transition: color 0.2s var(--ease-out), border-color 0.2s var(--ease-out);
+}
+
+.theme-switch__button:hover {
+  color: var(--color-text);
+}
+
+.theme-switch__button[aria-pressed='true'] {
+  border-color: var(--color-text);
+  color: var(--color-text);
+}
+
+.theme-switch__button svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* 狭い画面では、ページ送りを縦に 1 つずつ並べる（2 列だと、線画の余白で名前の入る幅が無くなる） */
+@media (max-width: 600px) {
+  .pagination-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .pagination-nav__link--next {
+    grid-column: auto;
+  }
 }
