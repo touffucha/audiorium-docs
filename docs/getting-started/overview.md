@@ -1,10 +1,10 @@
 ---
-title: できること
+title: 概要
 sidebar_position: 1
-description: Audiorium の概要と、できることの一覧。詳細は各ページで説明します
+description: Audiorium の概要と、主な機能の一覧。詳細は各ページで説明します
 ---
 
-# できること
+# 概要
 
 Audiorium は、VRChat のワールドに置く音響・演出コンソールです。
 動画プレイヤーの音を、ワールドのスピーカーから鳴らします。
