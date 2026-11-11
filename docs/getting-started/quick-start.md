@@ -7,16 +7,13 @@ hide_table_of_contents: true
 
 # クイックスタート
 
-Scene に Audiorium を置いてから、VRChat で最初の音を鳴らすまでの手順です。[インストール](./install.md) を済ませたプロジェクトで、ワールドの Scene を開いた状態から始めます。
+[インストール](./install.md) を済ませたプロジェクトで、ワールドの Scene を開いた状態から始めます。
 
 ## 動画プレイヤーを置く
 
-YamaPlayer か VizVid を Scene に置き、位置と向きを決めます。
-スピーカーとコンソールは、この画面を基準に置かれます。
+YamaPlayer か VizVid を Scene に置き、位置と向きを決めます（[動画プレイヤー](../setup/video-player.md#動画プレイヤーを置く)）。スピーカーとコンソールは、この画面を基準に置かれます。
 
 ![Scene に YamaPlayer を置いて選択した状態。Hierarchy に YamaPlayer、Scene ビューに動画プレイヤーの画面が表示されている。Audiorium を置く前](/img/quick-start/player-placed.png "full")
-
-置き方は [動画プレイヤー](../setup/video-player.md#動画プレイヤーを置く) で説明します。
 
 ## Audiorium を置く
 
@@ -30,7 +27,7 @@ YamaPlayer か VizVid を Scene に置き、位置と向きを決めます。
 
 </div>
 
-`AudioriumSetup` が Hierarchy に追加され、スピーカーとコンソールが置かれます。Inspector には、その設定が表示されます。TMP Essentials が無いプロジェクトでは、このときに自動で導入されます。
+`AudioriumSetup` が Hierarchy に追加され、スピーカーとコンソールが置かれます。TMP Essentials が無いプロジェクトでは、このときに自動で導入されます。
 
 ![Add Audiorium の直後。Scene にスピーカーとコンソールが置かれ、Inspector に AudioriumSetup の設定が表示される](/img/quick-start/editor-after-add.png)
 
@@ -40,7 +37,7 @@ YamaPlayer か VizVid を Scene に置き、位置と向きを決めます。
 
 :::info TMP Importer が表示された場合
 
-新しく作ったプロジェクトでは、インポートの後に「TMP Importer」のウィンドウが表示されます。何も押さずに閉じます。「Import TMP Essentials」を押した後にコンソールの文字が四角のまま表示される場合は、[トラブルシューティング](../help/troubleshooting.md#コンソールの文字が表示されない) を参照してください。
+何も押さずに閉じます。「Import TMP Essentials」を押した後にコンソールの文字が四角のまま表示される場合は、[トラブルシューティング](../help/troubleshooting.md#コンソールの文字が表示されない) を参照してください。
 
 :::
 
@@ -48,32 +45,19 @@ YamaPlayer か VizVid を Scene に置き、位置と向きを決めます。
 
 `AudioriumSetup` の Inspector の上部（Language の下）に、ビルドの前に直す項目が黄色の警告で表示されます。警告が無ければ、そのままビルドできます。
 
-警告にボタンがある場合は、ボタンを押すと直ります。詳しくは [トラブルシューティング](../help/troubleshooting.md) を参照してください。
+警告にボタンがある場合は、ボタンを押すと直ります。ほかの警告は [トラブルシューティング](../help/troubleshooting.md) を参照してください。
 
 ## スピーカーとコンソールの位置を調整する
 
-スピーカーとコンソールは、Scene ビューで移動します。
-
-- スピーカーは、Inspector の「スピーカー」の一覧の欄を押すと Hierarchy で選択されます（[スピーカー](../setup/speakers.md)）。
-- コンソールは、「Audiorium コンソール」の「コンソールを選択」を押すと、台ごと選択されます（[Audiorium コンソール](../setup/console.md)）。
+Scene ビューで移動します。選択の方法は [スピーカー](../setup/speakers.md) と [Audiorium コンソール](../setup/console.md) で説明します。
 
 ![Scene ビューのスピーカーと視聴位置。音が届く範囲が表示されている](/img/scene/speakers.png)
 
-Inspector での変更は、すぐに Scene に反映されます。元に戻すときは Ctrl+Z を押します。
-
 ## ビルドして VRChat で確認する
 
-動画の外部 URL は Unity の Play モードでは再生できないため、音はビルドして VRChat で確認します。
+動画の外部 URL は Unity の Play モードでは再生できません。音は、**VRChat SDK › Show Control Panel** の「Builder」タブの Build & Test で確認します。
 
-<div className="paren-list">
-
-1. メニューの **VRChat SDK › Show Control Panel** を開きます。
-2. VRChat のアカウントでログインします。
-3. 「Builder」タブで Build & Test Your World を選択し、Build & Test を押します。
-
-</div>
-
-ワールドがビルドされて VRChat が開きます。動画プレイヤーで動画を再生し、スピーカーから音が鳴ることを確認します。
+VRChat で動画を再生し、スピーカーから音が鳴ることを確認します。
 
 ## コンソールを操作する
 
@@ -81,4 +65,4 @@ Inspector での変更は、すぐに Scene に反映されます。元に戻す
 
 ![コンソールの Sound Mode タブ](/img/console/sound.webp)
 
-これで最初の音が鳴りました。コンソールの各タブの操作は [コンソールの操作](../console/operation.md) を、Inspector の各項目は [セットアップ](../setup/add-audiorium.md) の各ページを参照してください。
+各タブの操作は [コンソールの操作](../console/operation.md) を参照してください。

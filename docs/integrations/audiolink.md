@@ -28,8 +28,8 @@ AudioLink は、音を解析してワールドの演出に渡す仕組みです�
 1. VCC で AudioLink をプロジェクトに追加します。
 2. `AudioriumSetup` の Inspector の [外部設定](../setup/external.md) で、「AudioLink」をオンにします。
 
-AudioLink が Scene に無い場合は置かれ、接続した動画プレイヤーの音が AudioLink に送られます。動画プレイヤーの Inspector の AudioLink の設定と同じ設定です。
+AudioLink が Scene に無い場合は置かれます。接続した動画プレイヤーの音が AudioLink に送られます（動画プレイヤーの Inspector の AudioLink の設定と同じ）。
 
 ## 連携を解除する
 
-「AudioLink」をオフにすると、動画プレイヤーと AudioLink の連携が解除されます。AudioLink は Scene に残ります。不要な場合は、Hierarchy から削除します。
+「AudioLink」をオフにします。AudioLink は Scene に残るので、不要なら Hierarchy から削除します。

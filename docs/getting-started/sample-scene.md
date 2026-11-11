@@ -6,30 +6,22 @@ description: 付属のサンプルシーン（照明なし・照明あり）の�
 
 # サンプルシーン
 
-公開ワールドと同じ展示ホールのシーンが、サンプルシーンとして付属します。Audiorium を置いたワールドの完成例として、スピーカー・コンソール・照明の置き方を確かめられます。
+公開ワールドと同じ展示ホールのシーンです。スピーカー・コンソール・照明の置き方の完成例として使えます。
 
-| サンプルシーン | 入っているファイル | 内容 |
-| --- | --- | --- |
-| 照明なし | `AudioriumShowroom_1.0.0.unitypackage` | 本体だけで動く構成 |
-| 照明あり | `AudioriumShowroomLighting_1.0.0.unitypackage` | 照明システムを使う構成 |
+| サンプルシーン | 入っているファイル | シーンのファイル | 内容 |
+| --- | --- | --- | --- |
+| 照明なし | `AudioriumShowroom_1.0.0.unitypackage` | `AudioriumNoLighting.unity` | 本体だけで動く構成 |
+| 照明あり | `AudioriumShowroomLighting_1.0.0.unitypackage` | `Audiorium.unity` | 照明システムを使う構成 |
 
-シーンのファイルは、照明なしが `AudioriumNoLighting.unity`、照明ありが `Audiorium.unity` です。照明なしのサンプルシーンに使う Audiorium のファイルは、本体と `AudioriumShowroom_1.0.0.unitypackage` の 2 つです。照明ありのサンプルシーンを開くには、本体・照明システム・`AudioriumShowroom_1.0.0.unitypackage`・`AudioriumShowroomLighting_1.0.0.unitypackage` の 4 つを、この順でインポートします。
-
-{/* 未確認：直前の段落の 3 文目（照明ありのサンプルシーンを開くには…）は、設計の事実（照明ありのシーンは、サンプルシーン（照明なし）のファイルのモデルと焼いた光を使う）で、書き出した配布物での実測はまだ。実測が届いたら、この印を消す。印が残っている間は公開しない */}
+必要な配布ファイルとインポートの順番は、[必要な物と動作環境](./requirements.md#配布ファイル) と [インストール](./install.md#インポートの順番) を参照してください。
 
 ## 開く前に必要なパッケージ
 
-サンプルシーンを開く前に、次のパッケージを VCC でプロジェクトに追加します。どれも Audiorium には含まれていません（[必要な物と動作環境](./requirements.md)）。
-
-- YamaPlayer
-- AudioLink
-- LTCGI
-- VRC Light Volumes
+YamaPlayer・AudioLink・LTCGI・VRC Light Volumes を、VCC でプロジェクトに追加します。どれも Audiorium には含まれていません。
 
 ## 開く
 
-1. [インストール](./install.md) の順番で、使用するサンプルシーンのパッケージをインポートします。照明ありのパッケージは、照明なしのパッケージの後にインポートします。
-2. Project ウィンドウで、サンプルシーンのファイル（`AudioriumNoLighting.unity` または `Audiorium.unity`）をダブルクリックして開きます。
+[インストール](./install.md#インポートの順番) の順番でパッケージをインポートし、Project ウィンドウでシーンのファイルを開きます。
 
 {/* 画像を戻す場所：![Project ウィンドウのサンプルシーン](/img/sample/scenes.png)。配布物ができてから撮る */}
 
@@ -59,5 +51,3 @@ Hierarchy と Inspector に「Missing」と表示されます。YamaPlayer を�
 ## 利用の条件
 
 サンプルシーンの利用の条件は、同梱の利用規約（`License/LICENSE.md`）の第 6 条をご確認ください。
-
-ご自身のシーンに Audiorium を置く手順は、[クイックスタート](./quick-start.md) で説明します。

@@ -9,12 +9,12 @@ description: Audiorium をワールドから取り外す手順と、一時的に
 
 ## Scene から取り外す
 
-Hierarchy で `AudioriumSetup` を削除します。スピーカー、コンソール、照明、入場時の警告など、Audiorium が置いた物も一緒に削除されます。Ctrl+Z で元に戻せます。
+Hierarchy で `AudioriumSetup` を削除します。Ctrl+Z で元に戻せます。
 
 ![Hierarchy の AudioriumSetup](/img/setup/hierarchy.png)
 
-- `AudioriumSetup` の外にご自身で置いた物は残ります。
-- `AudioriumSetup` の中に置いた物は、一緒に削除されます。
+- **一緒に削除される物**：スピーカー、コンソール、照明、入場時の警告など、`AudioriumSetup` の中にある物（ご自身で中に置いた物も含みます）
+- **残る物**：`AudioriumSetup` の外にご自身で置いた物
 
 Audiorium は、保存した Scene の動画プレイヤーの音源の設定を書き換えません。削除した後は、動画プレイヤーは元の設定のまま鳴ります。
 
