@@ -4,7 +4,9 @@ import MDXComponents from '@theme-original/MDXComponents';
 
 const CaptureScale = 1.5;
 
-function Lightbox({ src, alt, onClose }) {
+const pageScaleWidth = (image) => Math.round(image.naturalWidth / CaptureScale);
+
+function Lightbox({ src, alt, width, onClose }) {
   useEffect(() => {
     const closeOnEscape = (event) => event.key === 'Escape' && onClose();
     document.addEventListener('keydown', closeOnEscape);
@@ -12,7 +14,7 @@ function Lightbox({ src, alt, onClose }) {
   }, [onClose]);
   return createPortal(
     <div className="lightbox" role="dialog" aria-modal="true" aria-label={alt} onClick={onClose}>
-      <img src={src} alt={alt} />
+      <img src={src} alt={alt} style={{ width }} />
     </div>,
     document.body,
   );
@@ -23,26 +25,30 @@ function ZoomableImage({ title, ...props }) {
   const full = title === 'full';
   const ref = useRef(null);
   const [width, setWidth] = useState(undefined);
-  const [zoomed, setZoomed] = useState(false);
+  const [shrunk, setShrunk] = useState(false);
+  const [zoomedWidth, setZoomedWidth] = useState(0);
   const measure = () => {
     const image = ref.current;
     if (!image || !image.naturalWidth) return;
-    setWidth(Math.round(image.naturalWidth / CaptureScale));
+    if (!full) setWidth(pageScaleWidth(image));
+    setShrunk(image.clientWidth < pageScaleWidth(image) - 1);
   };
   useEffect(() => {
-    if (!full && ref.current?.complete) measure();
-  }, [props.src]);
+    if (ref.current?.complete) measure();
+  }, [props.src, width]);
   const zoom = (event) => {
     if (event.ctrlKey || event.metaKey || event.shiftKey) return;
     event.preventDefault();
-    setZoomed(true);
+    const image = ref.current;
+    if (image.clientWidth < pageScaleWidth(image) - 1) setZoomedWidth(pageScaleWidth(image));
   };
+  const classes = ['zoomable-image', 'plate', full && 'zoomable-image--full', shrunk && 'zoomable-image--shrunk'];
   return (
     <>
-      <a href={props.src} onClick={zoom} className={full ? 'zoomable-image zoomable-image--full plate' : 'zoomable-image plate'}>
-        <img {...props} title={full ? undefined : title} ref={ref} loading="lazy" onLoad={full ? undefined : measure} style={!full && width ? { width } : undefined} />
+      <a href={props.src} onClick={zoom} onMouseEnter={measure} className={classes.filter(Boolean).join(' ')}>
+        <img {...props} title={full ? undefined : title} ref={ref} loading="lazy" onLoad={measure} style={!full && width ? { width } : undefined} />
       </a>
-      {zoomed && <Lightbox src={props.src} alt={props.alt} onClose={() => setZoomed(false)} />}
+      {zoomedWidth > 0 && <Lightbox src={props.src} alt={props.alt} width={zoomedWidth} onClose={() => setZoomedWidth(0)} />}
     </>
   );
 }

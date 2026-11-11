@@ -547,6 +547,11 @@ body {
   max-width: 100%;
   margin: var(--space-3) 0 var(--space-2);
   padding: 1px;
+  cursor: default;
+}
+
+/* 本文の幅に収めるために縮めた画像だけ、押すと元の倍率で出す */
+.zoomable-image--shrunk {
   cursor: zoom-in;
 }
 
@@ -564,7 +569,7 @@ body {
   width: 100%;
 }
 
-.zoomable-image:hover {
+.zoomable-image--shrunk:hover {
   --plate-line: var(--color-text);
 }
 
@@ -646,6 +651,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: var(--space-4);
+  overflow: auto;
   background: rgb(27 26 24 / 0.86);
   cursor: zoom-out;
 }
@@ -653,5 +659,6 @@ body {
 .lightbox img {
   max-width: 100%;
   max-height: 100%;
+  height: auto;
   object-fit: contain;
 }
