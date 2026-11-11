@@ -35,7 +35,8 @@
   --color-danger: var(--color-red-700);
   --color-danger-surface: var(--color-red-100);
 
-  --font-size-sm: 13px;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
   --font-size-base: 16px;
   --font-size-lg: 20px;
   --font-size-xl: 25px;
@@ -57,7 +58,8 @@
   --shadow-outline: inset 0 0 0 1px var(--color-border);
   --shadow-outline-strong: inset 0 0 0 2px var(--color-text);
 
-  --font-sans: 'Jost', 'Irohamaru', system-ui, sans-serif;
+  --font-sans: 'Jost', 'Zen Maru Gothic', system-ui, sans-serif;
+  --font-display: 'Jost', 'Irohamaru', system-ui, sans-serif;
   --font-mono: ui-monospace, 'Cascadia Mono', monospace;
 
   --ifm-color-primary: var(--color-primary);
@@ -95,9 +97,9 @@
   --ifm-font-family-monospace: var(--font-mono);
   --ifm-font-size-base: var(--font-size-base);
   --ifm-line-height-base: 1.8;
-  --ifm-heading-font-weight: 400;
-  --ifm-font-weight-base: 300;
-  --ifm-font-weight-bold: 500;
+  --ifm-heading-font-weight: 500;
+  --ifm-font-weight-base: 400;
+  --ifm-font-weight-bold: 700;
   --ifm-global-radius: var(--radius-sm);
   --ifm-navbar-height: 64px;
   --ifm-h1-font-size: var(--font-size-2xl);
@@ -182,40 +184,51 @@ body {
 
 .navbar__link {
   color: var(--color-text);
-  font-size: var(--font-size-sm);
-  letter-spacing: 0.1em;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.04em;
+}
+
+/* 題字だけ、卓と同じ書体（いろはマル Light）にする。本文と見出しは読める太さの書体 */
+.markdown h1 {
+  font-family: var(--font-display);
+  font-weight: 300;
 }
 
 .menu__link {
+  color: var(--color-text);
   font-size: var(--font-size-sm);
+  font-weight: 400;
   border-radius: 0;
 }
 
 .theme-doc-sidebar-item-link .menu__link--active {
   border-left: 2px solid var(--color-text);
+  font-weight: 700;
+}
+
+/* 区分の見出しは小さく薄い札にして、ページの名前（濃い字）と見分ける */
+.menu__list > .theme-doc-sidebar-item-category-level-1:not(:first-child) {
+  margin-top: var(--space-4);
 }
 
 .theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible > .menu__link {
-  color: var(--color-text);
-  font-size: var(--font-size-sm);
+  padding-bottom: var(--space-1);
+  color: var(--color-caption);
+  font-size: var(--font-size-xs);
   font-weight: 500;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.2em;
+  cursor: default;
 }
 
-.menu__link {
-  color: var(--color-text-secondary);
-  font-weight: 300;
+.theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible:hover,
+.theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible > .menu__link:hover {
+  background: transparent;
 }
 
 .theme-doc-sidebar-item-link-level-1 {
-  margin-top: var(--space-2);
+  margin-top: var(--space-4);
   padding-top: var(--space-2);
   border-top: 1px solid var(--color-border);
-}
-
-.theme-doc-sidebar-item-link-level-1 > .menu__link {
-  color: var(--color-text-secondary);
-  font-weight: 300;
 }
 
 .markdown h1,
@@ -393,8 +406,13 @@ body {
   display: table;
   max-width: 100%;
   margin: var(--space-3) 0 var(--space-2);
-  padding: var(--space-2);
+  padding: 1px;
   cursor: zoom-in;
+}
+
+/* 枠と同じ形に、画像の右上も切り欠く */
+.zoomable-image img {
+  clip-path: polygon(0 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% 100%, 0 100%);
 }
 
 .zoomable-image--full {

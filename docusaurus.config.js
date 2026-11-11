@@ -30,7 +30,7 @@ const config = {
     { href: 'https://fonts.googleapis.com', rel: 'preconnect' },
     { href: 'https://fonts.gstatic.com', rel: 'preconnect', crossorigin: 'anonymous' },
     {
-      href: 'https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap',
+      href: 'https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Zen+Maru+Gothic:wght@400;500;700&display=swap',
       rel: 'stylesheet',
     },
   ],
@@ -66,23 +66,6 @@ const config = {
         ],
       },
       footer: {
-        links: [
-          {
-            title: 'ドキュメント',
-            items: [
-              { label: 'はじめる', to: '/docs/getting-started/overview' },
-              { label: 'クイックスタート', to: '/docs/getting-started/quick-start' },
-              { label: 'トラブルシューティング', to: '/docs/help/troubleshooting' },
-            ],
-          },
-          {
-            title: 'リンク',
-            items: [
-              ...(links.booth ? [{ label: 'BOOTH', href: links.booth }] : []),
-              { label: '公開ワールド', href: links.world },
-            ],
-          },
-        ],
         copyright: '© 2026 とうっふ茶房',
       },
       docs: { sidebar: { hideable: false } },
