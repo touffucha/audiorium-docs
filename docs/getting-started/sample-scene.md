@@ -23,13 +23,18 @@ description: 付属のサンプルシーン（照明システムなし・照明�
 
 {/* 画像を戻す場所：![Project ウィンドウのサンプルシーン](/img/sample/scenes.png)。配布物ができてから撮る */}
 
-:::info YamaPlayer を入れる前に開いた場合
+## 動画プレイヤーを置く
 
-Hierarchy と Inspector に「Missing」と表示されます。YamaPlayer をプロジェクトに追加すると、すべての参照がつながり、表示が消えます。サンプルシーンの不具合ではありません。
+サンプルシーンには動画プレイヤーが入っていません。展示室の正面の額に合わせて置き、Audiorium につなぎます。
 
-{/* 画像を戻す場所：![YamaPlayer を入れる前に開いたサンプルシーン。Missing と表示される](/img/sample/missing.png)。配布物ができてから撮る */}
+1. 動画プレイヤーのプレハブを Hierarchy へドラッグし、Transform を次の値にします。Rotation はすべて 0 です。
 
-:::
+   | 動画プレイヤー | プレハブ | Position | Scale |
+   | --- | --- | --- | --- |
+   | YamaPlayer | `YamaPlayer.prefab` | X 0、Y 3.135、Z 7.28 | 2.88 |
+   | VizVid | `VVMW (On-Screen Controls).prefab` | X 0、Y -0.105、Z 7.28 | 2.16 |
+
+2. Hierarchy で `AudioriumSetup` を選択し、Inspector の「動画プレイヤー」の欄へ、Hierarchy から動画プレイヤーをドラッグします。スピーカーとコンソールは置き直されず、そのままつながります。
 
 ## 含まれていない物
 

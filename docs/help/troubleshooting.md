@@ -118,12 +118,6 @@ Packages\idv.jlchntoz.vvmw\Editor\VVMW\Designer\ScreenConfiguratorEditor.cs(114,
 - コンソールのフォントに無い文字（一部の漢字など）を含む
 - 名前や説明がコンソールのカードに収まらない
 
-## サンプルシーンに Missing と表示される
-
-**原因**：YamaPlayer を追加する前に、サンプルシーンを開きました。
-
-**直し方**：YamaPlayer を追加すると消えます（[サンプルシーン](../getting-started/sample-scene.md)）。
-
 ## お問い合わせ
 
 解決しない場合は、BOOTH ショップのメッセージよりお問い合わせください。次の情報があると、スムーズにご案内できます。
