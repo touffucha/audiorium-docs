@@ -1,7 +1,6 @@
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 import siteConfig from '@generated/docusaurus.config';
 
-const SeenKey = 'audiorium-intro-seen';
 const Ink = '#1b1a18';
 const Cream = '#e8e6dc';
 const RedPart = '#e80000';
@@ -369,11 +368,6 @@ function play() {
     window.clearTimeout(timeout);
     canvas.remove();
     delete document.documentElement.dataset.intro;
-    try {
-      window.localStorage.setItem(SeenKey, '1');
-    } catch {
-      return;
-    }
   };
   const timeout = window.setTimeout(finish, (End + 1.5) * 1000);
   const tick = (now) => {

@@ -883,7 +883,7 @@ body {
   clip-path: polygon(0 0, calc(100% - var(--cut) + 0.6px) 0, 100% calc(var(--cut) - 0.6px), 100% 100%, 0 100%);
 }
 
-/* 初回の演出：最初の 1 回だけ、ページの上に暗い幕とキャンバスを重ねる（?intro を付けると見直せる） */
+/* 開いたときの演出：ページを読み込むたびに、ページの上に暗い幕とキャンバスを重ねる */
 [data-intro] body::before {
   content: '';
   position: fixed;
