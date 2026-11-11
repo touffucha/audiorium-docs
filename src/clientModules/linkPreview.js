@@ -4,6 +4,7 @@ import siteConfig from '@generated/docusaurus.config';
 const MaxLength = 220;
 const Gap = 8;
 const Margin = 16;
+const HideDelay = 250;
 
 function createCard() {
   const card = document.createElement('div');
@@ -49,9 +50,26 @@ if (ExecutionEnvironment.canUseDOM && window.matchMedia('(hover: hover)').matche
   let hovered = null;
   let parts = null;
 
+  let hideTimer = 0;
+
   const hide = () => {
+    window.clearTimeout(hideTimer);
     hovered = null;
     if (parts) parts.card.hidden = true;
+  };
+
+  const keep = () => window.clearTimeout(hideTimer);
+
+  const hideSoon = () => {
+    window.clearTimeout(hideTimer);
+    hideTimer = window.setTimeout(hide, HideDelay);
+  };
+
+  const createHoverableCard = () => {
+    const created = createCard();
+    created.card.addEventListener('mouseenter', keep);
+    created.card.addEventListener('mouseleave', hideSoon);
+    return created;
   };
 
   const show = (link) => {
@@ -59,7 +77,7 @@ if (ExecutionEnvironment.canUseDOM && window.matchMedia('(hover: hover)').matche
     const key = entryKey(link);
     const entry = key && findEntry(index, key);
     if (!entry || !entry.text) return;
-    parts ??= createCard();
+    parts ??= createHoverableCard();
     parts.title.textContent = entry.heading ? `${entry.page} › ${entry.heading}` : entry.page;
     parts.text.textContent = entry.text.length > MaxLength ? `${entry.text.slice(0, MaxLength)}…` : entry.text;
     parts.card.hidden = false;
@@ -68,7 +86,9 @@ if (ExecutionEnvironment.canUseDOM && window.matchMedia('(hover: hover)').matche
 
   document.addEventListener('mouseover', (event) => {
     const link = event.target.closest?.('.markdown a[href]:not(.hash-link):not(.zoomable-image)');
-    if (!link || link === hovered) return;
+    if (!link) return;
+    keep();
+    if (link === hovered) return;
     hovered = link;
     if (!requested) {
       requested = true;
@@ -86,8 +106,10 @@ if (ExecutionEnvironment.canUseDOM && window.matchMedia('(hover: hover)').matche
   });
 
   document.addEventListener('mouseout', (event) => {
-    if (hovered && !hovered.contains(event.relatedTarget)) hide();
+    if (hovered && hovered.contains(event.target) && !hovered.contains(event.relatedTarget)) hideSoon();
   });
   document.addEventListener('scroll', hide, { passive: true });
-  document.addEventListener('click', hide);
+  document.addEventListener('click', (event) => {
+    if (!parts?.card.contains(event.target)) hide();
+  });
 }

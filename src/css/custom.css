@@ -631,10 +631,27 @@ body {
   color: var(--color-text);
   font-size: var(--font-size-sm);
   line-height: 1.6;
-  pointer-events: none;
 }
 
 .link-preview__title {
   margin-bottom: var(--space-1);
   font-weight: 700;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+  background: rgb(27 26 24 / 0.86);
+  cursor: zoom-out;
+}
+
+.lightbox img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
