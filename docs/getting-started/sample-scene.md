@@ -47,4 +47,4 @@ Hierarchy と Inspector に「Missing」と表示されます。YamaPlayer を�
 
 ## 利用の条件
 
-サンプルシーンの利用の条件は、同梱の利用規約（`License/LICENSE.md`）の第 6 条をご確認ください。
+サンプルシーンの利用の条件は、同梱の利用規約（`License/LICENSE.txt`）の第 6 条をご確認ください。
