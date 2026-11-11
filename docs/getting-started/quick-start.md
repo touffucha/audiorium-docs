@@ -33,6 +33,13 @@ YamaPlayer か VizVid を Scene に置き、位置と向きを決めます。ス
 
 ![Add Audiorium の直後の Hierarchy](/img/setup/hierarchy.png)
 
+| 置かれる物 | 説明 |
+| --- | --- |
+| `ListeningPosition` | 視聴位置。スピーカーの音量のバランスの基準になります |
+| `Front`・`Surround`・`Top Middle`・`Stereo Mix`・`Subwoofer` | スピーカー。動画プレイヤーのスクリーンを基準に配置されます |
+| `ConsoleMount_`（台の名前） | コンソールと、それを載せる台。名前の後半は、選択したモデルで変わります |
+| `AudioControls` など、そのほかの物 | Audiorium の動作に使う物。移動・削除しません |
+
 最初は、Front・Surround・Top Middle・Stereo Mix・Subwoofer の 5 種類、8 つの出力が配置されます。使わないスピーカーは [こちらの手順](../setup/speakers.md#追加と削除) で外します。
 
 :::info 動画プレイヤーを選択せずに押した場合

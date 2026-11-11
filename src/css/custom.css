@@ -231,14 +231,16 @@ body {
 
 .theme-doc-sidebar-item-link-level-1 {
   margin-top: var(--space-4);
-  padding-top: var(--space-2);
-  border-top: 1px solid var(--color-border);
 }
 
 .theme-doc-sidebar-item-link-level-1 + .theme-doc-sidebar-item-link-level-1 {
   margin-top: 0;
-  padding-top: 0;
-  border-top: none;
+}
+
+/* 区分の間に 1 ページだけ置く物（コンソールの操作）には線を引かず、末尾のリンクの並び（更新履歴から）の上にだけ線を引く */
+.theme-doc-sidebar-item-category-level-1 + .theme-doc-sidebar-item-link-level-1:has(+ .theme-doc-sidebar-item-link-level-1) {
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--color-border);
 }
 
 /* 広い画面ではヘッダーを出さず、ロゴと検索窓をサイドバーの一番上に置く。狭い画面はメニューを開くボタンが要るのでヘッダーを残す */

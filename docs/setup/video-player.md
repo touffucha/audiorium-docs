@@ -26,7 +26,7 @@ description: AudioriumSetup の Inspector の「動画プレイヤー」の節�
 | YamaPlayer | **YamaPlayer › Main (With screen and UI)** |
 | VizVid | **VizVid › Video Player (On-Screen Controls)** |
 
-続けて [Audiorium を置きます](./add-audiorium.md)。
+続けて [Audiorium を置きます](../getting-started/quick-start.md#audiorium-を置く)。
 
 ## 別の動画プレイヤーに差し替える
 
@@ -49,3 +49,9 @@ Scene ビューに表示される「画面に合わせる」を押します（[�
 ## 動画プレイヤーの音源の設定
 
 Audiorium は、保存した Scene の動画プレイヤーの音源の設定を書き換えません。Audiorium を削除すると、動画プレイヤーは元の設定のまま鳴ります（[ワールドから削除する](../help/uninstall.md)）。
+
+## 動画プレイヤーが複数あるワールド
+
+- 1 つの `AudioriumSetup` が接続できる動画プレイヤーは 1 台です。接続していない動画プレイヤーの音は、そのまま鳴ります。
+- ほかの `AudioriumSetup` が接続している動画プレイヤーには接続できません（「ほかの Audiorium がこの動画プレイヤーに接続しています。」と表示されます）。
+- すべての動画プレイヤーが接続済みのときに **Add Audiorium** を押すと、新しい `AudioriumSetup` は追加されず、接続済みの `AudioriumSetup` が選択されます。

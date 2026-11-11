@@ -1,7 +1,7 @@
 ---
 title: 外部設定
 sidebar_position: 3
-description: AudioriumSetup の Inspector の「外部設定」の節。AudioLink・LTCGI・照明のオンとオフ
+description: AudioriumSetup の Inspector の「外部設定」の節。AudioLink・LTCGI・照明のオンとオフと、AudioLink・LTCGI で使える機能
 ---
 
 # 外部設定
@@ -10,14 +10,34 @@ AudioLink・LTCGI・照明を使うかを切り替えます。
 
 ![外部設定の節。AudioLink がオン、LTCGI がオフ、照明がオン](/img/setup/external.png)
 
-| 項目 | オンにすると | オフにすると | 詳細 |
-| --- | --- | --- | --- |
-| AudioLink | Scene に AudioLink が無ければ置き、接続した動画プレイヤーの音を AudioLink に送ります。コンソールで、音に連動する視界エフェクトを設定できます | 動画プレイヤーと AudioLink の接続を外します。AudioLink は Scene に残ります | [AudioLink](../integrations/audiolink.md) |
-| LTCGI | Scene に LTCGI が無ければ置き、動画プレイヤーの画面とつなぎます。コンソールで LTCGI のオン・オフと強さを設定できます | 動画プレイヤーと LTCGI の接続を外します。LTCGI は Scene に残ります | [LTCGI](../integrations/ltcgi.md) |
-| 照明 | ムービング（吊り）1 台、ライトショー、入場時の光過敏の警告を置きます | 照明を削除します | [照明](./lights.md) |
+| 項目 | オンにすると | オフにすると |
+| --- | --- | --- |
+| AudioLink | Scene に AudioLink が無ければ置き、接続した動画プレイヤーの音を AudioLink に送ります | 動画プレイヤーと AudioLink の接続を外します。AudioLink は Scene に残ります |
+| LTCGI | Scene に LTCGI が無ければ置き、動画プレイヤーの画面とつなぎます | 動画プレイヤーと LTCGI の接続を外します。LTCGI は Scene に残ります |
+| 照明 | ムービング（吊り）1 台、ライトショー、入場時の光過敏の警告を置きます。設定は、表示される「照明を選択」から開きます（[照明システム](./lights.md)） | 照明を削除します |
 
-- **動画プレイヤー側の設定**：AudioLink と LTCGI は、動画プレイヤーの Inspector の設定と同じ物です。動画プレイヤー側で先に設定している場合は、オンで表示されます。
-- **照明の設定**：照明がオンのときに表示される「照明を選択」から開きます。
+AudioLink と LTCGI は、動画プレイヤーの Inspector の設定と同じ物です。動画プレイヤー側で先に設定している場合は、オンで表示されます。
+
+## AudioLink
+
+AudioLink は、音を解析してワールドの演出に渡す仕組みです。VCC でプロジェクトに追加してから、「AudioLink」をオンにします。
+
+| 機能 | AudioLink がある場合 | AudioLink が無い場合 |
+| --- | --- | --- |
+| 視界エフェクト（コンソールの Effects タブ） | 使用できます | 使用できません |
+| 照明システム | 音に反応します | 音に反応しません |
+| コンソールの EQ のグラフ | 音に反応します | 音に反応しません |
+| 音響（スピーカー、Sound Mode、Speaker EQ） | 使用できます | 使用できます |
+
+## LTCGI
+
+LTCGI は、スクリーンの映像の光をワールドの物体に映す仕組みです。オンにすると、コンソールの Effects タブで LTCGI のオン・オフと強さを操作できます。操作は、操作した人の画面にのみ反映されます。
+
+- **VRC Light Volumes も必要です**：無いと LTCGI がコンパイルエラーになります（[トラブルシューティング](../help/troubleshooting.md#ltcgi-を導入するとコンパイルエラーが出る)）。
+- **YamaPlayer の場合**：YamaPlayer の Inspector の「LTCGI を使用」と同じ設定が入ります。
+- **VizVid の場合**：Audiorium から LTCGI との連携を設定できません。「LTCGI」のチェックは、Scene に LTCGI があるかを表します。設定は VizVid の手順に従って行います。
+
+LTCGI の配置と設定の詳細は、LTCGI の配布ページをご確認ください。
 
 ## 導入していない場合
 

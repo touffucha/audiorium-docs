@@ -21,7 +21,6 @@ const sidebars = {
       label: 'セットアップ',
       collapsible: false,
       items: [
-        'setup/add-audiorium',
         'setup/video-player',
         'setup/external',
         'setup/speakers',
@@ -29,7 +28,6 @@ const sidebars = {
         'setup/console',
         'setup/visual-effects',
         'setup/advanced',
-        'help/uninstall',
       ],
     },
     {
@@ -38,23 +36,12 @@ const sidebars = {
       collapsible: false,
       items: ['setup/lights', 'setup/entry-notice'],
     },
-    {
-      type: 'category',
-      label: '連携',
-      collapsible: false,
-      items: ['integrations/audiolink', 'integrations/ltcgi'],
-    },
-    {
-      type: 'category',
-      label: 'リファレンス',
-      collapsible: false,
-      items: ['console/operation'],
-    },
+    'console/operation',
     {
       type: 'category',
       label: '困ったとき',
       collapsible: false,
-      items: ['help/troubleshooting'],
+      items: ['help/troubleshooting', 'help/uninstall'],
     },
     'changelog',
     ...(links.booth ? [{ type: 'link', label: 'BOOTH', href: links.booth }] : []),
