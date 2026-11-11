@@ -56,7 +56,7 @@ description: Inspector に表示される警告と、よくある問題の原因
 
 **直し方**：本体をインポートしてから **Tools › Audiorium › Add Audiorium** を押すと、Audiorium が U# のコンパイルをやり直します。順番は [インストール](../getting-started/install.md#インポートの順番) を参照してください。
 
-## 照明の Inspector に「別のライトショーに接続しています」と表示される
+## 照明システムの Inspector に「別のライトショーに接続しています」と表示される
 
 **原因**：Scene がすでに別のライトショーに接続しているため、Audiorium の照明を置けません。
 
@@ -95,7 +95,7 @@ Packages\idv.jlchntoz.vvmw\Editor\VVMW\Designer\ScreenConfiguratorEditor.cs(114,
 
 外部設定にチェックの代わりに「入手先を開く」が出る場合は、AudioLink と LTCGI がプロジェクトに導入されていません。
 
-## 外部設定に「照明」が表示されない
+## 外部設定に「照明システム」が表示されない
 
 **原因**：照明システム（拡張パッケージ）がインポートされていません。
 

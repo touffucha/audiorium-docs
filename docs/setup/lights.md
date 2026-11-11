@@ -2,34 +2,34 @@
 title: 照明システム
 sidebar_label: 配置と設定
 sidebar_position: 9
-description: 照明システム（拡張パッケージ）の照明の置き方、照明の Inspector、照明の種類、Scene ビューでの位置とトラスの長さ
+description: 照明システム（拡張パッケージ）の照明の置き方、照明システムの Inspector、照明の種類、Scene ビューでの位置とトラスの長さ
 ---
 
 # 照明システム
 
 照明システム（拡張パッケージ）で、ムービングライトなどの照明を置きます。ユーザーはコンソールの Live タブで操作します。照明システムは、本体の後にインポートします（[インストール](../getting-started/install.md)）。
 
-## 照明を置く
+## 照明システムを置く
 
 次のどちらかで置きます。
 
-- `AudioriumSetup` の Inspector の [外部設定](./external.md) で、「照明」をオンにする
+- `AudioriumSetup` の Inspector の [外部設定](./external.md) で、「照明システム」をオンにする
 
-  ![外部設定の「照明」](/img/lights/external-lights.png)
+  ![外部設定の「照明システム」](/img/lights/external-lights.png)
 
 - `AudioriumSetup` を選択し、**Tools › Audiorium › Add Lights**（Hierarchy の右クリックの **Audiorium Lights** でも同じ）
 
 `AudioriumSetup` の中に `AudioriumLights` が追加され、ムービング（吊り）・ライトショー・光過敏の警告が置かれます。警告の設定は [入場時の光過敏の警告](./entry-notice.md) を参照してください。
 
-![照明を置いた後の Hierarchy。AudioriumLights の中にムービング（吊り）・ライトショー・光過敏の警告](/img/lights/hierarchy.png)
+![照明システムを置いた後の Hierarchy。AudioriumLights の中にムービング（吊り）・ライトショー・光過敏の警告](/img/lights/hierarchy.png)
 
-照明を削除するときは、外部設定の「照明」をオフにします。Ctrl+Z で元に戻せます。
+照明システムを削除するときは、外部設定の「照明システム」をオフにします。Ctrl+Z で元に戻せます。
 
-## 照明の Inspector
+## 照明システムの Inspector
 
-外部設定の「照明を選択」で開きます。
+外部設定の「照明システムを選択」で開きます。
 
-![照明を置いた直後の照明の Inspector](/img/lights/inspector.png)
+![照明システムを置いた直後の照明システムの Inspector](/img/lights/inspector.png)
 
 | 項目 | 内容 |
 | --- | --- |

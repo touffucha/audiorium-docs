@@ -33,6 +33,6 @@ Audiorium は、VRChat のワールドに置く音響・演出コンソールで
 | 音の響きをプリセットで切り替える | [Sound Mode](../setup/sound-mode.md) |
 | スピーカーごとに EQ、Reverb、音量を調整する | [コンソールの操作](../console/operation.md#speaker-eq) |
 | コンソールの配色と台を選ぶ | [Audiorium コンソール](../setup/console.md) |
-| ムービングライトの色と動きを操作する（照明システムが必要） | [照明](../setup/lights.md) |
+| ムービングライトの色と動きを操作する（照明システムが必要） | [照明システム](../setup/lights.md) |
 | 音に連動する視界エフェクトを切り替える（AudioLink が必要） | [視界エフェクト](../setup/visual-effects.md) |
 | コンソールを操作できる人を限定する | [詳細](../setup/advanced.md#操作権限) |
