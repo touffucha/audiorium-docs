@@ -883,8 +883,8 @@ body {
   clip-path: polygon(0 0, calc(100% - var(--cut) + 0.6px) 0, 100% calc(var(--cut) - 0.6px), 100% 100%, 0 100%);
 }
 
-/* 開いたときの演出：ページを読み込むたびに、ページの上に暗い幕とキャンバスを重ねる */
-[data-intro] body::before {
+/* 開いたときの演出：ページを読み込むたびに、ページの上に暗い幕とキャンバスを重ねる。暗い幕は、キャンバスが最初の 1 コマを描くまで出しておく */
+[data-intro]:not([data-intro='playing']) body::before {
   content: '';
   position: fixed;
   inset: 0;
@@ -899,8 +899,4 @@ body {
   width: 100%;
   height: 100%;
   cursor: pointer;
-}
-
-[data-intro]:has(.intro) body::before {
-  content: none;
 }
