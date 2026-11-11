@@ -1,5 +1,6 @@
 ---
 title: 照明システム
+sidebar_label: 配置と設定
 sidebar_position: 9
 description: 照明システム（拡張パッケージ）の照明の置き方、照明の Inspector、照明の種類、Scene ビューでの位置とトラスの長さ
 ---
