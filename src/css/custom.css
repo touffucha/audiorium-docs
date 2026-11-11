@@ -729,9 +729,10 @@ body {
   content: none;
 }
 
+/* ロゴは検索窓と同じ幅にして、左右の端をそろえる */
 .sidebar-header__logo img {
-  height: 40px;
-  margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
 
 .zoomable-image {
