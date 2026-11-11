@@ -117,12 +117,12 @@ html[data-theme='dark'] {
   --color-surface: #292826;
   --color-band-global: #32312e;
   --color-band-local: #2e3237;
-  --color-text: #e8e6dc;
-  --color-text-secondary: #cbc8bd;
-  --color-text-muted: #9d9a91;
-  --color-caption: #a6a399;
-  --color-border: #56534c;
-  --color-primary: #e8e6dc;
+  --color-text: #f2f0e8;
+  --color-text-secondary: #dedbd1;
+  --color-text-muted: #b6b2a8;
+  --color-caption: #bfbbb0;
+  --color-border: #615e56;
+  --color-primary: #f2f0e8;
   --color-on-primary: #1b1a18;
   --color-danger: #e2776f;
   --color-danger-surface: #3a2523;
@@ -984,4 +984,14 @@ html[data-theme='dark'] .navbar__logo img {
   .pagination-nav__link--next {
     grid-column: auto;
   }
+}
+
+/* ダークでは、明るい字が細く見えるので、本文とメニューを 1 段太くする */
+html[data-theme='dark'] body,
+html[data-theme='dark'] .menu__link {
+  font-weight: 500;
+}
+
+html[data-theme='dark'] .theme-doc-sidebar-item-link .menu__link--active {
+  font-weight: 700;
 }
