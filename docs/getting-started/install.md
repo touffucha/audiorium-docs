@@ -44,7 +44,7 @@ VRChat Creator Companion（VCC）で作成したワールドのプロジェク�
 
 本体と照明システムには、[サンプルシーン](./sample-scene.md) が入っています。使わない場合は、インポートの画面で `Showroom` のチェックを外します。
 
-{/* 画像を入れる場所：![Import Unity Package の画面で Showroom のチェックを外した状態](/img/install/import-without-showroom.png)。書き出した配布物で撮る */}
+![Import Unity Package の画面で Showroom のチェックを外した状態](/img/install/import-without-showroom.png)
 
 {/* 未確認：Showroom を外したときの動き。素のプロジェクトで、本体の Showroom を外して照明システムを入れてもコンパイルエラーは 0 だった。U# のコンパイル、書き出した unitypackage からの取り込み、照明システムの Showroom を外した場合はまだ。照明システムありのサンプルシーンは本体の Showroom のモデルと焼いた光を使う（設計の事実）ので、使うときは本体の Showroom も外さない、の 1 文を足すかも、実測の後に決める。確かめたら、この印を消す。印が残っている間は公開しない */}
 
