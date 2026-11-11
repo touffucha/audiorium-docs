@@ -857,3 +857,23 @@ body {
 .link-preview:not([hidden]) {
   animation: rise-in 0.22s var(--ease-out) both;
 }
+
+/* 画像のフレーム：コンソールで選択中のカードと同じ、明るい帯の内側に細い線を 1 本入れた二重の縁 */
+.zoomable-image.plate {
+  --frame: 6px;
+  padding: calc(var(--frame) + 1px);
+}
+
+.zoomable-image.plate::before {
+  inset: 0;
+  background: var(--color-surface);
+}
+
+.zoomable-image.plate::after {
+  inset: var(--frame);
+  background: var(--plate-line);
+}
+
+.zoomable-image.plate img {
+  clip-path: polygon(0 0, calc(100% - var(--cut) + 0.6px) 0, 100% calc(var(--cut) - 0.6px), 100% 100%, 0 100%);
+}
