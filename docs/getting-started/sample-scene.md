@@ -8,18 +8,18 @@ description: 付属のサンプルシーン（照明システムなし・照明�
 
 公開ワールドの展示室を縮めたシーンです。スピーカーの置き方と、Inspector の設定の手本として使えます。
 
-| サンプルシーン | 入っているファイル |
-| --- | --- |
-| 照明システムなし | Audiorium の unitypackage（本体） |
-| 照明システムあり | AudioriumLightingSystem の unitypackage（照明システム） |
+| サンプルシーン | シーンのファイル | 入っているファイル |
+| --- | --- | --- |
+| 照明システムなし | `AudioriumNoLighting.unity` | Audiorium の unitypackage（本体） |
+| 照明システムあり | `Audiorium.unity` | AudioriumLightingSystem の unitypackage（照明システム） |
 
-{/* 未確認：サンプルシーンのファイルの名前と場所（照明システムありは設計では Showroom/Scenes/Audiorium.unity）。照明システムありのシーンが本体のファイルのモデルと焼いた光を使う事（設計の事実）を書くか。書き出した配布物で確かめたら、表に「シーンのファイル」の列を戻し、この印を消す。印が残っている間は公開しない */}
+どちらも `Assets/Audiorium/Showroom/Scenes/` にあります。
 
 ## 開く
 
-サンプルシーンは、[外部依存パッケージ](./requirements.md#外部依存パッケージ) のいくつかを使います。先にプロジェクトに追加し、[インストール](./install.md) の順番で Audiorium をインポートしてから、Project ウィンドウでシーンのファイルを開きます。
+サンプルシーンを開くには、[外部依存パッケージ](./requirements.md#外部依存パッケージ) のうち AudioLink・LTCGI・VRC Light Volumes の 3 つが必要です。無いと、シーンに Missing が表示されます。動画プレイヤーは、開いた後に置きます。
 
-{/* 未確認：サンプルシーンに要るパッケージの一覧（縮める前の展示シーンでは YamaPlayer・AudioLink・LTCGI・VRC Light Volumes のすべてが要った）。showroom-compact の確かめの後に一覧をこのページに書き、この印を消す。印が残っている間は公開しない */}
+先に 3 つをプロジェクトに追加し、[インストール](./install.md) の順番で Audiorium をインポートしてから、Project ウィンドウでシーンのファイルを開きます。TMP Importer のウィンドウが表示された場合は、「Import TMP Essentials」を押します。
 
 {/* 画像を戻す場所：![Project ウィンドウのサンプルシーン](/img/sample/scenes.png)。配布物ができてから撮る */}
 

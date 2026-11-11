@@ -12,7 +12,7 @@ VRChat Creator Companion（VCC）で作成したワールドのプロジェク�
 
 | 順番 | パッケージ | 必要な場合 |
 | --- | --- | --- |
-| 1 | AudioLink、VRC Light Volumes、LTCGI | 使用する場合 |
+| 1 | AudioLink、VRC Light Volumes、LTCGI | 使用する場合と、サンプルシーンを開く場合 |
 | 2 | 動画プレイヤー（YamaPlayer か VizVid） | 必ず |
 | 3 | Audiorium の unitypackage（本体） | 必ず |
 | 4 | AudioriumLightingSystem の unitypackage（照明システム） | 購入した場合 |
@@ -24,10 +24,9 @@ VRChat Creator Companion（VCC）で作成したワールドのプロジェク�
 
 :::
 
-{/* 未確認：サンプルシーンを開くのに要るパッケージの一覧（表の 1 行目に「サンプルシーンを開く場合は必ず」を足すか）。showroom-compact の確かめの後に書き、この印を消す。印が残っている間は公開しない */}
-
 - 動画プレイヤーは、各配布ページの手順で導入します。
 - AudioLink・VRC Light Volumes・LTCGI は VCC で追加します。AudioLink は後から追加できます。
+- サンプルシーンを開く場合は、AudioLink・VRC Light Volumes・LTCGI の 3 つとも追加します。無いと、シーンに Missing が表示されます。
 - 照明システムは、単体では動作しません。
 
 :::info TMP Importer が表示された場合
@@ -42,11 +41,9 @@ VRChat Creator Companion（VCC）で作成したワールドのプロジェク�
 
 ## サンプルシーンを入れない場合
 
-本体と照明システムには、[サンプルシーン](./sample-scene.md) が入っています。使わない場合は、インポートの画面で `Showroom` のチェックを外します。
+本体と照明システムには、[サンプルシーン](./sample-scene.md) が入っています。使わない場合は、インポートの画面で `Showroom` のチェックを外します。照明システムありのサンプルシーンは本体の `Showroom` のモデルと光を使うので、このシーンを使う場合は本体の `Showroom` を外しません。
 
 ![Import Unity Package の画面で Showroom のチェックを外した状態](/img/install/import-without-showroom.png)
-
-{/* 未確認：Showroom を外したときの動き。素のプロジェクトで、本体の Showroom を外して照明システムを入れてもコンパイルエラーは 0 だった。U# のコンパイル、書き出した unitypackage からの取り込み、照明システムの Showroom を外した場合はまだ。照明システムありのサンプルシーンは本体の Showroom のモデルと焼いた光を使う（設計の事実）ので、使うときは本体の Showroom も外さない、の 1 文を足すかも、実測の後に決める。確かめたら、この印を消す。印が残っている間は公開しない */}
 
 ## インストールを確認する
 
