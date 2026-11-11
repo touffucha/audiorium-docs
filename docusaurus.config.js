@@ -34,7 +34,8 @@ const config = {
   ],
 
   plugins: [searchIndex],
-  clientModules: ['./src/clientModules/linkPreview.js'],
+  clientModules: ['./src/clientModules/linkPreview.js', './src/clientModules/motion.js'],
+  headTags: [{ tagName: 'script', attributes: {}, innerHTML: "document.documentElement.dataset.motion = 'ready'" }],
 
   presets: [
     [

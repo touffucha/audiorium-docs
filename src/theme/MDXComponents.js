@@ -25,28 +25,24 @@ function ZoomableImage({ title, ...props }) {
   const full = title === 'full';
   const ref = useRef(null);
   const [width, setWidth] = useState(undefined);
-  const [shrunk, setShrunk] = useState(false);
   const [zoomedWidth, setZoomedWidth] = useState(0);
   const measure = () => {
     const image = ref.current;
     if (!image || !image.naturalWidth) return;
-    if (!full) setWidth(pageScaleWidth(image));
-    setShrunk(image.clientWidth < pageScaleWidth(image) - 1);
+    setWidth(pageScaleWidth(image));
   };
   useEffect(() => {
-    if (ref.current?.complete) measure();
-  }, [props.src, width]);
+    if (!full && ref.current?.complete) measure();
+  }, [props.src]);
   const zoom = (event) => {
     if (event.ctrlKey || event.metaKey || event.shiftKey) return;
     event.preventDefault();
-    const image = ref.current;
-    if (image.clientWidth < pageScaleWidth(image) - 1) setZoomedWidth(pageScaleWidth(image));
+    if (ref.current.naturalWidth) setZoomedWidth(pageScaleWidth(ref.current));
   };
-  const classes = ['zoomable-image', 'plate', full && 'zoomable-image--full', shrunk && 'zoomable-image--shrunk'];
   return (
     <>
-      <a href={props.src} onClick={zoom} onMouseEnter={measure} className={classes.filter(Boolean).join(' ')}>
-        <img {...props} title={full ? undefined : title} ref={ref} loading="lazy" onLoad={measure} style={!full && width ? { width } : undefined} />
+      <a href={props.src} onClick={zoom} className={full ? 'zoomable-image zoomable-image--full plate' : 'zoomable-image plate'}>
+        <img {...props} title={full ? undefined : title} ref={ref} loading="lazy" onLoad={full ? undefined : measure} style={!full && width ? { width } : undefined} />
       </a>
       {zoomedWidth > 0 && <Lightbox src={props.src} alt={props.alt} width={zoomedWidth} onClose={() => setZoomedWidth(0)} />}
     </>

@@ -493,37 +493,6 @@ body {
   color: var(--color-text);
 }
 
-.pagination-nav__link {
-  position: relative;
-  isolation: isolate;
-  border: none;
-  border-radius: 0;
-  background: transparent;
-}
-
-.pagination-nav__link::before,
-.pagination-nav__link::after {
-  content: '';
-  position: absolute;
-  clip-path: polygon(0 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% 100%, 0 100%);
-}
-
-.pagination-nav__link::before {
-  inset: 0;
-  z-index: -2;
-  background: var(--color-border);
-}
-
-.pagination-nav__link::after {
-  inset: 1px;
-  z-index: -1;
-  background: var(--color-surface);
-}
-
-.pagination-nav__link:hover::before {
-  background: var(--color-text);
-}
-
 .footer {
   padding-right: var(--space-5);
   padding-left: var(--space-5);
@@ -661,4 +630,303 @@ body {
   max-height: 100%;
   height: auto;
   object-fit: contain;
+}
+
+/* ページ送り：コンソールのタブ（切り欠き、■ と名前、右端の薄い線画）と同じ形。指すと左から段で塗りが満ち、字が反転する */
+.pagination-nav__link {
+  --art: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='40' viewBox='0 0 56 40' fill='none' stroke='%23aeaba3' stroke-width='1'%3E%3Cpath d='M8 4l16 16L8 36M22 4l16 16-16 16M36 4l16 16-16 16'/%3E%3C/svg%3E");
+  position: relative;
+  isolation: isolate;
+  padding: var(--space-3) var(--space-8) var(--space-3) var(--space-3);
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  text-align: left;
+  transition: color 0.24s steps(6);
+}
+
+.pagination-nav__link--prev {
+  --art: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='40' viewBox='0 0 56 40' fill='none' stroke='%23aeaba3' stroke-width='1'%3E%3Cpath d='M48 4L32 20l16 16M34 4L18 20l16 16M20 4L4 20l16 16'/%3E%3C/svg%3E");
+}
+
+.pagination-nav__link::before,
+.pagination-nav__link::after {
+  content: '';
+  position: absolute;
+  clip-path: polygon(0 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% 100%, 0 100%);
+}
+
+.pagination-nav__link::before {
+  inset: 0;
+  z-index: -2;
+  background: var(--color-text);
+}
+
+.pagination-nav__link::after {
+  inset: 1px;
+  z-index: -1;
+  background:
+    var(--art) right var(--space-3) center no-repeat,
+    linear-gradient(var(--color-text), var(--color-text)) left / 0% 100% no-repeat,
+    var(--color-surface);
+  transition: background-size 0.24s steps(6);
+}
+
+.pagination-nav__link:hover {
+  color: var(--color-on-primary);
+  text-decoration: none;
+}
+
+.pagination-nav__link:hover::after {
+  background-size: auto, 100% 100%, auto;
+}
+
+.pagination-nav__sublabel {
+  color: var(--color-caption);
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.16em;
+  transition: color 0.24s steps(6);
+}
+
+.pagination-nav__link:hover .pagination-nav__sublabel {
+  color: var(--color-stone-400);
+}
+
+.pagination-nav__label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+}
+
+.pagination-nav__link--prev .pagination-nav__label::before,
+.pagination-nav__link--next .pagination-nav__label::before {
+  content: '';
+  flex: none;
+  width: 8px;
+  height: 8px;
+  background: currentColor;
+}
+
+.pagination-nav__link--next .pagination-nav__label::after {
+  content: none;
+}
+
+.sidebar-header__logo img {
+  height: 40px;
+  margin: 0 auto;
+}
+
+.zoomable-image,
+.zoomable-image--shrunk {
+  cursor: zoom-in;
+}
+
+.zoomable-image:hover {
+  --plate-line: var(--color-text);
+}
+
+/* 動き：なめらかに滑らせず、段で切り替える。勝手に動き続ける物は置かない */
+@keyframes glitch-in {
+  0% {
+    opacity: 0;
+    clip-path: inset(0 0 100% 0);
+    transform: translateX(-14px);
+  }
+  18% {
+    opacity: 1;
+    clip-path: inset(0 0 58% 0);
+    transform: translateX(10px);
+  }
+  36% {
+    clip-path: inset(42% 0 18% 0);
+    transform: translateX(-7px);
+  }
+  54% {
+    clip-path: inset(8% 0 46% 0);
+    transform: translateX(5px);
+  }
+  72% {
+    clip-path: inset(0 0 12% 0);
+    transform: translateX(-2px);
+  }
+  100% {
+    opacity: 1;
+    clip-path: inset(0);
+    transform: none;
+  }
+}
+
+@keyframes step-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes strip-out {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes backdrop-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes wipe-in {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0);
+  }
+}
+
+.page-wipe {
+  position: fixed;
+  inset: 0;
+  z-index: 250;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  pointer-events: none;
+}
+
+@media (min-width: 997px) {
+  .page-wipe {
+    left: var(--doc-sidebar-width);
+  }
+}
+
+.page-wipe span {
+  border-right: 2px solid var(--color-text);
+  background: var(--color-surface);
+  transform-origin: right;
+  animation: strip-out 0.3s steps(6) both;
+}
+
+.page-wipe span:nth-child(even) {
+  border-right: none;
+  border-left: 2px solid var(--color-text);
+  transform-origin: left;
+}
+
+.page-wipe span:nth-child(2) { animation-delay: 0.05s; }
+.page-wipe span:nth-child(3) { animation-delay: 0.1s; }
+.page-wipe span:nth-child(4) { animation-delay: 0.15s; }
+.page-wipe span:nth-child(5) { animation-delay: 0.2s; }
+.page-wipe span:nth-child(6) { animation-delay: 0.25s; }
+
+[data-motion] .markdown h1 {
+  animation: glitch-in 0.45s steps(1) both;
+}
+
+[data-motion] .theme-doc-breadcrumbs {
+  animation: step-in 0.2s steps(3) both;
+}
+
+[data-motion] .markdown > :is(p, ul, ol) {
+  animation: step-in 0.3s steps(4) both;
+  animation-delay: 0.18s;
+}
+
+[data-motion] .sidebar-header__logo {
+  animation: glitch-in 0.5s steps(1) both;
+}
+
+[data-motion] .theme-doc-sidebar-menu > li {
+  animation: step-in 0.3s steps(4) both;
+}
+
+[data-motion] .theme-doc-sidebar-menu > li:nth-child(1) { animation-delay: 0.1s; }
+[data-motion] .theme-doc-sidebar-menu > li:nth-child(2) { animation-delay: 0.16s; }
+[data-motion] .theme-doc-sidebar-menu > li:nth-child(3) { animation-delay: 0.22s; }
+[data-motion] .theme-doc-sidebar-menu > li:nth-child(4) { animation-delay: 0.28s; }
+[data-motion] .theme-doc-sidebar-menu > li:nth-child(5) { animation-delay: 0.34s; }
+[data-motion] .theme-doc-sidebar-menu > li:nth-child(n + 6) { animation-delay: 0.4s; }
+
+/* 見出しの下線は、画面に入ったときに左から引く */
+.markdown h2 {
+  position: relative;
+  border-bottom: none;
+}
+
+.markdown h2::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background: var(--color-border);
+  transform-origin: left;
+  transition: transform 0.5s steps(12);
+}
+
+[data-motion] .markdown :is(h2, h3):not([data-inview]) {
+  opacity: 0;
+}
+
+[data-motion] .markdown h2:not([data-inview])::after {
+  transform: scaleX(0);
+}
+
+[data-motion] .markdown :is(h2, h3)[data-inview] {
+  animation: glitch-in 0.4s steps(1) both;
+}
+
+[data-motion] .markdown .zoomable-image:not([data-inview]) {
+  clip-path: inset(0 100% 0 0);
+}
+
+[data-motion] .markdown .zoomable-image[data-inview] {
+  animation: wipe-in 0.45s steps(9) both;
+}
+
+[data-motion] :is(.markdown table, .markdown .theme-admonition, .pagination-nav):not([data-inview]) {
+  opacity: 0;
+}
+
+[data-motion] :is(.markdown table, .markdown .theme-admonition, .pagination-nav)[data-inview] {
+  animation: step-in 0.3s steps(4) both;
+}
+
+/* サイドバーの項目：指すと左から段で地が満ちる */
+.theme-doc-sidebar-item-link .menu__link {
+  background: linear-gradient(var(--color-band-global), var(--color-band-global)) left / 0% 100% no-repeat;
+  transition: background-size 0.18s steps(5);
+}
+
+.theme-doc-sidebar-item-link .menu__link:hover,
+.theme-doc-sidebar-item-link .menu__link--active {
+  background-size: 100% 100%;
+}
+
+.sidebar-search__results > li {
+  animation: step-in 0.2s steps(3) both;
+}
+
+.lightbox {
+  animation: backdrop-in 0.16s steps(4) both;
+}
+
+.lightbox img {
+  animation: wipe-in 0.3s steps(8) both;
+}
+
+.link-preview:not([hidden]) {
+  animation: step-in 0.14s steps(3) both;
 }
