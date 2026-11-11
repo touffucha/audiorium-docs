@@ -930,3 +930,13 @@ body {
 .link-preview:not([hidden]) {
   animation: step-in 0.14s steps(3) both;
 }
+
+/* 「前へ」は線画を左端に置き、矢印の向きと位置をそろえる */
+.pagination-nav__link--prev {
+  padding-right: var(--space-3);
+  padding-left: var(--space-8);
+}
+
+.pagination-nav__link--prev::after {
+  background-position: left var(--space-3) center, left, 0 0;
+}
