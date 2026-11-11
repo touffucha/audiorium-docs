@@ -206,7 +206,7 @@ body {
   font-weight: 700;
 }
 
-/* 区分の見出しは小さく薄い札にして、ページの名前（濃い字）と見分ける */
+/* 区分の見出しは小さい太字と上の余白で示し、ページの名前（大きく濃い字）と見分ける。和文なので字間は広げない */
 .menu__list > .theme-doc-sidebar-item-category-level-1:not(:first-child) {
   margin-top: var(--space-4);
 }
@@ -215,9 +215,13 @@ body {
   padding-bottom: var(--space-1);
   color: var(--color-caption);
   font-size: var(--font-size-xs);
-  font-weight: 500;
-  letter-spacing: 0.2em;
+  font-weight: 700;
   cursor: default;
+}
+
+.menu {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) transparent;
 }
 
 .theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible:hover,
