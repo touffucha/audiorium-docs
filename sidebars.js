@@ -1,4 +1,5 @@
 // @ts-check
+import { links } from './src/links.js';
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
@@ -13,7 +14,6 @@ const sidebars = {
         'getting-started/install',
         'getting-started/quick-start',
         'getting-started/sample-scene',
-        'getting-started/update',
       ],
     },
     {
@@ -57,6 +57,8 @@ const sidebars = {
       items: ['help/troubleshooting'],
     },
     'changelog',
+    ...(links.booth ? [{ type: 'link', label: 'BOOTH', href: links.booth }] : []),
+    { type: 'link', label: '公開ワールド', href: links.world },
   ],
 };
 

@@ -235,6 +235,121 @@ body {
   border-top: 1px solid var(--color-border);
 }
 
+.theme-doc-sidebar-item-link-level-1 + .theme-doc-sidebar-item-link-level-1 {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+/* 広い画面ではヘッダーを出さず、ロゴと検索窓をサイドバーの一番上に置く。狭い画面はメニューを開くボタンが要るのでヘッダーを残す */
+@media (min-width: 997px) {
+  :root {
+    --ifm-navbar-height: 0px;
+  }
+
+  .navbar {
+    display: none;
+  }
+}
+
+.sidebar-header {
+  padding: var(--space-5) var(--space-3) var(--space-3);
+}
+
+.sidebar-header__logo {
+  display: block;
+  margin-bottom: var(--space-4);
+}
+
+.sidebar-header__logo img {
+  display: block;
+  width: auto;
+  height: 36px;
+}
+
+.sidebar-search {
+  position: relative;
+}
+
+.sidebar-search__icon {
+  position: absolute;
+  top: 50%;
+  left: var(--space-2);
+  width: 16px;
+  height: 16px;
+  transform: translateY(-50%);
+  fill: none;
+  stroke: var(--color-caption);
+  stroke-width: 2;
+  pointer-events: none;
+}
+
+.sidebar-search__input {
+  width: 100%;
+  height: 36px;
+  padding: 0 var(--space-2) 0 var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: 0;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font: inherit;
+  font-size: var(--font-size-sm);
+}
+
+.sidebar-search__input:focus {
+  border-color: var(--color-text);
+  outline: none;
+}
+
+.sidebar-search__results {
+  max-height: 60vh;
+  margin: var(--space-2) 0 0;
+  padding: 0;
+  overflow-y: auto;
+  border-bottom: 1px solid var(--color-border);
+  list-style: none;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) transparent;
+}
+
+.sidebar-search__result {
+  display: block;
+  padding: var(--space-2);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  line-height: 1.5;
+}
+
+.sidebar-search__result:hover {
+  background: var(--color-band-global);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.sidebar-search__title {
+  display: block;
+  font-weight: 700;
+}
+
+.sidebar-search__excerpt {
+  display: block;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-xs);
+}
+
+.sidebar-search__excerpt mark {
+  background: var(--color-action);
+  color: var(--color-on-action);
+}
+
+.sidebar-search__empty {
+  padding: var(--space-2);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-caption);
+  font-size: var(--font-size-sm);
+}
+
 .markdown h1,
 .markdown h2,
 .markdown h3,
@@ -467,4 +582,16 @@ body {
   font-size: var(--font-size-lg);
   letter-spacing: 0;
   clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%);
+}
+
+.sidebar-search__input::-webkit-search-cancel-button {
+  filter: grayscale(1) brightness(0);
+  cursor: pointer;
+}
+
+/* 本文の上端を、サイドバーのロゴの上端とそろえる */
+@media (min-width: 997px) {
+  main[class*='docMainContainer'] > .container {
+    padding-top: var(--space-5) !important;
+  }
 }

@@ -52,6 +52,10 @@ Hierarchy と Inspector に「Missing」と表示されます。YamaPlayer を�
 - 設計図の字幕
 - 環境音（滝・鳥・風）
 
+## 改変して使う場合
+
+改変したシーンは、**File › Save As** で `Assets/Audiorium` の外へ別の名前で保存します。新しいバージョンの Audiorium をインポートすると、サンプルシーンは上書きされます。
+
 ## 利用の条件
 
 サンプルシーンの利用の条件は、同梱の利用規約（`License/LICENSE.md`）の第 6 条をご確認ください。

@@ -1,11 +1,9 @@
 // @ts-check
 import { themes as prismThemes } from 'prism-react-renderer';
 import lineBreaks from './src/remark/line-breaks.js';
+import searchIndex from './src/plugins/search-index.js';
+import { links } from './src/links.js';
 
-const links = {
-  booth: '',
-  world: 'https://vrchat.com/home/launch?worldId=wrld_3b124d05-d1c4-4ae3-a216-0b58c5f82ab9',
-};
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -35,6 +33,8 @@ const config = {
     },
   ],
 
+  plugins: [searchIndex],
+
   presets: [
     [
       'classic',
@@ -59,11 +59,7 @@ const config = {
       navbar: {
         title: '',
         logo: { alt: 'Audiorium', src: 'img/logo-ink.svg', className: 'navbar-logo', href: '/docs/getting-started/overview' },
-        items: [
-          { type: 'docSidebar', sidebarId: 'docs', position: 'left', label: 'ドキュメント' },
-          ...(links.booth ? [{ href: links.booth, label: 'BOOTH', position: 'right' }] : []),
-          { href: links.world, label: '公開ワールド', position: 'right' },
-        ],
+        items: [],
       },
       footer: {
         copyright: '© 2026 とうっふ茶房',
