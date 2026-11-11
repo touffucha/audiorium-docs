@@ -1,8 +1,6 @@
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
-const RevealSelector = '.markdown h2, .markdown h3, .markdown .zoomable-image, .markdown table, .markdown .theme-admonition, .pagination-nav';
-const StripCount = 6;
-const WipeDuration = 700;
+const RevealSelector = '.markdown h2, .markdown .zoomable-image';
 
 let observer = null;
 
@@ -20,18 +18,6 @@ function observeContent() {
   for (const element of document.querySelectorAll(RevealSelector)) {
     if (!('inview' in element.dataset)) observer.observe(element);
   }
-}
-
-function wipe() {
-  const overlay = document.createElement('div');
-  overlay.className = 'page-wipe';
-  for (let i = 0; i < StripCount; i += 1) overlay.append(document.createElement('span'));
-  document.body.append(overlay);
-  window.setTimeout(() => overlay.remove(), WipeDuration);
-}
-
-export function onRouteDidUpdate({ location, previousLocation }) {
-  if (previousLocation && previousLocation.pathname !== location.pathname) wipe();
 }
 
 if (ExecutionEnvironment.canUseDOM) {

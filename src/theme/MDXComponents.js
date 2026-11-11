@@ -37,7 +37,7 @@ function ZoomableImage({ title, ...props }) {
   const zoom = (event) => {
     if (event.ctrlKey || event.metaKey || event.shiftKey) return;
     event.preventDefault();
-    if (ref.current.naturalWidth) setZoomedWidth(pageScaleWidth(ref.current));
+    if (ref.current.naturalWidth) setZoomedWidth(ref.current.naturalWidth);
   };
   return (
     <>
