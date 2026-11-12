@@ -70,7 +70,7 @@ description: コンソールの 4 つのタブの操作と、反映される範�
 | --- | --- | --- |
 | BEAT | Tremor・Radial・Chroma・Glitch | 音の拍に合わせて動く効果。チェックでオン、スライダーで強さを調整します |
 | LOOK | NTSC・VHS・Bleach・Dither・Cel・Sketch・Neon | 画面全体の質感 |
-| WORLD | Echo・Invert・LTCGI | 空間に効く効果。LTCGI は、LTCGI がワールドにある場合だけ表示されます |
+| WORLD | Echo・Invert・LTCGI | 空間に効く効果。Echo は、動画の映像の範囲に重なります。LTCGI は、LTCGI がワールドにある場合だけ表示されます |
 | FX Bypass | — | 視界エフェクトを一時的にすべて無効にします |
 
 視界エフェクトは画面酔いを起こすことがあります。注意文の表示は [視界エフェクト](../setup/visual-effects.md) で設定します。
