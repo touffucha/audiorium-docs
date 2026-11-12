@@ -31,7 +31,7 @@ VRChat Creator Companion（VCC）で作成したワールドのプロジェク�
 
 :::info TMP Importer が表示された場合
 
-本体のインポートの後に「TMP Importer」のウィンドウが表示された場合は、「Import TMP Essentials」を押します。TextMesh Pro を初めて使うプロジェクトで 1 回だけ表示されます。
+本体のインポートの後に TMP Importer のウィンドウが表示された場合は、「Import TMP Essentials」を押します。TextMesh Pro を初めて使うプロジェクトで 1 回だけ表示されます。
 
 ![TMP Importer のウィンドウ](/img/install/tmp-importer.png)
 

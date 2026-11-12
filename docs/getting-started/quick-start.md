@@ -72,4 +72,4 @@ Scene ビューで移動と回転を行います。
 
 ## ビルドして VRChat で確認する
 
-動画の外部 URL は Unity の Play モードでは再生できません。動作確認は、**VRChat SDK › Show Control Panel** の「Builder」タブの Build & Test、もしくは Build & Publish で行います。
+動画の外部 URL は Unity の Play モードでは再生できません。動作確認は、**VRChat SDK › Show Control Panel** の「Builder」タブの「Build & Test」、もしくは「Build & Publish」で行います。
