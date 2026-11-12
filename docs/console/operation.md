@@ -14,9 +14,9 @@ description: コンソールの 4 つのタブの操作と、反映される範�
 | Sound Mode | ワールド全体（GLOBAL） | 必要 | — |
 | Speaker EQ | ワールド全体（GLOBAL） | 必要 | — |
 | Live | ワールド全体（GLOBAL） | 必要 | 照明システム |
-| Effects | 操作した人の画面のみ（LOCAL） | 不要 | AudioLink か LTCGI |
+| Effects | 操作したユーザーの画面のみ（LOCAL） | 不要 | AudioLink か LTCGI |
 
-操作できる人は、`AudioriumSetup` の Inspector の [詳細](../setup/advanced.md#操作権限) で設定します。
+操作できるユーザーは、`AudioriumSetup` の Inspector の [詳細](../setup/advanced.md#操作権限) で設定します。
 
 ## Sound Mode
 
@@ -27,7 +27,7 @@ description: コンソールの 4 つのタブの操作と、反映される範�
 | 項目 | 内容 |
 | --- | --- |
 | PRESETS | ワールド制作者が用意したプリセット |
-| Slot A・B・C | 自分で調整した音の保存枠。「保存」で今の音を保存し、枠を押すと部屋全体に反映します。保存した内容は保存した人だけが使え、次に入室したときも残ります |
+| Slot A・B・C | ユーザーが調整した音の保存枠。「保存」で今の音を保存し、枠を押すと部屋全体に反映します。保存した内容は保存したユーザーだけが使え、次に入室したときも残ります |
 | CURRENT STATE | 今のプリセットと Reverb の種類 |
 | REVERB | Reverb の種類（Room・Hall・Cathedral・Off）と、Wet、Reverb Level、Decay、HF Decay、Pre-Delay |
 
@@ -62,7 +62,7 @@ description: コンソールの 4 つのタブの操作と、反映される範�
 
 ## Effects
 
-音に連動する視界エフェクトを切り替えます。操作した人の画面にのみ反映されます。
+音に連動する視界エフェクトを切り替えます。操作したユーザーの画面にのみ反映されます。
 
 ![コンソールの Effects タブ](/img/console/effects.webp)
 
