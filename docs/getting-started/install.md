@@ -24,7 +24,7 @@ VRChat Creator Companion（VCC）で作成したワールドのプロジェク�
 
 :::
 
-- 動画プレイヤーは、各配布ページの手順で導入します。
+- 動画プレイヤーは、[YamaPlayer の導入手順](https://github.com/koorimizuw/YamaPlayer/wiki/YamaPlayer-%E5%B0%8E%E5%85%A5%E6%89%8B%E9%A0%86) か [VizVid の導入方法](https://xtlcdn.github.io/VizVid/docs/simple_ja.html) に従って導入します。
 - AudioLink・VRC Light Volumes・LTCGI は VCC で追加します。AudioLink は後から追加できます。
 - サンプルシーンを開く場合は、AudioLink・VRC Light Volumes・LTCGI の 3 つとも追加します。無いと、シーンに Missing が表示されます。
 - 照明システムは、単体では動作しません。
