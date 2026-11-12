@@ -80,6 +80,19 @@ Packages\idv.jlchntoz.vvmw\Editor\VVMW\Designer\ScreenConfiguratorEditor.cs(114,
 
 **直し方**：VRC Light Volumes も導入します。動作確認済みのバージョンは [必要な物と動作環境](../getting-started/requirements.md) にあります。
 
+## LTCGI や VRC Light Volumes の光が、ワールドの壁や床に映らない
+
+**原因**：ワールドの材質のシェーダーが LTCGI・VRC Light Volumes に対応していないためで、Audiorium の不具合ではありません。どちらの光も、対応したシェーダーを使った材質にだけ映ります。Unity 標準の Standard シェーダーは対応していません。
+
+**直し方**：光を映したい材質を、対応したシェーダー（Filamented、Mochie Standard など）に切り替え、材質の設定で LTCGI と Light Volumes を有効にします。どちらのシェーダーにも、Standard の材質をまとめて置き換える機能があります。サンプルシーンの壁や床は、Filamented で両方を有効にしています。
+
+対応したシェーダーの一覧と切り替えの手順は、各配布元の説明をご確認ください。
+
+- [LTCGI](https://github.com/PiMaker/ltcgi)
+- [VRC Light Volumes の対応シェーダー](https://github.com/REDSIM/VRCLightVolumes/blob/main/Documentation/CompatibleShaders.md)
+- [Filamented](https://gitlab.com/s-ilent/filamented)
+- [Mochie Standard](https://github.com/MochiesCode/Mochies-Unity-Shaders/wiki/Standard-Shader)
+
 ## Play モードで音が鳴らない
 
 **原因**：動画の外部 URL は、Play モードでは再生できません。
