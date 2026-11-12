@@ -12,7 +12,7 @@ VRChat Creator Companion（VCC）で作成したワールドのプロジェク�
 
 | 順番 | パッケージ | 必要な場合 |
 | --- | --- | --- |
-| 1 | AudioLink、VRC Light Volumes、LTCGI | 使用する場合と、サンプルシーンを開く場合 |
+| 1 | AudioLink・VRC Light Volumes・LTCGI | 使用する場合と、サンプルシーンを開く場合 |
 | 2 | 動画プレイヤー（YamaPlayer か VizVid） | 必ず |
 | 3 | Audiorium の unitypackage（本体） | 必ず |
 | 4 | AudioriumLightingSystem の unitypackage（照明システム） | 購入した場合 |
