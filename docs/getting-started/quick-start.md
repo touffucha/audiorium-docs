@@ -37,7 +37,7 @@ YamaPlayer か VizVid を Scene に置き、位置と向きを決めます。ス
 | --- | --- |
 | `ListeningPosition` | 視聴位置。スピーカーの音が届く範囲を決める基準の位置です |
 | `Front`・`Surround`・`Top Middle`・`Stereo Mix`・`Subwoofer` | スピーカー。動画プレイヤーのスクリーンを基準に配置されます |
-| `ConsoleMount_`（台の名前） | コンソールと、それを載せる台。名前の後半は、選択したモデルで変わります |
+| `AudioriumConsole` | コンソール。台のあるモデルを選ぶと、台の名前の `ConsoleMount_` の中に入ります |
 | `AudioControls` など、そのほかの物 | Audiorium の動作に使う物。移動・削除しません |
 
 最初は、Front・Surround・Top Middle・Stereo Mix・Subwoofer の 5 種類、8 つの出力が配置されます。使わないスピーカーは [こちらの手順](../setup/speakers.md#追加と削除) で外します。
@@ -66,7 +66,7 @@ YamaPlayer か VizVid を Scene に置き、位置と向きを決めます。ス
 Scene ビューで移動と回転を行います。
 
 - **スピーカー**：Inspector の「スピーカー」の一覧の行をダブルクリックすると選択されます。
-- **コンソール**：Inspector の「コンソールを選択」を押すと、コンソールと台が選択されます。
+- **コンソール**：Inspector の「コンソールを選択」を押すと、コンソールが選択されます。台のあるモデルでは、台ごと選択されます。
 
 ![Scene ビューのスピーカーと視聴位置。音が届く範囲が表示されている](/img/scene/speakers.png)
 
