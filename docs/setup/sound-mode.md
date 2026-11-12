@@ -56,4 +56,4 @@ description: AudioriumSetup の Inspector の「Sound Mode」の節。音の響�
 
 ## ユーザーが操作できること
 
-ユーザーはコンソールでプリセットを切り替え、スピーカーごとの EQ・Reverb・音量を調整できます。ユーザーの操作は Scene のプリセットを変えません（[コンソールの操作](../console/operation.md)）。
+ユーザーはコンソールでプリセットを切り替え、スピーカーごとの EQ・Reverb・音量を調整できます。ユーザーの操作は Scene のプリセットを変更しません（[コンソールの操作](../console/operation.md)）。

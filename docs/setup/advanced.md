@@ -6,7 +6,7 @@ description: AudioriumSetup の Inspector の「詳細」の節。コンソー�
 
 # 詳細
 
-コンソールの動きと、音声の処理を設定します。
+コンソールの動作と、音声の処理を設定します。
 
 ![詳細の節](/img/setup/advanced.png)
 

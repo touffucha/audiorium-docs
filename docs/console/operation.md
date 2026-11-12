@@ -33,7 +33,7 @@ description: コンソールの 4 つのタブの操作と、反映される範�
 
 ## Speaker EQ
 
-スピーカーごとに EQ、Reverb、音量を調整します。
+スピーカーごとに EQ・Reverb・音量を調整します。
 
 ![コンソールの Speaker EQ タブ](/img/console/speaker-eq.webp)
 
@@ -56,7 +56,7 @@ description: コンソールの 4 つのタブの操作と、反映される範�
 | SOUND | 全体の音のフィルターと、押している間だけ低音（Low）・全体（Kill）・高音（High）を切る操作 |
 | LIGHTS | 照明の色。カラーホイールと、Auto・White・Ice・Blue・Amber・Magenta・Red |
 | PATTERN | ムービングライトの動き（Auto・Fan・Cross・Tent・Wave・Circle・Sweep・Pillar）と、SPEED、MODE |
-| CUE | Blinder・Wash・Blackout・Strobe。押している間だけ効きます（カードの Hold の表示） |
+| CUE | Blinder・Wash・Blackout・Strobe。押している間だけ有効です（カードの Hold の表示） |
 
 照明の点滅に配慮が必要な場合は、[入場時の光過敏の警告](../setup/entry-notice.md) を表示できます。
 
@@ -68,9 +68,9 @@ description: コンソールの 4 つのタブの操作と、反映される範�
 
 | 区分 | 項目 | 内容 |
 | --- | --- | --- |
-| BEAT | Tremor・Radial・Chroma・Glitch | 音の拍に合わせて動く効果。チェックでオン、スライダーで強さを調整します |
+| BEAT | Tremor・Radial・Chroma・Glitch | 音の拍に合わせて動く効果。チェックで有効にし、スライダーで強さを調整します |
 | LOOK | NTSC・VHS・Bleach・Dither・Cel・Sketch・Neon | 画面全体の質感 |
-| WORLD | Echo・Invert・LTCGI | 空間に効く効果。Echo は、動画の映像の範囲に重なります。LTCGI は、LTCGI がワールドにある場合だけ表示されます |
+| WORLD | Echo・Invert・LTCGI | 空間に作用する効果。Echo は、動画の映像の範囲に重なります。LTCGI は、ワールドにある場合だけ表示されます |
 | FX Bypass | — | 視界エフェクトを一時的にすべて無効にします |
 
 視界エフェクトは画面酔いを起こすことがあります。注意文の表示は [視界エフェクト](../setup/visual-effects.md) で設定します。

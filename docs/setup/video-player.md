@@ -1,7 +1,7 @@
 ---
 title: 動画プレイヤー
 sidebar_position: 2
-description: AudioriumSetup の Inspector の「動画プレイヤー」の節。動画プレイヤーの置き方、接続する動画プレイヤーとスクリーン、差し替え
+description: AudioriumSetup の Inspector の「動画プレイヤー」の節。動画プレイヤーの配置、接続する動画プレイヤーとスクリーン、差し替え
 ---
 
 # 動画プレイヤー
@@ -13,20 +13,20 @@ description: AudioriumSetup の Inspector の「動画プレイヤー」の節�
 | 項目 | 内容 |
 | --- | --- |
 | 動画プレイヤー | 接続している動画プレイヤー |
-| スクリーン | スピーカーの配置の基準にする画面。接続したときに動画プレイヤーから自動で選ばれます |
+| スクリーン | スピーカーの配置の基準にする画面。接続したときに動画プレイヤーから自動で選択されます |
 
-## 動画プレイヤーを置く
+## 動画プレイヤーを配置する
 
-動画プレイヤーは、**Audiorium を置く前に**置き、位置と向きを決めておきます。スピーカーとコンソールは、動画プレイヤーのスクリーンを基準に置かれます。
+動画プレイヤーは、**Audiorium を配置する前に**配置し、位置と向きを決めておきます。スピーカーとコンソールは、動画プレイヤーのスクリーンを基準に配置されます。
 
-各動画プレイヤーを VCC でプロジェクトに追加してから、Hierarchy の右クリックのメニュー（またはメニューの **GameObject**）で置きます。
+各動画プレイヤーを VCC でプロジェクトに追加してから、Hierarchy の右クリックメニュー（またはメニューの **GameObject**）で配置します。
 
 | 動画プレイヤー | メニュー |
 | --- | --- |
 | YamaPlayer | **YamaPlayer › Main (With screen and UI)** |
 | VizVid | **VizVid › Video Player (On-Screen Controls)** |
 
-続けて [Audiorium を置きます](../getting-started/quick-start.md#audiorium-を置く)。
+続けて [Audiorium を配置します](../getting-started/quick-start.md#audiorium-を配置する)。
 
 ## 別の動画プレイヤーに差し替える
 
@@ -44,14 +44,14 @@ Hierarchy から別の動画プレイヤーを「動画プレイヤー」の欄�
 
 ## 動画プレイヤーを移動した場合
 
-スピーカーなどは付いて動かないので、`AudioriumSetup` も同じだけ移動します（[スピーカー](./speakers.md#動画プレイヤーを移動した場合)）。
+スピーカーなどは動画プレイヤーに連動しないので、`AudioriumSetup` も同じだけ移動します（[スピーカー](./speakers.md#動画プレイヤーを移動した場合)）。
 
 ## 動画プレイヤーの音源の設定
 
-Audiorium は、保存した Scene の動画プレイヤーの音源の設定を書き換えません。Audiorium を削除すると、動画プレイヤーは元の設定のまま鳴ります（[ワールドから削除する](../help/uninstall.md)）。
+Audiorium は、保存した Scene の動画プレイヤーの音源の設定を書き換えません。Audiorium を削除すると、動画プレイヤーは元の設定のまま再生されます（[ワールドから削除する](../help/uninstall.md)）。
 
 ## 動画プレイヤーが複数あるワールド
 
-- 1 つの `AudioriumSetup` が接続できる動画プレイヤーは 1 台です。接続していない動画プレイヤーの音は、そのまま鳴ります。
+- 1 つの `AudioriumSetup` が接続できる動画プレイヤーは 1 台です。接続していない動画プレイヤーの音は、そのまま再生されます。
 - ほかの `AudioriumSetup` が接続している動画プレイヤーには接続できません（「ほかの Audiorium がこの動画プレイヤーに接続しています。」と表示されます）。
-- すべての動画プレイヤーが接続済みのときに **Add Audiorium** を押すと、新しい `AudioriumSetup` は追加されず、接続済みの `AudioriumSetup` が選択されます。
+- すべての動画プレイヤーが接続済みのときに **Add Audiorium** を選択すると、新しい `AudioriumSetup` は追加されず、接続済みの `AudioriumSetup` が選択されます。

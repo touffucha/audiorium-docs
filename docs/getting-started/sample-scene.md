@@ -6,7 +6,7 @@ description: 付属のサンプルシーン（照明システムなし・照明�
 
 # サンプルシーン
 
-公開ワールドの展示室を縮めたシーンです。スピーカーの置き方と、Inspector の設定の手本として使えます。
+公開ワールドの展示室を縮小したシーンです。スピーカーの配置と、Inspector の設定の参考として使えます。
 
 | サンプルシーン | シーンのファイル | 入っているファイル |
 | --- | --- | --- |
@@ -19,15 +19,15 @@ description: 付属のサンプルシーン（照明システムなし・照明�
 
 ## 開く
 
-サンプルシーンを開くには、[外部依存パッケージ](./requirements.md#外部依存パッケージ) のうち AudioLink・LTCGI・VRC Light Volumes の 3 つが必要です。無いと、シーンに Missing が表示されます。動画プレイヤーは、開いた後に置きます。
+サンプルシーンを開くには、[外部依存パッケージ](./requirements.md#外部依存パッケージ) のうち AudioLink・LTCGI・VRC Light Volumes の 3 つが必要です。無い場合は、シーンに Missing が表示されます。動画プレイヤーは、開いた後に配置します。
 
 先に 3 つをプロジェクトに追加し、[インストール](./install.md) の順番で Audiorium をインポートしてから、Project ウィンドウでシーンのファイルを開きます。TMP Importer のウィンドウが表示された場合は、「Import TMP Essentials」を押します。
 
 {/* 画像を戻す場所：![Project ウィンドウのサンプルシーン](/img/sample/scenes.png)。配布物ができてから撮る */}
 
-## 動画プレイヤーを置く
+## 動画プレイヤーを配置する
 
-サンプルシーンには動画プレイヤーが入っていません。展示室の正面の額に合わせて置き、Audiorium につなぎます。
+サンプルシーンには動画プレイヤーが入っていません。展示室の正面の額に合わせて配置し、Audiorium に接続します。
 
 1. 動画プレイヤーの Prefab を Hierarchy へドラッグし、Transform を次の値にします。Rotation はすべて 0 です。
 
@@ -36,7 +36,7 @@ description: 付属のサンプルシーン（照明システムなし・照明�
    | YamaPlayer | `YamaPlayer.prefab` | X 0、Y 3.135、Z 7.28 | 2.88 |
    | VizVid | `VVMW (On-Screen Controls).prefab` | X 0、Y -0.105、Z 7.28 | 2.16 |
 
-2. Hierarchy で `AudioriumSetup` を選択し、Inspector の「動画プレイヤー」の欄へ、Hierarchy から動画プレイヤーをドラッグします。スピーカーとコンソールは置き直されず、そのままつながります。
+2. Hierarchy で `AudioriumSetup` を選択し、Inspector の「動画プレイヤー」の欄へ、Hierarchy から動画プレイヤーをドラッグします。スピーカーとコンソールは配置し直されず、そのまま接続されます。
 
 ## 含まれていない物
 
