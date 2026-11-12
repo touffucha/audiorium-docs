@@ -13,7 +13,7 @@ hide_table_of_contents: true
 
 YamaPlayer か VizVid を Scene に配置し、位置と向きを決めます。スピーカーとコンソールは、この画面を基準に配置されます。
 
-![Scene に YamaPlayer を置いて選択した状態。Hierarchy に YamaPlayer、Scene ビューに動画プレイヤーの画面が表示されている。Audiorium を配置する前](/img/quick-start/player-placed.png "full")
+![Scene に YamaPlayer を配置して選択した状態。Hierarchy に YamaPlayer、Scene ビューに動画プレイヤーの画面が表示されている。Audiorium を配置する前](/img/quick-start/player-placed.png "full")
 
 ## Audiorium を配置する
 
@@ -37,10 +37,10 @@ YamaPlayer か VizVid を Scene に配置し、位置と向きを決めます。
 | --- | --- |
 | `ListeningPosition` | 視聴位置。スピーカーの音が届く範囲を決める基準の位置です |
 | `Front`・`Surround`・`Top Middle`・`Stereo Mix`・`Subwoofer` | スピーカー。動画プレイヤーのスクリーンを基準に配置されます |
-| `AudioriumConsole` | コンソール。台のあるモデルを選ぶと、台の名前の `ConsoleMount_` の中に入ります |
+| `AudioriumConsole` | コンソール。台のあるモデルを選択すると、台の名前の `ConsoleMount_` の中に入ります |
 | `AudioControls` など、そのほかのオブジェクト | Audiorium の動作に使うオブジェクト。移動・削除しないでください |
 
-最初は、Front・Surround・Top Middle・Stereo Mix・Subwoofer の 5 種類、8 つの出力が配置されます。使わないスピーカーは [こちらの手順](../setup/speakers.md#追加と削除) で外します。
+Add Audiorium の直後は、Front・Surround・Top Middle・Stereo Mix・Subwoofer の 5 種類、8 つの出力が配置されます。使わないスピーカーは [こちらの手順](../setup/speakers.md#追加と削除) で外します。
 
 :::info 動画プレイヤーを選択せずに押した場合
 
