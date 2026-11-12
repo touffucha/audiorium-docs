@@ -15,6 +15,8 @@ description: 付属のサンプルシーン（照明システムなし・照明�
 
 どちらも `Assets/Audiorium/Showroom/Scenes/` にあります。
 
+サンプルシーンでは、入った時点で Effects がオンです（[視界エフェクトのデフォルト](../setup/visual-effects.md)）。
+
 ## 開く
 
 サンプルシーンを開くには、[外部依存パッケージ](./requirements.md#外部依存パッケージ) のうち AudioLink・LTCGI・VRC Light Volumes の 3 つが必要です。無いと、シーンに Missing が表示されます。動画プレイヤーは、開いた後に置きます。
