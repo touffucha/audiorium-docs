@@ -37,7 +37,7 @@ description: AudioriumSetup の Inspector の「Audiorium コンソール」の�
 
 ## テーマ
 
-テーマは 16 個です。
+テーマは 16 種類です。
 
 ![テーマの一覧](/img/setup/console-themes.png)
 

@@ -29,9 +29,9 @@ description: 付属のサンプルシーン（照明システムなし・照明�
 
 サンプルシーンには動画プレイヤーが入っていません。展示室の正面の額に合わせて置き、Audiorium につなぎます。
 
-1. 動画プレイヤーのプレハブを Hierarchy へドラッグし、Transform を次の値にします。Rotation はすべて 0 です。
+1. 動画プレイヤーの Prefab を Hierarchy へドラッグし、Transform を次の値にします。Rotation はすべて 0 です。
 
-   | 動画プレイヤー | プレハブ | Position | Scale |
+   | 動画プレイヤー | Prefab | Position | Scale |
    | --- | --- | --- | --- |
    | YamaPlayer | `YamaPlayer.prefab` | X 0、Y 3.135、Z 7.28 | 2.88 |
    | VizVid | `VVMW (On-Screen Controls).prefab` | X 0、Y -0.105、Z 7.28 | 2.16 |
