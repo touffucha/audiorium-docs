@@ -37,7 +37,7 @@ LTCGI は、動画プレイヤーの画面の光をワールドの物体に映�
 - **YamaPlayer の場合**：YamaPlayer の Inspector の「LTCGI を使用」と同じ設定が入ります。
 - **VizVid の場合**：Audiorium から LTCGI との連携を設定できません。「LTCGI」のチェックは、Scene に LTCGI があるかを表します。設定は [VizVid のマニュアルの LTCGI の手順](https://xtlcdn.github.io/VizVid/docs/index_ja.html#ltcgi) に従って行います。
 
-LTCGI の配置と設定の詳細は、[LTCGI のコントローラーの置き方と設定](https://ltcgi.dev/Getting%20Started/Setup/Controller)（英語）をご確認ください。
+LTCGI の配置と設定の詳細は、[LTCGI のコントローラーの置き方と設定](https://ltcgi.dev/Getting%20Started/Setup/Controller)（英語）を参照してください。
 
 ワールドの壁や床に LTCGI の光が映らない場合は、[トラブルシューティング](../help/troubleshooting.md#ltcgi-や-vrc-light-volumes-の光がワールドの壁や床に映らない) を参照してください。
 

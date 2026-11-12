@@ -86,7 +86,7 @@ Packages\idv.jlchntoz.vvmw\Editor\VVMW\Designer\ScreenConfiguratorEditor.cs(114,
 
 **直し方**：光を映したいマテリアルを、対応したシェーダー（Filamented、Mochie Standard など）に切り替え、マテリアルの設定で LTCGI と Light Volumes が有効になっていることを確かめます。どちらのシェーダーにも、Standard のマテリアルをまとめて置き換える機能があります。サンプルシーンの壁や床は、Filamented で両方を有効にしています。
 
-手順は、各シェーダーの説明をご確認ください。
+手順は、各シェーダーの説明を参照してください。
 
 - [LTCGI の光を受けられるシェーダーの一覧](https://ltcgi.dev/Getting%20Started/Installation/Compatible_Shaders)（英語）
 - [Filamented：Standard のマテリアルをまとめて置き換える手順](https://gitlab.com/s-ilent/filamented/-/wikis/ja/1.-%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB#マテリアルの一括置換)
