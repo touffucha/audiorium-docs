@@ -84,14 +84,15 @@ Packages\idv.jlchntoz.vvmw\Editor\VVMW\Designer\ScreenConfiguratorEditor.cs(114,
 
 **原因**：ワールドの材質のシェーダーが LTCGI・VRC Light Volumes に対応していないためで、Audiorium の不具合ではありません。どちらの光も、対応したシェーダーを使った材質にだけ映ります。Unity 標準の Standard シェーダーは対応していません。
 
-**直し方**：光を映したい材質を、対応したシェーダー（Filamented、Mochie Standard など）に切り替え、材質の設定で LTCGI と Light Volumes を有効にします。どちらのシェーダーにも、Standard の材質をまとめて置き換える機能があります。サンプルシーンの壁や床は、Filamented で両方を有効にしています。
+**直し方**：光を映したい材質を、対応したシェーダー（Filamented、Mochie Standard など）に切り替え、材質の設定で LTCGI と Light Volumes が有効になっていることを確かめます。どちらのシェーダーにも、Standard の材質をまとめて置き換える機能があります。サンプルシーンの壁や床は、Filamented で両方を有効にしています。
 
-対応したシェーダーの一覧と切り替えの手順は、各配布元の説明をご確認ください。
+手順は、各シェーダーの説明をご確認ください。
 
-- [LTCGI](https://github.com/PiMaker/ltcgi)
-- [VRC Light Volumes の対応シェーダー](https://github.com/REDSIM/VRCLightVolumes/blob/main/Documentation/CompatibleShaders.md)
-- [Filamented](https://gitlab.com/s-ilent/filamented)
-- [Mochie Standard](https://github.com/MochiesCode/Mochies-Unity-Shaders/wiki/Standard-Shader)
+- [LTCGI の光を受けられるシェーダーの一覧](https://ltcgi.dev/Getting%20Started/Installation/Compatible_Shaders)（英語）
+- [Filamented：Standard の材質をまとめて置き換える手順](https://gitlab.com/s-ilent/filamented/-/wikis/ja/1.-%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB#マテリアルの一括置換)
+- [Filamented：材質で VRC Light Volumes と LTCGI を有効にする設定](https://gitlab.com/s-ilent/filamented/-/wikis/ja/4.-%E5%A4%96%E9%83%A8%E3%83%84%E3%83%BC%E3%83%AB%E9%80%A3%E6%90%BA#vrc-light-volumes-vrclv)
+- [Mochie Standard：Standard の材質をまとめて置き換える手順（Tools › Mochie › Global Standard Settings）](https://github.com/MochiesCode/Mochies-Unity-Shaders/wiki/Utilities#swap-shaders)（英語）
+- [Mochie Standard：材質の LTCGI と Light Volumes の設定](https://github.com/MochiesCode/Mochies-Unity-Shaders/wiki/Standard-Shader#ltcgi)（英語）
 
 ## Play モードで音が鳴らない
 
