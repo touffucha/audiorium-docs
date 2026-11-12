@@ -44,6 +44,8 @@ description: AudioriumSetup の Inspector の「スピーカー」の節。ス�
 
 視聴位置（`AudioriumSetup` の中の `ListeningPosition`）は、スピーカーの音が届く範囲を決める基準の位置です。Add Audiorium が、画面の正面に自動で置きます。通常は、動かす必要はありません。客席がこの位置から数 m 以上離れているときだけ、Scene ビューで動かします。
 
+Hierarchy で `ListeningPosition` か `AudioriumSetup` を選ぶと、Scene ビューに視聴位置が表示されます。動かすと、スピーカーの音が届く範囲の円がその場で変わります。金色の円は、視聴位置で大きさが決まる円です。
+
 ### 動画プレイヤーを移動した場合
 
 スピーカー・コンソール・視聴位置は、動画プレイヤーを移動しても動きません。Hierarchy で `AudioriumSetup` を選択して同じだけ移動すると、中にあるスピーカー・コンソール・視聴位置が一緒に動きます。
