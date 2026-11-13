@@ -28,7 +28,7 @@ description: Audiorium の動作環境と、外部依存パッケージの動作
 
 :::info AudioLink を導入しない場合
 
-視界エフェクトは使用できず、照明と EQ のグラフは音に反応しません。音響の機能は AudioLink なしでも使用できます。
+BEAT・LOOK・Echo・Invert は使用できず、照明は音に反応せず、EQ のグラフには音のスペクトルが表示されません。音響の機能は引き続き使用できます。Scene に LTCGI があり、「Effects を有効化」がオンの場合は、Effects タブで LTCGI の点灯と強さを操作できます。
 
 :::
 

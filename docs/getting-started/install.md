@@ -19,8 +19,8 @@ VRChat Creator Companion（VCC）で作成したワールドのプロジェク�
 
 :::warning インポートの順番の注意
 
-- **VizVid は VRC Light Volumes の後に**：VizVid を先にインポートすると、VizVid でコンパイルエラーが出ます（[トラブルシューティング](../help/troubleshooting.md#vizvid-と-vrc-light-volumes-を同時に導入するとコンパイルエラーが出る)）。
-- **照明システムは本体の後に**：先にインポートすると、Unity の Console に U# のコンパイルエラーが表示されます。
+- **VizVid と VRC Light Volumes を両方入れる場合**は、VRC Light Volumes を先に導入します。VizVid を先に入れるとコンパイルエラーが出ることがあります（[トラブルシューティング](../help/troubleshooting.md#vizvid-と-vrc-light-volumes-を同時に導入するとコンパイルエラーが出る)）。
+- **照明システムは本体の後に**インポートします。先にインポートすると、Unity の Console に UdonSharp のコンパイルエラーが出ることがあります。
 
 :::
 

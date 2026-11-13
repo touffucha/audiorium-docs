@@ -17,8 +17,9 @@ description: Inspector に表示される警告と、よくある問題の原因
 | ビルド先が PC（Windows）ではありません | ビルドのプラットフォームが Android など | **File › Build Settings** で PC（Windows）に切り替えます。Audiorium は PC 専用です |
 | TMP Essentials がプロジェクトにないため、コンソールの文字が表示されません | TMP Essentials を導入していない | 「TMP Essentials を導入」を押します |
 | 動画プレイヤーが原点から約 ○ km 離れています | 動画プレイヤーが原点（0, 0, 0）から 5 km より遠い | 動画プレイヤーと `AudioriumSetup` を原点の近くへ移動します（[原点から遠い](#コンソールの文字や絵が欠けて見える)） |
+| 動画プレイヤーが指定されていません | 動画プレイヤーが未接続。サンプルシーンを開いた直後にも表示されます | Scene に動画プレイヤーを配置し、Inspector の「動画プレイヤー」の欄に指定します |
 | コンソールがありません | コンソールが削除された | Ctrl+Z で元に戻すか、`AudioriumSetup` を削除してもう一度 Add Audiorium を実行します（Inspector の設定はデフォルトに戻ります） |
-| スピーカーがありません | スピーカーがすべて削除された | Ctrl+Z で元に戻すか、[スピーカー](../setup/speakers.md) の一覧で追加します（Surround と Top Middle はチェックを入れ、ほかは「+」を押します） |
+| スピーカーがありません | スピーカーがすべて削除された | Ctrl+Z で元に戻すか、[スピーカー](../setup/speakers.md) の一覧で追加します（Surround・Top Middle・Stereo Mix・Subwoofer はチェックを入れ、任意のスピーカーを足すときは「+」を押します） |
 
 ## コンソールの文字や絵が欠けて見える
 
@@ -52,7 +53,7 @@ description: Inspector に表示される警告と、よくある問題の原因
 
 ## 照明システムを本体より先にインポートした
 
-**症状**：Unity の Console に U# のコンパイルエラーが出ます。
+Unity の Console に UdonSharp のコンパイルエラーが出ることがあります。
 
 **直し方**：本体をインポートしてから **Tools › Audiorium › Add Audiorium** を選択すると、Audiorium が U# を再コンパイルします。順番は [インストール](../getting-started/install.md#インポートの順番) を参照してください。
 
@@ -66,7 +67,7 @@ description: Inspector に表示される警告と、よくある問題の原因
 
 **原因**：VizVid と VRC Light Volumes の組み合わせで起きるエラーで、Audiorium は関係しません。VRC Light Volumes は LTCGI に必要です。
 
-VizVid を VRC Light Volumes より先にインポートすると、次のエラーが 3 件出てコンパイルが止まります。残りの 2 件は `EnsureLightVolumeCookie` と `TryEstimatePlacement` についての同じ形のエラーです。
+両方を導入するとき、VizVid を先にインポートすると、次のようなエラーが出てコンパイルが止まることがあります。`EnsureLightVolumeCookie` や `TryEstimatePlacement` についても同様のエラーが出る場合があります。
 
 ```text
 Packages\idv.jlchntoz.vvmw\Editor\VVMW\Designer\ScreenConfiguratorEditor.cs(114,32): error CS1061: 'ScreenConfigurator' does not contain a definition for 'CreateLightVolume'
@@ -82,9 +83,9 @@ Packages\idv.jlchntoz.vvmw\Editor\VVMW\Designer\ScreenConfiguratorEditor.cs(114,
 
 ## LTCGI や VRC Light Volumes の光が、ワールドの壁や床に映らない
 
-**原因**：ワールドのマテリアルのシェーダーが LTCGI・VRC Light Volumes に対応していないためで、Audiorium の不具合ではありません。どちらの光も、対応したシェーダーを使ったマテリアルにだけ映ります。Unity 標準の Standard シェーダーは対応していません。
+どちらの光も、対応したシェーダーを使ったマテリアルにだけ映ります。Unity 標準の Standard シェーダーは対応していません。
 
-**直し方**：光を映したいマテリアルを、対応したシェーダー（Filamented、Mochie Standard など）に切り替え、マテリアルの設定で LTCGI と Light Volumes が有効になっていることを確認します。どちらのシェーダーにも、Standard のマテリアルをまとめて置き換える機能があります。サンプルシーンの壁や床は、Filamented で両方を有効にしています。
+動画の光を映す場合は、動画プレイヤーと LTCGI が [外部設定](../setup/external.md#ltcgi) の手順で接続されていることを確認します。光を映したいマテリアルを、対応したシェーダー（Filamented、Mochie Standard など）に切り替え、マテリアルの設定で LTCGI と Light Volumes が有効になっていることを確認します。どちらのシェーダーにも、Standard のマテリアルをまとめて置き換える機能があります。サンプルシーンの壁や床は、Filamented で両方を有効にしています。
 
 手順は、各シェーダーの説明を参照してください。
 
@@ -102,12 +103,9 @@ Packages\idv.jlchntoz.vvmw\Editor\VVMW\Designer\ScreenConfiguratorEditor.cs(114,
 
 ## コンソールの Effects タブが表示されない
 
-**原因**：次の両方を満たしていません（[視界エフェクト](../setup/visual-effects.md)）。
+「視界エフェクト」の「Effects を有効化」がオンで、Scene に AudioLink か LTCGI が配置されているとタブが表示されます。外部設定で接続をオフにしても、Scene に配置が残っている場合は表示されます。
 
-- 「視界エフェクト」の「Effects を有効化」がオン
-- 「外部設定」で AudioLink か LTCGI がオン
-
-外部設定にチェックの代わりに「入手先を開く」が表示される場合は、AudioLink と LTCGI がプロジェクトに導入されていません。
+外部設定の各項目に「入手先を開く」が表示される場合は、対応するパッケージをプロジェクトに導入します。LTCGI だけを配置した場合は、Effects タブに LTCGI の操作が表示されます。詳しくは [視界エフェクト](../setup/visual-effects.md#effects-タブが表示される条件) を参照してください。
 
 ## 外部設定に「照明システム」が表示されない
 
