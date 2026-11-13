@@ -16,7 +16,7 @@ AudioLink・LTCGI・照明システムを使うかを切り替えます。
 | LTCGI | Scene に LTCGI が無ければ配置し、動画プレイヤーの画面と接続します | 動画プレイヤーと LTCGI の接続を解除します。LTCGI は Scene に残ります |
 | 照明システム | ムービング（吊り）1 台、ライトショー、入場時の光過敏の警告を配置します。設定は、表示される「照明システムを選択」から開きます（[照明システム](./lights.md)） | 照明システムを無効にし、ビルドから外します。配置と設定は残り、オンに戻すと元どおりになります |
 
-AudioLink と YamaPlayer の LTCGI は、動画プレイヤー側で先に接続している場合もオンで表示されます。
+AudioLink と LTCGI は、動画プレイヤー側で先に接続している場合もオンで表示されます。
 
 ## AudioLink
 
@@ -37,7 +37,7 @@ LTCGI は、動画プレイヤーの画面の光をワールドの物体に映�
 
 - **VRC Light Volumes も必要です**。LTCGI 1.7.4 は、VRC Light Volumes が無い場合にコンパイルエラーが出ます（[トラブルシューティング](../help/troubleshooting.md#ltcgi-を導入するとコンパイルエラーが出る)）。
 - **YamaPlayer** の画面を接続するには、「LTCGI」をオンにします。YamaPlayer の Inspector の「LTCGI を使用」と同じ設定が入ります。
-- **VizVid** の画面を接続するには、「LTCGI」をオンにします。VizVid の LTCGI_Controller の Auto-Configure と同じ設定が入ります。
+- **VizVid** の画面を接続するには、「LTCGI」をオンにします。LTCGI_Controller の Inspector の Auto-Configure と同じ設定が入ります。
 
 LTCGI の配置と設定の詳細は、[LTCGI のコントローラーの配置と設定](https://ltcgi.dev/Getting%20Started/Setup/Controller)（英語）を参照してください。
 
