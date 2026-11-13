@@ -23,7 +23,7 @@ YamaPlayer か VizVid を Scene に配置し、位置と向きを決めます。
 
    ![Hierarchy で YamaPlayer を選択した状態](/img/quick-start/hierarchy-player.png)
 
-2. メニューの **Tools › Audiorium › Add Audiorium** を選択します。Hierarchy の右クリックメニューの **Audiorium** でも同じです。
+2. メニューの **Tools › Audiorium › Add Audiorium** を選択します。Hierarchy の右クリックメニューの **Audiorium › Add Audiorium** でも同じです。
 
 </div>
 

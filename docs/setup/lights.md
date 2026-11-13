@@ -17,7 +17,7 @@ description: 照明システム（拡張パッケージ）の照明の配置、�
 
   ![外部設定の「照明システム」](/img/lights/external-lights.png)
 
-- `AudioriumSetup` を選択し、**Tools › Audiorium › Add Lights**（Hierarchy の右クリックメニューの **Audiorium Lights** でも同じ）
+- `AudioriumSetup` を選択し、**Tools › Audiorium › Add Lights**（Hierarchy の右クリックメニューの **Audiorium › Add Lights** でも同じ）
 
 `AudioriumSetup` の中に `AudioriumLights` が追加され、ムービング（吊り）・ライトショー・光過敏の警告が配置されます。警告の設定は [入場時の光過敏の警告](./entry-notice.md) を参照してください。
 
