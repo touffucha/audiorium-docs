@@ -11,7 +11,7 @@ hide_table_of_contents: true
 
 ## 動画プレイヤーを配置する
 
-YamaPlayer か VizVid を Scene に配置し、位置と向きを決めます。スピーカーとコンソールは、この画面を基準に配置されます。
+YamaPlayer か VizVid を Scene に配置し、位置と向きを決めます。Audiorium によって生成される AudioSource（以降、スピーカー）とコンソールは、動画プレイヤーの位置を基準に配置されます。
 
 ![Scene に YamaPlayer を配置して選択した状態。Hierarchy に YamaPlayer、Scene ビューに動画プレイヤーの画面が表示されている。Audiorium を配置する前](/img/quick-start/player-placed.png "full")
 
@@ -53,7 +53,7 @@ Add Audiorium の直後は、Front・Surround・Top Middle・Stereo Mix・Subwoo
 
 :::info TMP Importer が表示された場合
 
-「Import TMP Essentials」を押します。導入した後にコンソールの文字が四角のまま表示される場合は、[トラブルシューティング](../help/troubleshooting.md#コンソールの文字が表示されない) を参照してください。
+「Import TMP Essentials」を押します。導入後、Scene ビューの Audiorium コンソールが文字化けしている場合は、[トラブルシューティング](../help/troubleshooting.md#コンソールの文字が表示されない) を参照してください。
 
 :::
 
@@ -70,4 +70,4 @@ Add Audiorium の直後は、Front・Surround・Top Middle・Stereo Mix・Subwoo
 
 ## ビルドして VRChat で確認する
 
-動画の外部 URL は Unity の Play モードでは再生できません。動作確認は、**VRChat SDK › Show Control Panel** の「Builder」タブの「Build & Test」、もしくは「Build & Publish」で行います。
+動画の外部 URL は Unity の Play モードでは再生できません。（SDK 3.10.6 時点）動作確認は、**VRChat SDK › Show Control Panel** の「Builder」タブの「Build & Test」、もしくは「Build & Publish」で行います。

@@ -97,7 +97,7 @@ Packages\idv.jlchntoz.vvmw\Editor\VVMW\Designer\ScreenConfiguratorEditor.cs(114,
 
 ## Play モードで音が鳴らない
 
-**原因**：動画の外部 URL は、Play モードでは再生できません。
+**原因**：動画の外部 URL は、Play モードでは再生できません。（SDK 3.10.6 時点）
 
 **直し方**：ビルドして VRChat で確認します（[クイックスタート](../getting-started/quick-start.md#ビルドして-vrchat-で確認する)）。
 
