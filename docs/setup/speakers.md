@@ -50,7 +50,7 @@ Hierarchy で `ListeningPosition` か `AudioriumSetup` を選択すると、Scen
 
 Scene 上で動画プレイヤーを移動した後、スピーカー・コンソール・視聴位置もまとめて移動するには、Hierarchy で `AudioriumSetup` を選択し、同じだけ移動します。
 
-ビルド時と Unity の Play モードでは、個別に移動していない Stereo Mix と Subwoofer が、動画プレイヤーの音源位置に合うよう調整されます。Echo の板もスクリーンに合わせて調整されます。これらの調整は、ビルドや Play モードで使う Scene に適用されます。
+ビルドと Play モードのときだけ、個別に移動していない Stereo Mix と Subwoofer は動画プレイヤーの音源の位置に、Echo の板は画面に合わせて調整されます。保存した Scene は変わりません。
 
 ## スピーカーごとの設定
 
