@@ -6,7 +6,7 @@ description: AudioriumSetup の Inspector の「詳細」の節。コンソー�
 
 # 詳細
 
-コンソールの動作と、音声の処理を設定します。
+Audiorium コンソールの権限、UI 操作音、映像と音声遅延を設定します。
 
 ![詳細の節](/img/setup/advanced.png)
 
@@ -14,7 +14,7 @@ description: AudioriumSetup の Inspector の「詳細」の節。コンソー�
 
 | 項目 | 内容 |
 | --- | --- |
-| デフォルト画面 | コンソールで最初に表示するタブ。Scene のコンソールの表示も切り替わります |
+| デフォルト画面 | ワールド入場時にデフォルトで表示されるタブ。Scene ビューの表示も切り替わります |
 | 操作権限 | Sound Mode・Speaker EQ・Live のタブを操作できるユーザー |
 
 ### 操作権限
