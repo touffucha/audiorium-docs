@@ -6,7 +6,7 @@ description: AudioriumSetup の Inspector の「Audiorium コンソール」の�
 
 # Audiorium コンソール
 
-ワールドに配置するコンソールの配色と台を選択します。選択した組み合わせは、節の下の見本に表示されます。
+ワールドに配置するコンソールのカラーテーマとモデルを選択します。選択した組み合わせは、インスペクター内のプレビューで確認することができます。
 
 ![Audiorium コンソールの節。テーマは Graphite、モデルは枠のみ](/img/setup/console.png)
 
@@ -43,4 +43,4 @@ description: AudioriumSetup の Inspector の「Audiorium コンソール」の�
 
 ## コンソールの位置を変更する
 
-「コンソールを選択」を押すと、コンソールが Hierarchy で選択されます。台のあるモデルでは、台ごと選択されます。Scene ビューで移動と回転を行います。スピーカーは動きません。
+「コンソールを選択」を押すと、コンソールが Hierarchy で選択されます。台のあるモデルでは、台ごと選択されます。Scene ビューで移動と回転を行います。AudioSource の配置には影響しません。
