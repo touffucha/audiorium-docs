@@ -13,7 +13,7 @@ description: コンソールの各タブの表示条件と操作、反映され�
 | --- | --- | --- | --- |
 | Sound Mode | ワールド全体（GLOBAL） | 必要 | 常に表示 |
 | Speaker EQ | ワールド全体（GLOBAL） | 必要 | 常に表示 |
-| Live | ワールド全体（GLOBAL） | 必要 | 照明システムのライトショーが接続されている |
+| Live | ワールド全体（GLOBAL） | 必要 | 照明システムが有効化されている |
 | Effects | 操作したユーザーの画面のみ（LOCAL） | 不要 | 「Effects を有効化」がオンで、Scene に AudioLink か LTCGI がある |
 
 操作できるユーザーは、`AudioriumSetup` の Inspector の [詳細](../setup/advanced.md#操作権限) で設定します。
@@ -68,10 +68,11 @@ description: コンソールの各タブの表示条件と操作、反映され�
 
 | 区分 | 項目 | 内容 |
 | --- | --- | --- |
-| BEAT | Tremor・Radial・Chroma・Glitch | チェックで有効にし、スライダーで音の拍に合わせて動く効果の強さを調整します |
-| LOOK | NTSC・VHS・Bleach・Dither・Cel・Sketch・Neon | 画面全体の質感を切り替えます |
-| WORLD | Echo・Invert | Echo は動画の映像の範囲に重なります |
-| WORLD | LTCGI | 動画の光の点灯と強さを調整します |
-| FX Bypass | — | BEAT・LOOK・Echo・Invert を一時的に無効にします。LTCGI の点灯は個別に切り替えます |
+| BEAT | Tremor・Radial・Chroma・Glitch | AudioLink に反応して、視界にエフェクトを発生させます |
+| LOOK | NTSC・VHS・Bleach・Dither・Cel・Sketch・Neon | 視界全体にエフェクトを掛けます |
+| WORLD | Echo | 動画プレイヤーのスクリーンに AudioLink に反応するエフェクトを掛けます |
+| WORLD | Invert | AudioLink に反応して、白く大きい立方体をランダムに出現させます |
+| WORLD | LTCGI | 動画プレイヤーのスクリーンの光を、ワールドに落とします。LTCGI Light のスライダーで明るさを調整できます |
+| FX Bypass | — | LTCGI を除く、すべてのエフェクトを無効化します。 |
 
 視界エフェクトは画面酔いを起こすことがあります。注意文の表示は [視界エフェクト](../setup/visual-effects.md) で設定します。
