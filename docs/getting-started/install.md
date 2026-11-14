@@ -17,6 +17,8 @@ VRChat Creator Companion（VCC）で作成したワールドのプロジェク�
 | 3 | Audiorium の unitypackage（本体） | 必須 |
 | 4 | AudioriumLightingSystem の unitypackage（照明システム） | 購入した場合 |
 
+「Audiorium」および「外部依存パッケージ」を、以前からご利用のプロジェクト等にインポートする場合、プロジェクト内の既存アセットとの相性により、エラーが生じる場合があります。どのパッケージがエラーの原因となったかを特定しやすくするため、1 つずつインポートすることをおすすめいたします。
+
 :::warning インポートの順番の注意
 
 - **VizVid と VRC Light Volumes を両方入れる場合**は、VRC Light Volumes を先に導入します。VizVid を先に入れるとコンパイルエラーが出ることがあります（[トラブルシューティング](../help/troubleshooting.md#vizvid-と-vrc-light-volumes-を同時に導入するとコンパイルエラーが出る)）。
@@ -25,9 +27,9 @@ VRChat Creator Companion（VCC）で作成したワールドのプロジェク�
 :::
 
 - 動画プレイヤーは、[YamaPlayer の導入手順](https://github.com/koorimizuw/YamaPlayer/wiki/YamaPlayer-%E5%B0%8E%E5%85%A5%E6%89%8B%E9%A0%86) か [VizVid の導入方法](https://xtlcdn.github.io/VizVid/docs/simple_ja.html) に従って導入します。
-- AudioLink・VRC Light Volumes・LTCGI は VCC で追加します。AudioLink は後から追加できます。
-- サンプルシーンを開く場合は、AudioLink・VRC Light Volumes・LTCGI の 3 つとも追加します。追加しないと、シーンに Missing が表示されます。
-- 照明システムは、単体では動作しません。
+- AudioLink・VRC Light Volumes・LTCGI は VCC で追加します。
+- サンプルシーンを開く場合は、AudioLink・VRC Light Volumes・LTCGI の 3 つとも追加します。追加しない場合、シーン上の一部 Prefab が Missing になるなど、不具合が生じます。
+- 照明システム単体では動作しません。必ず、Audiorium 本体と併せて導入してください。
 
 :::info TMP Importer が表示された場合
 
@@ -35,15 +37,9 @@ VRChat Creator Companion（VCC）で作成したワールドのプロジェク�
 
 ![TMP Importer のウィンドウ](/img/install/tmp-importer.png)
 
-導入した後にコンソールの文字が四角のまま表示される場合は、Unity を開き直します。
+導入後、Scene ビューの Audiorium コンソールが文字化けしている場合は、[トラブルシューティング](../help/troubleshooting.md#コンソールの文字が表示されない) を参照してください。
 
 :::
-
-## サンプルシーンを入れない場合
-
-本体と照明システムには、[サンプルシーン](./sample-scene.md) が入っています。使わない場合は、インポートの画面で `Showroom` のチェックを外します。照明システムありのサンプルシーンは本体の `Showroom` のモデルと光を使うので、このシーンを使う場合は本体の `Showroom` のチェックを外さないでください。
-
-![Import Unity Package の画面で Showroom のチェックを外した状態](/img/install/import-without-showroom.png)
 
 ## インストールを確認する
 
