@@ -6,7 +6,7 @@ description: AudioriumSetup の Inspector の「Audiorium コンソール」の�
 
 # Audiorium コンソール
 
-ワールドに配置するコンソールのカラーテーマとモデルを選択します。選択した組み合わせは、インスペクター内のプレビューで確認することができます。
+ワールドに配置するコンソールのカラーテーマとモデルを選択します。選択した組み合わせは、Inspector 内のプレビューで確認することができます。
 
 ![Audiorium コンソールの節。テーマは Graphite、モデルは枠のみ](/img/setup/console.png)
 
