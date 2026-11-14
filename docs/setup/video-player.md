@@ -6,7 +6,7 @@ description: AudioriumSetup の Inspector の「動画プレイヤー」の節�
 
 # 動画プレイヤー
 
-接続している動画プレイヤーと、スピーカーの配置の基準にするスクリーンを設定します。対応する動画プレイヤーは YamaPlayer と VizVid です（動作確認済みのバージョンは [必要な物と動作環境](../getting-started/requirements.md)）。
+接続している動画プレイヤーと、スピーカーの配置の基準にするスクリーンを設定します。対応する動画プレイヤーと動作確認済みのバージョンは [動作環境](../getting-started/requirements.md#外部依存パッケージ) を参照してください。
 
 ![動画プレイヤーの節](/img/setup/player.png)
 

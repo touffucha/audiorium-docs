@@ -20,13 +20,13 @@ AudioLink と LTCGI は、動画プレイヤー側で先に接続している場
 
 ## AudioLink
 
-AudioLink は、音を解析してワールドの演出に渡す仕組みです。VCC でプロジェクトに追加してから、「AudioLink」をオンにします。
+AudioLink の役割と必要条件は [動作環境](../getting-started/requirements.md#外部依存パッケージ) を参照してください。VCC でプロジェクトに追加してから、「AudioLink」をオンにします。
 
 ## LTCGI
 
-LTCGI は、動画プレイヤーの画面の光をワールドの物体に映す仕組みです。Scene に LTCGI があり、「Effects を有効化」がオンの場合は、コンソールの Effects タブで LTCGI のオン・オフと強さを操作できます。操作は、操作したユーザーの画面にのみ反映されます。
+LTCGI の役割と必要なパッケージは [動作環境](../getting-started/requirements.md#外部依存パッケージ) を参照してください。Scene に LTCGI があり、「Effects を有効化」がオンの場合は、コンソールの Effects タブで LTCGI のオン・オフと強さを操作できます。操作は、操作したユーザーの画面にのみ反映されます。
 
-- **VRC Light Volumes も必要です**。LTCGI 1.7.4 は、VRC Light Volumes が無い場合にコンパイルエラーが出ます（[トラブルシューティング](../help/troubleshooting.md#ltcgi-を導入するとコンパイルエラーが出る)）。
+- **コンパイルエラーが出る場合**は、[トラブルシューティング](../help/troubleshooting.md#ltcgi-を導入するとコンパイルエラーが出る) を参照してください。
 - **YamaPlayer** の画面を接続するには、「LTCGI」をオンにします。YamaPlayer の Inspector の「LTCGI を使用」と同じ設定が入ります。
 - **VizVid** の画面を接続するには、「LTCGI」をオンにします。LTCGI_Controller の Inspector の Auto-Configure と同じ設定が入ります。先に Auto-Configure で接続していた場合は、チェックを外しても解除されません。LTCGI_Controller の Inspector の Un-Configure で解除します。
 

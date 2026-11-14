@@ -65,7 +65,7 @@ Unity の Console に UdonSharp のコンパイルエラーが出ることがあ
 
 ## VizVid と VRC Light Volumes を同時に導入するとコンパイルエラーが出る
 
-**原因**：VizVid と VRC Light Volumes の組み合わせで起きるエラーで、Audiorium は関係しません。VRC Light Volumes は LTCGI に必要です。
+**原因**：VizVid と VRC Light Volumes の組み合わせで起きるエラーで、Audiorium は関係しません。各パッケージの必要条件は [動作環境](../getting-started/requirements.md#外部依存パッケージ) を参照してください。
 
 両方を導入するとき、VizVid を先にインポートすると、次のようなエラーが出てコンパイルが止まることがあります。`EnsureLightVolumeCookie` や `TryEstimatePlacement` についても同様のエラーが出る場合があります。
 
@@ -79,7 +79,7 @@ Packages\idv.jlchntoz.vvmw\Editor\VVMW\Designer\ScreenConfiguratorEditor.cs(114,
 
 **原因**：LTCGI 1.7.4 は、VRC Light Volumes が無いと U# のコンパイルエラーになります。その間は Audiorium の U# もコンパイルされず、Audiorium が動作しません。
 
-**直し方**：VRC Light Volumes も導入します。動作確認済みのバージョンは [必要な物と動作環境](../getting-started/requirements.md) にあります。
+**直し方**：VRC Light Volumes も導入します。動作確認済みのバージョンは [動作環境](../getting-started/requirements.md#外部依存パッケージ) にあります。
 
 ## LTCGI や VRC Light Volumes の光が、ワールドの壁や床に映らない
 
