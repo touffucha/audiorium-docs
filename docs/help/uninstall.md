@@ -14,7 +14,7 @@ Hierarchy で `AudioriumSetup` を削除します。Ctrl+Z で元に戻せます
 ![Hierarchy の AudioriumSetup](/img/setup/hierarchy.png)
 
 - **一緒に削除されるオブジェクト**：スピーカー、コンソール、照明、入場時の警告など、`AudioriumSetup` の中にあるオブジェクト（ご自身で中に配置したオブジェクトも含みます）
-- **残るオブジェクト**：`AudioriumSetup` の外にご自身で配置したオブジェクト
+- **残るオブジェクト**：`AudioriumSetup` の外にご自身で配置したオブジェクトと、外部設定で配置された AudioLink・LTCGI（Scene のルートにあります）
 
 Audiorium は、保存した Scene の動画プレイヤーの音源の設定を書き換えません。削除した後も、動画プレイヤーは元の設定のまま再生されます。
 
