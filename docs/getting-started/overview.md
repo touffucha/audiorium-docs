@@ -12,7 +12,7 @@ Audiorium は、VRChat のワールドに配置する音響・演出コンソー
 
 購入前に、[公開ワールド](https://vrchat.com/home/launch?worldId=wrld_3b124d05-d1c4-4ae3-a216-0b58c5f82ab9)で操作を試せます。
 
-## 2 つの画面
+## コンソールと Inspector
 
 ![コンソール](/img/console/sound.webp "full")
 
