@@ -17,6 +17,7 @@ description: Inspector に表示される警告と、よくある問題の原因
 | ビルド先が PC（Windows）ではありません | ビルドのプラットフォームが Android など | **File › Build Settings** で PC（Windows）に切り替えます。Audiorium は PC 専用です |
 | TMP Essentials がプロジェクトにないため、コンソールの文字が表示されません | TMP Essentials を導入していない | 「TMP Essentials を導入」を押します |
 | 動画プレイヤーが原点から約 ○ km 離れています | 動画プレイヤーが原点（0, 0, 0）から 5 km より遠い | 動画プレイヤーと `AudioriumSetup` を原点の近くへ移動します（[原点から遠い](#コンソールの文字や絵が欠けて見える)） |
+| VizVid に LTCGI を自動で接続できませんでした | Audiorium が VizVid の LTCGI の設定の部品を見つけられない（動作確認済みの版と仕組みが違う VizVid など） | LTCGI_Controller の Inspector で、VizVid の Auto-Configure を押します |
 | コンソールがありません | コンソールが削除された | Ctrl+Z で元に戻すか、`AudioriumSetup` を削除してもう一度 Add Audiorium を実行します（Inspector の設定はデフォルトに戻ります） |
 | スピーカーがありません | スピーカーがすべて削除された | Ctrl+Z で元に戻すか、[スピーカー](../setup/speakers.md) の一覧で追加します（Surround・Top Middle・Stereo Mix・Subwoofer はチェックを入れ、任意のスピーカーを足すときは「+」を押します） |
 
