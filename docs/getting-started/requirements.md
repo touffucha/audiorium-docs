@@ -22,13 +22,13 @@ description: Audiorium の動作環境と、外部依存パッケージの動作
 | --- | --- | --- | --- |
 | YamaPlayer | 1.5.19 | 動画プレイヤー。VizVid とどちらかが必須 | [BOOTH](https://booth.pm/ja/items/4768863) |
 | VizVid | 1.8.3 | 動画プレイヤー。YamaPlayer とどちらかが必須 | [BOOTH](https://booth.pm/ja/items/5056077) |
-| AudioLink | 3.1.2 | 推奨。視界エフェクト、音に反応する照明と EQ のグラフに使います | [GitHub](https://github.com/llealloo/audiolink) |
+| AudioLink | 3.1.2 | 必須。視界エフェクト、音に反応する照明と EQ のグラフに使います | [GitHub](https://github.com/llealloo/audiolink) |
 | LTCGI | 1.7.4 | 任意。コンソールから LTCGI の点灯と強さを操作します | [GitHub](https://github.com/PiMaker/ltcgi#download) |
 | VRC Light Volumes | 3.0.1 | LTCGI を使う場合は必須 | [GitHub](https://github.com/REDSIM/VRCLightVolumes) |
 
-:::info AudioLink を導入しない場合
+:::info AudioLink が無い場合
 
-BEAT・LOOK・Echo・Invert は使用できず、照明は音に反応せず、EQ のグラフには音のスペクトルが表示されません。音響の機能は引き続き使用できます。Scene に LTCGI があり、「Effects を有効化」がオンの場合は、Effects タブで LTCGI の点灯と強さを操作できます。
+AudioLink が無い場合は、一部の機能（Effects タブの BEAT・LOOK・Echo・Invert・FX Bypass、照明システムが音に反応する動き、EQ のグラフの音のスペクトル）が利用できません。
 
 :::
 
