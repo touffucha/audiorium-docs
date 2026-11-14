@@ -62,16 +62,16 @@ description: コンソールの各タブの表示条件と操作、反映され�
 
 ## Effects
 
-視界エフェクトと LTCGI の光を調整します。操作は自分の画面にのみ反映されます。表示される項目は、Scene にある AudioLink と LTCGI によって変わります。
+視界エフェクトと LTCGI の光を調整します。操作は、操作したユーザーの画面にのみ反映されます。BEAT・LOOK・Echo・Invert・FX Bypass は AudioLink が、LTCGI は LTCGI が Scene にある場合に表示されます。
 
 ![コンソールの Effects タブ](/img/console/effects.webp)
 
 | 区分 | 項目 | 内容 |
 | --- | --- | --- |
-| BEAT | Tremor・Radial・Chroma・Glitch | AudioLink がある場合に表示します。チェックで有効にし、スライダーで音の拍に合わせて動く効果の強さを調整します |
-| LOOK | NTSC・VHS・Bleach・Dither・Cel・Sketch・Neon | AudioLink がある場合に表示します。画面全体の質感を切り替えます |
-| WORLD | Echo・Invert | AudioLink がある場合に表示します。Echo は動画の映像の範囲に重なります |
-| WORLD | LTCGI | LTCGI がある場合に表示します。動画の光の点灯と強さを調整します |
+| BEAT | Tremor・Radial・Chroma・Glitch | チェックで有効にし、スライダーで音の拍に合わせて動く効果の強さを調整します |
+| LOOK | NTSC・VHS・Bleach・Dither・Cel・Sketch・Neon | 画面全体の質感を切り替えます |
+| WORLD | Echo・Invert | Echo は動画の映像の範囲に重なります |
+| WORLD | LTCGI | 動画の光の点灯と強さを調整します |
 | FX Bypass | — | BEAT・LOOK・Echo・Invert を一時的に無効にします。LTCGI の点灯は個別に切り替えます |
 
 視界エフェクトは画面酔いを起こすことがあります。注意文の表示は [視界エフェクト](../setup/visual-effects.md) で設定します。
