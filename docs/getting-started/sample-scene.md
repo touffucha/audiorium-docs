@@ -36,7 +36,7 @@ description: 付属のサンプルシーン（照明システムなし・照明�
    | YamaPlayer | `YamaPlayer.prefab` | X 0、Y 3.135、Z 7.28 | 2.88 |
    | VizVid | `VVMW (On-Screen Controls).prefab` | X 0、Y -0.105、Z 7.28 | 2.16 |
 
-2. Hierarchy で `AudioriumSetup` を選択し、Inspector の「動画プレイヤー」の欄へ、Hierarchy から動画プレイヤーをドラッグします。Scene に保存されているスピーカーとコンソールの配置はそのまま使われます。接続すると、Inspector の「動画プレイヤーが指定されていません」という警告が消えます。
+2. Hierarchy で `AudioriumSetup` を選択し、Inspector の「動画プレイヤー」の欄へ、Hierarchy から動画プレイヤーをドラッグします。指定すると、Inspector に「外部設定」や「スピーカー」などの節が表示されます。スピーカーとコンソールの配置は変更されません。
 
 動画の音で視界エフェクトや照明を動かすには、`AudioriumSetup` の「外部設定」で「AudioLink」をオンにします。動画の光を壁や床に映す場合は、動画プレイヤーを [LTCGI に接続](../setup/external.md#ltcgi) します。
 
