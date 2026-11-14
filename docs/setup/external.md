@@ -37,7 +37,7 @@ LTCGI は、動画プレイヤーの画面の光をワールドの物体に映�
 
 - **VRC Light Volumes も必要です**。LTCGI 1.7.4 は、VRC Light Volumes が無い場合にコンパイルエラーが出ます（[トラブルシューティング](../help/troubleshooting.md#ltcgi-を導入するとコンパイルエラーが出る)）。
 - **YamaPlayer** の画面を接続するには、「LTCGI」をオンにします。YamaPlayer の Inspector の「LTCGI を使用」と同じ設定が入ります。
-- **VizVid** の画面を接続するには、「LTCGI」をオンにします。LTCGI_Controller の Inspector の Auto-Configure と同じ設定が入ります。
+- **VizVid** の画面を接続するには、「LTCGI」をオンにします。LTCGI_Controller の Inspector の Auto-Configure と同じ設定が入ります。先に Auto-Configure で接続していた場合は、チェックを外しても解除されません。LTCGI_Controller の Inspector の Un-Configure で解除します。
 
 LTCGI の配置と設定の詳細は、[LTCGI のコントローラーの配置と設定](https://ltcgi.dev/Getting%20Started/Setup/Controller)（英語）を参照してください。
 
