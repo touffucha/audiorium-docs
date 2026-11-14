@@ -14,15 +14,15 @@ description: AudioriumSetup の Inspector の「スピーカー」の節。ス�
 
 ![真上から見たスピーカーの配置。Add Audiorium の直後](/img/setup/speaker-layout.svg)
 
-| スピーカー | 出力数 | 鳴らす位置 |
+| スピーカー | 出力数 | 初期配置 |
 | --- | --- | --- |
-| Front | 2 | 画面の左右。外せません |
+| Front | 2 | スクリーンの左右。外せません |
 | Surround | 2 | 視聴位置の横と後ろ |
 | Top Middle | 2 | 視聴位置の真上 |
-| Stereo Mix | 1 | 画面の中心。動画の音をステレオのまま鳴らします |
-| Subwoofer | 1 | 画面の中心。動画の音の低音を鳴らします |
+| Stereo Mix | 1 | スクリーンの中心。動画の音をステレオのまま鳴らします |
+| Subwoofer | 1 | スクリーンの中心。動画の音の低音を鳴らします |
 
-出力は、合わせて **8 つまで**使えます。配置した直後は 8 つすべてを使っています。
+出力は、合わせて **8 つまで**使用可能です。
 
 ## 追加と削除
 
@@ -42,15 +42,15 @@ description: AudioriumSetup の Inspector の「スピーカー」の節。ス�
 
 ### 視聴位置
 
-視聴位置（`AudioriumSetup` の中の `ListeningPosition`）は、スピーカーの音が届く範囲を決める基準の位置です。Add Audiorium が、画面の正面に自動で配置します。通常は、移動する必要はありません。客席がこの位置から数 m 以上離れているときだけ、Scene ビューで移動します。
+視聴位置（`AudioriumSetup` の中の `ListeningPosition`）は、スピーカーの音が届く範囲を決める基準の位置です。通常は、移動する必要はありません。客席がこの位置から数 m 以上離れているときだけ、Scene ビューで移動します。
 
-Hierarchy で `ListeningPosition` か `AudioriumSetup` を選択すると、Scene ビューに視聴位置が表示されます。移動すると、スピーカーの音が届く範囲の円がその場で変わります。金色の円は、視聴位置で大きさが決まる円です。
+Hierarchy で `ListeningPosition` か `AudioriumSetup` を選択すると、Scene ビューに視聴位置が表示されます。移動すると、AudioSource の最大距離が変わります。黄色の円は、視聴位置に応じて範囲が変わります。
 
 ### 動画プレイヤーを移動した場合
 
 Scene 上で動画プレイヤーを移動した後、スピーカー・コンソール・視聴位置もまとめて移動するには、Hierarchy で `AudioriumSetup` を選択し、同じだけ移動します。
 
-ビルドと Play モードのときだけ、個別に移動していない Stereo Mix と Subwoofer は動画プレイヤーの音源の位置に、Echo の板は画面に合わせて調整されます。保存した Scene は変わりません。
+ビルドと Play モードのときだけ、個別に移動していない Stereo Mix と Subwoofer は動画プレイヤーの音源の位置に、Echo の板は画面に合わせて調整されます。
 
 ## スピーカーごとの設定
 
