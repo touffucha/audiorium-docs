@@ -103,9 +103,9 @@ Packages\idv.jlchntoz.vvmw\Editor\VVMW\Designer\ScreenConfiguratorEditor.cs(114,
 
 ## コンソールの Effects タブが表示されない
 
-「視界エフェクト」の「Effects を有効化」がオンで、Scene に AudioLink か LTCGI が配置されているとタブが表示されます。外部設定で接続をオフにしても、Scene に配置が残っている場合は表示されます。
+**原因**：「Effects を有効化」がオフか、Scene に AudioLink が配置されていません。
 
-外部設定の各項目に「入手先を開く」が表示される場合は、対応するパッケージをプロジェクトに導入します。LTCGI だけを配置した場合は、Effects タブに LTCGI の操作が表示されます。詳しくは [視界エフェクト](../setup/visual-effects.md#effects-タブが表示される条件) を参照してください。
+**直し方**：「視界エフェクト」の「Effects を有効化」をオンにし、「外部設定」の「AudioLink」をオンにします。「入手先を開く」が表示される場合は、先に VCC で AudioLink をプロジェクトに追加します。
 
 ## 外部設定に「照明システム」が表示されない
 

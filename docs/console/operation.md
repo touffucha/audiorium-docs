@@ -14,7 +14,7 @@ description: コンソールの各タブの表示条件と操作、反映され�
 | Sound Mode | ワールド全体（GLOBAL） | 必要 | 常に表示 |
 | Speaker EQ | ワールド全体（GLOBAL） | 必要 | 常に表示 |
 | Live | ワールド全体（GLOBAL） | 必要 | 照明システムが有効化されている |
-| Effects | 操作したユーザーの画面のみ（LOCAL） | 不要 | 「Effects を有効化」がオンで、Scene に AudioLink か LTCGI がある |
+| Effects | 操作したユーザーの画面のみ（LOCAL） | 不要 | 「Effects を有効化」がオン |
 
 操作できるユーザーは、`AudioriumSetup` の Inspector の [詳細](../setup/advanced.md#操作権限) で設定します。
 
@@ -62,7 +62,7 @@ description: コンソールの各タブの表示条件と操作、反映され�
 
 ## Effects
 
-視界エフェクトと LTCGI の光を調整します。操作は、操作したユーザーの画面にのみ反映されます。BEAT・LOOK・Echo・Invert・FX Bypass は AudioLink が、LTCGI は LTCGI が Scene にある場合に表示されます。
+視界エフェクトと LTCGI の光を調整します。操作は、操作したユーザーの画面にのみ反映されます。LTCGI の項目は、Scene に LTCGI がある場合に表示されます。
 
 ![コンソールの Effects タブ](/img/console/effects.webp)
 

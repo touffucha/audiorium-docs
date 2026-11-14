@@ -1,7 +1,7 @@
 ---
 title: 外部設定
 sidebar_position: 3
-description: AudioriumSetup の Inspector の「外部設定」の節。AudioLink・LTCGI・照明システムのオンとオフと、AudioLink・LTCGI で使える機能
+description: AudioriumSetup の Inspector の「外部設定」の節。AudioLink・LTCGI・照明システムのオンとオフ
 ---
 
 # 外部設定
@@ -21,15 +21,6 @@ AudioLink と LTCGI は、動画プレイヤー側で先に接続している場
 ## AudioLink
 
 AudioLink は、音を解析してワールドの演出に渡す仕組みです。VCC でプロジェクトに追加してから、「AudioLink」をオンにします。
-
-| 機能 | AudioLink がある場合 | AudioLink が無い場合 |
-| --- | --- | --- |
-| Effects タブの BEAT・LOOK・Echo・Invert | 「Effects を有効化」がオンの場合に使用できます | 表示されません。LTCGI がある場合は LTCGI の操作が表示されます |
-| 照明システム | AudioLink に送られた音に反応します | 音に反応しません |
-| コンソールの EQ のグラフ | AudioLink に送られた音のスペクトルを表示します | EQ の周波数特性を表示します |
-| 音響（スピーカー、Sound Mode、Speaker EQ） | 使用できます | 使用できます |
-
-タブの表示条件は [視界エフェクト](./visual-effects.md#effects-タブが表示される条件) を参照してください。
 
 ## LTCGI
 
