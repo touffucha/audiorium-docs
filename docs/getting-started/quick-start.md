@@ -19,19 +19,21 @@ YamaPlayer か VizVid を Scene に配置し、位置と向きを決めます。
 
 <div className="paren-list">
 
-1. Hierarchy で動画プレイヤーを選択します。
+1. メニューの **Tools › Audiorium › Add Audiorium** を選択します。Hierarchy の右クリックメニューの **Audiorium › Add Audiorium** でも同じです。
 
-   ![Hierarchy で YamaPlayer を選択した状態](/img/quick-start/hierarchy-player.png)
+   `AudioriumSetup` が Hierarchy に追加され、選択された状態になります。この時点では、スピーカーとコンソールはまだ配置されません。
 
-2. メニューの **Tools › Audiorium › Add Audiorium** を選択します。Hierarchy の右クリックメニューの **Audiorium › Add Audiorium** でも同じです。
+2. Hierarchy の動画プレイヤーを、Inspector の「動画プレイヤー」の欄へドラッグします。
+
+   ![Add Audiorium の直後の画面。Hierarchy で AudioriumSetup が選択され、Inspector の「動画プレイヤー」の欄は空。Hierarchy の YamaPlayer から Inspector の欄へ、ドラッグする向きを矢印で示している](/img/quick-start/player-drag.png)
 
 </div>
 
-`AudioriumSetup` が Hierarchy に追加され、スピーカーとコンソールが配置されます。
+動画プレイヤーに接続され、スピーカーとコンソールが配置されます。
 
-![Add Audiorium の直後。Scene にスピーカーとコンソールが配置され、Inspector に AudioriumSetup の設定が表示される](/img/quick-start/editor-after-add.png)
+![動画プレイヤーに接続した直後。Scene にスピーカーとコンソールが配置され、Inspector に AudioriumSetup の設定が表示される](/img/quick-start/editor-after-add.png)
 
-![Add Audiorium の直後の Hierarchy](/img/setup/hierarchy.png)
+![動画プレイヤーに接続した直後の Hierarchy](/img/setup/hierarchy.png)
 
 | 配置されるオブジェクト | 説明 |
 | --- | --- |
@@ -40,14 +42,11 @@ YamaPlayer か VizVid を Scene に配置し、位置と向きを決めます。
 | `AudioriumConsole` | コンソール。台のあるモデルを選択すると、台の名前の `ConsoleMount_` の中に入ります |
 | `AudioControls` など、そのほかのオブジェクト | Audiorium の動作に使うオブジェクト。移動・削除しないでください |
 
-Add Audiorium の直後は、Front・Surround・Top Middle・Stereo Mix・Subwoofer の 5 種類、8 つの出力が配置されます。使わないスピーカーは [こちらの手順](../setup/speakers.md#追加と削除) で外します。
+接続した直後は、Front・Surround・Top Middle・Stereo Mix・Subwoofer の 5 種類、8 つの出力が配置されます。使わないスピーカーは [こちらの手順](../setup/speakers.md#追加と削除) で外します。
 
-:::info 動画プレイヤーを選択せずに押した場合
+:::tip 動画プレイヤーを選択してから Add Audiorium を選択した場合
 
-- **動画プレイヤーが 1 台だけ**：その動画プレイヤーに接続します。
-- **複数ある**：動画プレイヤーに接続していない `AudioriumSetup` が配置されます。Hierarchy から動画プレイヤーを Inspector の「動画プレイヤー」の欄へドラッグすると接続し、スピーカーとコンソールが配置されます。
-
-![動画プレイヤーの欄が空の状態](/img/setup/player-empty.png)
+選択していた動画プレイヤーに接続した状態で配置されます。手順 2 は要りません。
 
 :::
 
