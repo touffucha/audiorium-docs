@@ -65,8 +65,27 @@ TMP Essentials が無いと、コンソールの文字が表示されません�
 
 ## スピーカーとコンソールの位置を調整する
 
-- **スピーカー**：Inspector の「スピーカー」の一覧の行をダブルクリックすると選択されます。
-- **コンソール**：Inspector の「コンソールを選択」を押すと、コンソールが選択されます。台のあるモデルでは、台ごと選択されます。
+スピーカーとコンソールは、`AudioriumSetup` の Inspector から Hierarchy で選択し、Scene ビューで移動と回転を行います。
+
+### スピーカー
+
+<div className="paren-list">
+
+1. `AudioriumSetup` の Inspector の「スピーカー」の一覧で、動かすスピーカーの右側の欄（スピーカーの名前が入った欄）をダブルクリックします。
+
+   ![AudioriumSetup の Inspector の「スピーカー」の一覧。Front の右側の欄を赤枠で示している](/img/quick-start/speaker-list.png)
+
+2. Hierarchy で、そのスピーカーが選択されます。
+
+   ![ダブルクリックの後の Hierarchy。AudioriumSetup の中の Front が選択されている](/img/quick-start/speaker-selected.png)
+
+</div>
+
+左のチェックボックスは、スピーカーを使うかどうかの切り替えです。位置の調整には使いません（[追加と削除](../setup/speakers.md#追加と削除)）。
+
+### コンソール
+
+`AudioriumSetup` の Inspector の「Audiorium コンソール」の節で、「コンソールを選択」を押します。Hierarchy でコンソールが選択されます。台のあるモデルでは、台ごと選択されます。
 
 ![Scene ビューのスピーカーと視聴位置。音が届く範囲が表示されている](/img/scene/speakers.png)
 
