@@ -28,6 +28,7 @@ const sidebars = {
         'setup/console',
         'setup/visual-effects',
         'setup/advanced',
+        'setup/switches',
       ],
     },
     {

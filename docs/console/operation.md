@@ -16,7 +16,7 @@ description: コンソールの各タブの表示条件と操作、反映され�
 | Live | ワールド全体（GLOBAL） | 必要 | 照明システムが有効化されている |
 | Effects | 操作したユーザーの画面のみ（LOCAL） | 不要 | 「Effects を有効化」がオン |
 
-操作できるユーザーは、`AudioriumSetup` の Inspector の [詳細](../setup/advanced.md#操作権限) で設定します。FX Bypass・Reverb・プリセットは、ワールドに置いたスイッチからも切り替えられます（[スイッチから操作する](switches.md)）。
+操作できるユーザーは、`AudioriumSetup` の Inspector の [詳細](../setup/advanced.md#操作権限) で設定します。FX Bypass・Reverb・プリセットは、ワールドに置いたスイッチからも切り替えられます（[スイッチから操作する](../setup/switches.md)）。
 
 ## Sound Mode
 
