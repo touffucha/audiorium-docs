@@ -55,8 +55,17 @@ description: コンソールの各タブの表示条件と操作、反映され�
 | --- | --- |
 | SOUND | 全体の音のフィルターと、押している間だけ低音（Low）・全体（Kill）・高音（High）を切る操作 |
 | LIGHTS | 照明の色。カラーホイールと、Auto・White・Ice・Blue・Amber・Magenta・Red |
-| PATTERN | ムービングライトの動き（Auto・Fan・Cross・Tent・Wave・Circle・Sweep・Pillar）と、SPEED、MODE |
+| PATTERN | 照明の型（Auto と 7 つの型）、SPEED、MODE。型の名前は MODE によって変わります |
 | CUE | Blinder・Wash・Blackout・Strobe。押している間だけ有効です（カードの Hold の表示） |
+
+### MODE A と MODE B
+
+照明の動き方を 2 通りから選びます。デフォルトは MODE B です。
+
+| MODE | 動き方 | 型 |
+| --- | --- | --- |
+| MODE A | 灯体を型の形に向けたまま、曲のキックに合わせて、点く灯体の組を切り替えます。曲が流れていないときは切り替えません | Fan・Cross・Tent・Flow・Checker・Swing・Pillar |
+| MODE B | ムービングライトが首を振って、型の形を描きます。動きの速さは SPEED で変えます | Fan・Cross・Tent・Wave・Circle・Sweep・Pillar |
 
 照明の点滅に配慮が必要な場合は、[入場時の光過敏の警告](../setup/entry-notice.md) を表示できます。
 
