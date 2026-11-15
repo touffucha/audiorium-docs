@@ -26,7 +26,12 @@ AudioLink の役割と必要条件は [動作環境](../getting-started/requirem
 
 LTCGI の役割と必要なパッケージは [動作環境](../getting-started/requirements.md#外部依存パッケージ) を参照してください。Scene に LTCGI があり、「Effects を有効化」がオンの場合は、コンソールの Effects タブで LTCGI のオン・オフと強さを操作できます。操作は、操作したユーザーの画面にのみ反映されます。
 
-- **コンパイルエラーが出る場合**は、[トラブルシューティング](../help/troubleshooting.md#ltcgi-を導入するとコンパイルエラーが出る) を参照してください。
+:::warning VRC Light Volumes が無い場合のコンパイルエラー
+
+LTCGI 1.7.4 は、VRC Light Volumes が無いと U# のコンパイルエラーになります。その間は Audiorium の U# もコンパイルされず、Audiorium が動作しません。VRC Light Volumes も導入します（[トラブルシューティング](../help/troubleshooting.md#ltcgi-を導入するとコンパイルエラーが出る)）。
+
+:::
+
 - **YamaPlayer** の画面を接続するには、「LTCGI」をオンにします。YamaPlayer の Inspector の「LTCGI を使用」と同じ設定が入ります。
 - **VizVid** の画面を接続するには、「LTCGI」をオンにします。LTCGI_Controller の Inspector の Auto-Configure と同じ設定が入ります。先に Auto-Configure で接続していた場合は、チェックを外しても解除されません。LTCGI_Controller の Inspector の Un-Configure で解除します。
 

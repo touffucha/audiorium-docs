@@ -51,7 +51,9 @@ Add Audiorium の直後は、Front・Surround・Top Middle・Stereo Mix・Subwoo
 
 :::
 
-:::info TMP Importer が表示された場合
+:::warning TMP Importer が表示された場合
+
+TMP Essentials が無いと、コンソールの文字が表示されません。
 
 「Import TMP Essentials」を押します。導入後、Scene ビューの Audiorium コンソールが文字化けしている場合は、[トラブルシューティング](../help/troubleshooting.md#コンソールの文字が表示されない) を参照してください。
 

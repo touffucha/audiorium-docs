@@ -27,15 +27,17 @@ VRChat Creator Companion（VCC）で作成したワールドのプロジェク�
 
 - **VizVid と VRC Light Volumes を両方入れる場合**は、VRC Light Volumes を先に導入します。VizVid を先に入れるとコンパイルエラーが出ることがあります（[トラブルシューティング](../help/troubleshooting.md#vizvid-と-vrc-light-volumes-を同時に導入するとコンパイルエラーが出る)）。
 - **照明システムは本体の後に**インポートします。先にインポートすると、Unity の Console に UdonSharp のコンパイルエラーが出ることがあります。
+- 照明システム単体では動作しません。必ず、Audiorium 本体と併せて導入してください。
+- サンプルシーンを開く場合は、AudioLink・VRC Light Volumes・LTCGI の 3 つとも追加します。追加しない場合、シーン上の一部 Prefab が Missing になるなど、不具合が生じます。
 
 :::
 
 - 動画プレイヤーは、[YamaPlayer の導入手順](https://github.com/koorimizuw/YamaPlayer/wiki/YamaPlayer-%E5%B0%8E%E5%85%A5%E6%89%8B%E9%A0%86) か [VizVid の導入方法](https://xtlcdn.github.io/VizVid/docs/simple_ja.html) に従って導入します。
 - AudioLink・VRC Light Volumes・LTCGI は VCC で追加します。
-- サンプルシーンを開く場合は、AudioLink・VRC Light Volumes・LTCGI の 3 つとも追加します。追加しない場合、シーン上の一部 Prefab が Missing になるなど、不具合が生じます。
-- 照明システム単体では動作しません。必ず、Audiorium 本体と併せて導入してください。
 
-:::info TMP Importer が表示された場合
+:::warning TMP Importer が表示された場合
+
+TMP Essentials が無いと、コンソールの文字が表示されません。
 
 本体のインポートの後に TMP Importer のウィンドウが表示された場合は、「Import TMP Essentials」を押します。TextMesh Pro を初めて使うプロジェクトで 1 回だけ表示されます。
 

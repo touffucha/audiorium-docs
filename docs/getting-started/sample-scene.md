@@ -19,13 +19,23 @@ description: 付属のサンプルシーン（照明システムなし・照明�
 
 ## 開く
 
-サンプルシーンを開くには、[外部依存パッケージ](./requirements.md#外部依存パッケージ) のうち AudioLink・LTCGI・VRC Light Volumes の 3 つが必要です。無い場合、シーン上の一部 Prefab が Missing になるなど、不具合が生じます。動画プレイヤーは、開いた後に配置します。
+:::warning サンプルシーンを開く前の注意
+
+サンプルシーンを開くには、[外部依存パッケージ](./requirements.md#外部依存パッケージ) のうち AudioLink・LTCGI・VRC Light Volumes の 3 つが必要です。無い場合、シーン上の一部 Prefab が Missing になるなど、不具合が生じます。
+
+:::
+
+動画プレイヤーは、開いた後に配置します。
 
 {/* 画像を戻す場所：![Project ウィンドウのサンプルシーン](/img/sample/scenes.png)。配布物ができてから撮る */}
 
 ## 動画プレイヤーを配置する
 
+:::warning 動画プレイヤーの配置と接続の注意
+
 サンプルシーンには動画プレイヤーが含まれていません。動画プレイヤーを配置して Audiorium に接続すると、初めて動作します。
+
+:::
 
 1. 動画プレイヤーの Prefab を Hierarchy へドラッグし、Transform を次の値にします。Rotation はすべて 0 です。
 
