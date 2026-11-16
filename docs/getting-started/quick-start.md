@@ -11,7 +11,7 @@ hide_table_of_contents: true
 
 ## 動画プレイヤーを配置する
 
-YamaPlayer か VizVid を Scene に配置し、位置と向きを決めます。Audiorium によって生成される AudioSource（以降、スピーカー）とコンソールは、動画プレイヤーの位置を基準に配置されます。
+YamaPlayer か VizVid を Scene に配置し、位置と向きを決めます。置き方は [動画プレイヤーを配置する](../setup/video-player.md#動画プレイヤーを配置する) を参照してください。Audiorium が配置する AudioSource（以降、スピーカー）とコンソールは、動画プレイヤーのスクリーンを基準に配置されます。
 
 ![Scene に YamaPlayer を配置して選択した状態。Hierarchy に YamaPlayer、Scene ビューに動画プレイヤーの画面が表示されている。Audiorium を配置する前](/img/quick-start/player-placed.png "full")
 
@@ -19,44 +19,39 @@ YamaPlayer か VizVid を Scene に配置し、位置と向きを決めます。
 
 <div className="paren-list">
 
-1. メニューの **Tools › Audiorium › Add Audiorium** を選択します。Hierarchy の右クリックメニューの **Audiorium › Add Audiorium** でも同じです。
+1. メニューの **Tools › Audiorium › Add Audiorium** を実行します。Hierarchy の右クリックメニューの **Audiorium › Add Audiorium** からも実行できます。
 
-   `AudioriumSetup` が Hierarchy に追加され、選択された状態になります。この時点では、スピーカーとコンソールはまだ配置されません。
+   - **何も選択していない、または動画プレイヤー以外を選択している場合**：`AudioriumSetup` が Hierarchy に追加され、選択された状態になります。この時点では、スピーカーとコンソールはまだ配置されません。手順 2 へ進みます。
+   - **動画プレイヤー（その中のオブジェクトを含む）を選択している場合**（Hierarchy で動画プレイヤーを右クリックした場合も）：その動画プレイヤーに接続され、スピーカーとコンソールが配置されます。手順 2 は要りません。
 
-2. Hierarchy の動画プレイヤーを、Inspector の「動画プレイヤー」の欄へドラッグします。
+2. Hierarchy から、接続する動画プレイヤー（複数ある場合は、Audiorium で鳴らす 1 台）を、`AudioriumSetup` の Inspector の「動画プレイヤー」の欄へ、押したままドラッグします。クリックして離すと、Inspector の表示が動画プレイヤーに切り替わります。その場合は、Hierarchy で `AudioriumSetup` を選択し直します。
 
    ![Add Audiorium の直後の画面。Hierarchy で AudioriumSetup が選択され、Inspector の「動画プレイヤー」の欄は空。Hierarchy の YamaPlayer から Inspector の欄へ、ドラッグする向きを矢印で示している](/img/quick-start/player-drag.png)
 
 </div>
 
-動画プレイヤーに接続され、スピーカーとコンソールが配置されます。
-
-![動画プレイヤーに接続した直後。Scene にスピーカーとコンソールが配置され、Inspector に AudioriumSetup の設定が表示される](/img/quick-start/editor-after-add.png)
-
-![動画プレイヤーに接続した直後の Hierarchy](/img/setup/hierarchy.png)
-
-| 配置されるオブジェクト | 説明 |
-| --- | --- |
-| `ListeningPosition` | 視聴位置。スピーカーの音が届く範囲を決める基準の位置です |
-| `Front`・`Surround`・`Top Middle`・`Stereo Mix`・`Subwoofer` | スピーカー。動画プレイヤーのスクリーンを基準に配置されます |
-| `AudioriumConsole` | コンソール。台のあるモデルを選択すると、台の名前の `ConsoleMount_` の中に入ります |
-| `AudioControls` など、そのほかのオブジェクト | Audiorium の動作に使うオブジェクト。移動・削除しないでください |
-
-接続した直後は、Front・Surround・Top Middle・Stereo Mix・Subwoofer の 5 種類、8 つの出力が配置されます。使わないスピーカーは [こちらの手順](../setup/speakers.md#追加と削除) で外します。
-
-:::tip 動画プレイヤーを選択してから Add Audiorium を選択した場合
-
-選択していた動画プレイヤーに接続した状態で配置されます。手順 2 は要りません。
-
-:::
-
-:::warning TMP Importer が表示された場合
+:::warning TMP Importer の窓が表示された場合
 
 TMP Essentials が無いと、コンソールの文字が表示されません。
 
 「Import TMP Essentials」を押します。導入後、Scene ビューの Audiorium コンソールが文字化けしている場合は、[トラブルシューティング](../help/troubleshooting.md#コンソールの文字が表示されない) を参照してください。
 
 :::
+
+動画プレイヤーに接続されると、Scene ビューのスクリーンの手前にコンソールが表示されます。スピーカーとコンソールは、Hierarchy の `AudioriumSetup` の中に入ります（2 枚目の画像）。
+
+![動画プレイヤーに接続した直後。Scene にスピーカーとコンソールが配置され、Inspector に AudioriumSetup の設定が表示される](/img/quick-start/editor-after-add.png)
+
+![動画プレイヤーに接続した直後の Hierarchy。AudioriumSetup を開いた状態](/img/setup/hierarchy.png)
+
+| 配置されるオブジェクト | 説明 |
+| --- | --- |
+| `ListeningPosition` | 視聴位置。スピーカーの音が届く範囲を決める基準の位置です |
+| `Front`・`Surround`・`Top Middle`・`Stereo Mix`・`Subwoofer` | スピーカー。動画プレイヤーのスクリーンを基準に配置されます |
+| `AudioriumConsole` | コンソール。Inspector の「Audiorium コンソール」の節で台のあるモデルを選ぶと、`ConsoleMount_`（台の名前）の中へ移ります |
+| `AudioControls` など、そのほかのオブジェクト | Audiorium の動作に使うオブジェクト。移動・削除しないでください。灰色（非アクティブ）の物も、そのままにします |
+
+スピーカーの出力は合わせて 8 つまでで、接続した直後は 8 つすべてを使います（Front・Surround・Top Middle は左右で 2 つずつ）。スピーカーを足す場合は、先に使わないスピーカーを [こちらの手順](../setup/speakers.md#追加と削除) で外します。
 
 ## Inspector の警告を確認する
 

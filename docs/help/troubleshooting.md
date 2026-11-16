@@ -17,8 +17,8 @@ description: Inspector に表示される警告と、よくある問題の原因
 | ビルド先が PC（Windows）ではありません | ビルドのプラットフォームが Android など | **File › Build Settings** で PC（Windows）に切り替えます。Audiorium は PC 専用です |
 | TMP Essentials がプロジェクトにないため、コンソールの文字が表示されません | TMP Essentials を導入していない | 「TMP Essentials を導入」を押します |
 | 動画プレイヤーが原点から約 ○ km 離れています | 動画プレイヤーが原点（0, 0, 0）から 5 km より遠い | 動画プレイヤーと `AudioriumSetup` を原点の近くへ移動します（[原点から遠い](#コンソールの文字や絵が欠けて見える)） |
-| VizVid に LTCGI を自動で接続できませんでした | Audiorium が VizVid の LTCGI の設定の部品を見つけられない（動作確認済みの版と仕組みが違う VizVid など） | LTCGI_Controller の Inspector で、VizVid の Auto-Configure を押します |
-| コンソールがありません | コンソールが削除された | Ctrl+Z で元に戻すか、`AudioriumSetup` を削除してもう一度 Add Audiorium を実行します（Inspector の設定はデフォルトに戻ります） |
+| VizVid に LTCGI を自動で接続できませんでした | VizVid の版が、動作確認済みの版と違う など | LTCGI_Controller の Inspector で、VizVid の Auto-Configure を押します |
+| コンソールがありません | コンソールが削除された | Ctrl+Z で元に戻すか、`AudioriumSetup` を削除し、動画プレイヤーを選択してからもう一度 Add Audiorium を実行します（Inspector の設定はデフォルトに戻ります） |
 | スピーカーがありません | スピーカーがすべて削除された | Ctrl+Z で元に戻すか、[スピーカー](../setup/speakers.md) の一覧で追加します（Surround・Top Middle・Stereo Mix・Subwoofer はチェックを入れ、任意のスピーカーを足すときは「+」を押します） |
 
 ## コンソールの文字や絵が欠けて見える
@@ -40,22 +40,37 @@ description: Inspector に表示される警告と、よくある問題の原因
 
 **原因**：Unity がスクリプトをコンパイルしています。
 
-**直し方**：右下の進行表示が消えてから、もう一度 **Tools › Audiorium › Add Audiorium** を選択します。
+**直し方**：右下の進行表示が消えてから、もう一度 **Tools › Audiorium › Add Audiorium** を実行します。
+
+## Add Audiorium の後、スピーカーとコンソールが配置されない
+
+**原因**：動画プレイヤーを選択せずに Add Audiorium を実行すると、動画プレイヤーに接続していない `AudioriumSetup` だけが配置されます。
+
+**直し方**：Hierarchy で `AudioriumSetup` を選択し、接続する動画プレイヤーを Hierarchy から Inspector の「動画プレイヤー」の欄へドラッグします（[クイックスタート](../getting-started/quick-start.md#audiorium-を配置する)）。
+
+## 「既に AudioriumSetup がシーン上に存在します。」と表示される
+
+**原因**：Audiorium は Scene に 1 つまでです。`AudioriumSetup` がある Scene で Add Audiorium を実行すると、何も追加されません。
+
+**直し方**：
+
+- **まだ動画プレイヤーに接続していない場合**：Hierarchy で `AudioriumSetup` を選択し、動画プレイヤーを Inspector の「動画プレイヤー」の欄へドラッグします（[クイックスタート](../getting-started/quick-start.md#audiorium-を配置する)）。
+- **接続する動画プレイヤーを変える場合**：同じ欄へ、別の動画プレイヤーをドラッグします（[別の動画プレイヤーに差し替える](../setup/video-player.md#別の動画プレイヤーに差し替える)）。
 
 ## 動画プレイヤーに接続できない
 
-対応する動画プレイヤーは YamaPlayer と VizVid です。
+対応する動画プレイヤーは YamaPlayer と VizVid です。「動画プレイヤー」の欄へドラッグしたときに、次の窓が表示されることがあります。
 
 | 表示 | 原因 | 直し方 |
 | --- | --- | --- |
-| この Scene にある、音源を持つ対応動画プレイヤーを 1 台選択してください。 | 対応する動画プレイヤーではない、または別の Scene にある | YamaPlayer か VizVid の、ルートの GameObject を選択します |
-| ほかの Audiorium がこの動画プレイヤーに接続しています。 | 別の `AudioriumSetup` が接続している | 別の動画プレイヤーを選択するか、接続している `AudioriumSetup` を削除します |
+| この Scene にある、音源を持つ対応動画プレイヤーを 1 台選択してください。 | 対応する動画プレイヤーではない、または別の Scene にある | YamaPlayer か VizVid の、ルートの GameObject を「動画プレイヤー」の欄へドラッグします |
+| ほかの Audiorium がこの動画プレイヤーに接続しています。 | `AudioriumSetup` が 2 つある（複製した場合など） | 片方の `AudioriumSetup` を削除します（Audiorium は Scene に 1 つまで） |
 
 ## 照明システムを本体より先にインポートした
 
 Unity の Console に UdonSharp のコンパイルエラーが出ることがあります。
 
-**直し方**：本体をインポートしてから **Tools › Audiorium › Add Audiorium** を選択すると、Audiorium が U# を再コンパイルします。順番は [インストール](../getting-started/install.md#インポートの順番) を参照してください。
+**直し方**：本体をインポートしてから **Tools › Audiorium › Add Audiorium** を実行します。順番は [インストール](../getting-started/install.md#インポートの順番) を参照してください。
 
 ## 照明システムの Inspector に「別のライトショーに接続しています」と表示される
 
