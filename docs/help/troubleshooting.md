@@ -142,7 +142,6 @@ Packages\idv.jlchntoz.vvmw\Editor\VVMW\Designer\ScreenConfiguratorEditor.cs(114,
 **原因**：次の場合、Sound Mode のプリセット名と説明は変更前に戻ります。どれに該当するかは、表示されるダイアログで確認できます（[Sound Mode](../setup/sound-mode.md#名前と説明)）。
 
 - 名前が空、またはほかのプリセットと同じ名前
-- コンソールのフォントに無い文字（一部の漢字など）を含む
 - 名前や説明がコンソールのカードに収まらない
 
 ## お問い合わせ
