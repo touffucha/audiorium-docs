@@ -1,7 +1,7 @@
 ---
 title: 詳細
 sidebar_position: 8
-description: AudioriumSetup の Inspector の「詳細」の節。コンソールのデフォルト画面、操作権限、UI 操作音、音声バッファ
+description: AudioriumSetup の Inspector の「詳細」の節。コンソールのデフォルト画面、操作権限、Tips、UI 操作音、音声バッファ
 ---
 
 # 詳細
@@ -16,6 +16,7 @@ Audiorium コンソールの権限、UI 操作音、映像と音声遅延を設�
 | --- | --- |
 | デフォルト画面 | ワールド入場時にデフォルトで表示されるタブ。Scene ビューの表示も切り替わります |
 | 操作権限 | Sound Mode・Speaker EQ・Live のタブを操作できるユーザー |
+| Tips を有効にする | ワールド入場時に、コンソールの Tips を表示するか。デフォルトはオンです。ユーザーがコンソールで切り替えた状態は、次に入ったときも保たれます |
 
 ### 操作権限
 
