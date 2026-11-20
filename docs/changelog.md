@@ -15,13 +15,13 @@ hide_table_of_contents: true
 </details>
 
 <details className="changelog-version" open>
-<summary><span className="changelog-version__name">v0.13（β）</span><span className="changelog-version__lead">コンソールの Tips モードと、外部のスイッチからの操作が追加されます。また、コンソールの枠と台のマテリアルに木目が追加されます。</span></summary>
+<summary><span className="changelog-version__name">v0.14（β）</span><span className="changelog-version__lead">コンソールの Tips モードと、外部のスイッチからの操作が追加されます。また、コンソールの枠と台のマテリアルに木目が追加されます。</span></summary>
 
 ### 更新関連
 
 #### 以前のバージョンで配置したシーンが自動で作り直されます
 
-v0.13 の 2 つの unitypackage を上書きインポートすると、以前のバージョンで配置したコンソール・台・視界エフェクトが自動で作り直されます。
+v0.14 の 2 つの unitypackage を上書きインポートすると、以前のバージョンで配置したコンソール・台・視界エフェクトが自動で作り直されます。
 
 <p className="changelog-note">※スピーカーと照明の配置、Inspector の設定はそのまま残ります。<br />※v0.10 で使っていたファイルの一部はプロジェクトに残りますが、動作には影響しません。</p>
 
@@ -91,6 +91,7 @@ LuraSwitch2、UI の Button、自作の Udon などから、FX Bypass・Reverb�
 
 - 外部設定の「LTCGI」をオフにすると、YamaPlayer に自分で追加した LTCGI_Screen コンポーネントも削除される。
 - LTCGI を後から導入すると、コンソールの LTCGI のスイッチが機能しない。
+- コンソールの LTCGI Light のスライダーで明るさを変えても、2 回目以降の変更が反映されない。
 
 #### Inspector
 
